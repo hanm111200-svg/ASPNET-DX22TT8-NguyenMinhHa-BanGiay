@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOLE DISTRICT — Checkout</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/checkout.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <a href="sole-index.html" class="logo"
+        >SOLE<span class="dot">·</span>DISTRICT</a
+      >
+      <div class="header-secure">
+        <svg
+          width="13"
+          height="13"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+        >
+          <rect x="3" y="11" width="18" height="11" rx="2" />
+          <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+        </svg>
+        Secure Checkout · SSL 256-bit
+      </div>
+    </header>
+
+    <!-- TICKER -->
+    <div class="ticker">
+      <div class="ticker-track">
+        <div class="ticker-item">
+          XÁC THỰC 100% CHÍNH HÃNG <span class="ticker-sep">★</span> ĐỔI TRẢ 30
+          NGÀY <span class="ticker-sep">★</span> THANH TOÁN BẢO MẬT SSL
+          <span class="ticker-sep">★</span> GIAO HÀNG TOÀN QUỐC
+          <span class="ticker-sep">★</span>
+        </div>
+        <div class="ticker-item">
+          XÁC THỰC 100% CHÍNH HÃNG <span class="ticker-sep">★</span> ĐỔI TRẢ 30
+          NGÀY <span class="ticker-sep">★</span> THANH TOÁN BẢO MẬT SSL
+          <span class="ticker-sep">★</span> GIAO HÀNG TOÀN QUỐC
+          <span class="ticker-sep">★</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-wrap">
+      <!-- STEPS -->
+      <div class="steps-bar">
+        <div class="step done"><span class="step-num">✓</span>Cart</div>
+        <div class="step-line"></div>
+        <div class="step active"><span class="step-num">2</span>Info</div>
+        <div class="step-line"></div>
+        <div class="step"><span class="step-num">3</span>Shipping</div>
+        <div class="step-line"></div>
+        <div class="step"><span class="step-num">4</span>Payment</div>
+      </div>
+
+      <div class="checkout-layout">
+        <!-- FORM PANEL -->
+        <div class="form-panel">
+          <!-- CONTACT -->
+          <div class="blk">
+            <div class="blk-eyebrow">Step 01</div>
+            <h2 class="blk-title">CONTACT INFO</h2>
+
+            <div class="login-prompt">
+              <p>Đã có tài khoản? Đăng nhập để checkout nhanh hơn</p>
+              <a href="#" class="login-link">Đăng nhập →</a>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label>Họ</label>
+                <input type="text" placeholder="Nguyễn" id="fName" />
+              </div>
+              <div class="field">
+                <label>Tên</label>
+                <input type="text" placeholder="Minh Tuấn" id="lName" />
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label>Email</label>
+                <div class="inp-wrap">
+                  <input
+                    type="email"
+                    placeholder="you@email.com"
+                    id="email"
+                    class="ok"
+                  />
+                  <span class="inp-icon ok"
+                    ><svg
+                      width="14"
+                      height="14"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <polyline points="20 6 9 17 4 12" /></svg
+                  ></span>
+                </div>
+              </div>
+              <div class="field">
+                <label>Số điện thoại</label>
+                <div class="inp-wrap">
+                  <input type="tel" placeholder="0901 234 567" id="phone" />
+                  <span class="inp-icon"
+                    ><svg
+                      width="13"
+                      height="13"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6.16 6.16l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                      /></svg
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <label class="check-row">
+              <input type="checkbox" checked />
+              <span>Nhận thông báo về drops mới và restocks qua email</span>
+            </label>
+          </div>
+
+          <hr class="blk-divider" />
+
+          <!-- DELIVERY -->
+          <div class="blk">
+            <div class="blk-eyebrow">Step 02</div>
+            <h2 class="blk-title">DELIVERY ADDRESS</h2>
+
+            <p
+              style="
+                font-family: var(--mono);
+                font-size: 9px;
+                letter-spacing: 0.12em;
+                text-transform: uppercase;
+                color: var(--muted);
+                margin-bottom: 12px;
+              "
+            >
+              Địa chỉ đã lưu
+            </p>
+            <div class="saved-addrs">
+              <label class="addr-card active" onclick="pickAddr(this)">
+                <input type="radio" name="addr" checked />
+                <span class="addr-tag">Default</span>
+                <div class="addr-name">Nguyễn Minh Tuấn</div>
+                <div class="addr-detail">
+                  123 Nguyễn Huệ, P. Bến Nghé<br />Quận 1, TP.HCM
+                </div>
+              </label>
+              <label class="addr-card" onclick="pickAddr(this)">
+                <input type="radio" name="addr" />
+                <div class="addr-name">Văn phòng</div>
+                <div class="addr-detail">
+                  45 Điện Biên Phủ, P.3<br />Quận Bình Thạnh, TP.HCM
+                </div>
+              </label>
+              <div class="new-addr-btn" onclick="toggleNewAddr()">
+                <svg
+                  width="14"
+                  height="14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+                Thêm địa chỉ mới
+              </div>
+            </div>
+
+            <div class="new-addr-form" id="newAddrForm">
+              <div class="field-row full" style="margin-bottom: 12px">
+                <div class="field">
+                  <label>Địa chỉ cụ thể</label
+                  ><input
+                    type="text"
+                    placeholder="Số nhà, tên đường, phường/xã"
+                  />
+                </div>
+              </div>
+              <div class="field-row triple">
+                <div class="field">
+                  <label>Tỉnh / Thành</label>
+                  <select>
+                    <option selected>TP. Hồ Chí Minh</option>
+                    <option>Hà Nội</option>
+                    <option>Đà Nẵng</option>
+                    <option>Cần Thơ</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label>Quận / Huyện</label>
+                  <select>
+                    <option>Quận 1</option>
+                    <option>Quận 2</option>
+                    <option>Bình Thạnh</option>
+                    <option>Gò Vấp</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label>Phường / Xã</label>
+                  <select>
+                    <option>Bến Nghé</option>
+                    <option>Bến Thành</option>
+                    <option>Phạm Ngũ Lão</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field-row full" style="margin-bottom: 12px">
+                <div class="field">
+                  <label>Ghi chú <span class="opt">(tùy chọn)</span></label
+                  ><textarea
+                    placeholder="Gọi trước khi giao, để tại bảo vệ..."
+                  ></textarea>
+                </div>
+              </div>
+              <label class="check-row"
+                ><input type="checkbox" /><span
+                  >Lưu địa chỉ này cho lần sau</span
+                ></label
+              >
+            </div>
+          </div>
+
+          <hr class="blk-divider" />
+
+          <!-- PAYMENT -->
+          <div class="blk">
+            <div class="blk-eyebrow">Step 03</div>
+            <h2 class="blk-title">PAYMENT METHOD</h2>
+
+            <div class="pay-tabs">
+              <button class="pay-tab active" onclick="switchPay(this, 'card')">
+                <svg
+                  width="12"
+                  height="12"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                >
+                  <rect x="1" y="4" width="22" height="16" rx="2" />
+                  <line x1="1" y1="10" x2="23" y2="10" />
+                </svg>
+                Thẻ bank
+              </button>
+              <button class="pay-tab" onclick="switchPay(this, 'qr')">
+                <svg
+                  width="12"
+                  height="12"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                >
+                  <rect x="3" y="3" width="7" height="7" />
+                  <rect x="14" y="3" width="7" height="7" />
+                  <rect x="3" y="14" width="7" height="7" />
+                </svg>
+                QR / Ví
+              </button>
+              <button class="pay-tab" onclick="switchPay(this, 'cod')">
+                <svg
+                  width="12"
+                  height="12"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                >
+                  <line x1="12" y1="1" x2="12" y2="23" />
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                </svg>
+                COD
+              </button>
+            </div>
+
+            <!-- CARD -->
+            <div class="pay-content active" id="pay-card">
+              <div class="field-row full" style="margin-bottom: 12px">
+                <div class="field">
+                  <label>Số thẻ</label>
+                  <div class="card-num-wrap">
+                    <div class="card-brands">
+                      <span class="brand-tag visa">VISA</span
+                      ><span class="brand-tag mc">MC</span>
+                    </div>
+                    <input
+                      type="text"
+                      placeholder="1234  5678  9012  3456"
+                      oninput="fmtCard(this)"
+                      maxlength="19"
+                      id="cardNum"
+                      style="padding-left: 72px"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="field-row full" style="margin-bottom: 12px">
+                <div class="field">
+                  <label>Tên chủ thẻ</label
+                  ><input
+                    type="text"
+                    placeholder="NGUYEN MINH TUAN"
+                    oninput="this.value = this.value.toUpperCase()"
+                  />
+                </div>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label>Ngày hết hạn</label
+                  ><input
+                    type="text"
+                    placeholder="MM / YY"
+                    oninput="fmtExpiry(this)"
+                    maxlength="7"
+                  />
+                </div>
+                <div class="field">
+                  <label>CVV</label>
+                  <div class="inp-wrap">
+                    <input type="password" placeholder="• • •" maxlength="4" />
+                    <span class="inp-icon"
+                      ><svg
+                        width="12"
+                        height="12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                        />
+                        <circle cx="12" cy="12" r="3" /></svg
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <label class="check-row" style="margin-top: 10px"
+                ><input type="checkbox" checked /><span
+                  >Lưu thẻ này cho lần sau</span
+                ></label
+              >
+            </div>
+
+            <!-- QR -->
+            <div class="pay-content" id="pay-qr">
+              <div class="qr-block">
+                <div class="qr-visual" id="qrGrid"></div>
+                <div class="qr-info">
+                  <h4>Quét QR để thanh toán</h4>
+                  <p>
+                    Mở app ngân hàng → Quét mã QR → Thanh toán
+                    <strong style="color: var(--accent)">7.281.000₫</strong>
+                  </p>
+                  <div class="bank-chips">
+                    <span class="bank-chip">MoMo</span
+                    ><span class="bank-chip">ZaloPay</span>
+                    <span class="bank-chip">VNPay</span
+                    ><span class="bank-chip">VCB</span>
+                    <span class="bank-chip">BIDV</span
+                    ><span class="bank-chip">Techcombank</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- COD -->
+            <div class="pay-content" id="pay-cod">
+              <div class="cod-box">
+                <p>
+                  <strong>Thanh toán khi nhận hàng (COD)</strong><br />Bạn sẽ
+                  thanh toán <strong>7.281.000₫</strong> bằng tiền mặt khi nhận
+                  được hàng. Vui lòng chuẩn bị đúng số tiền. Đơn COD có thể mất
+                  thêm 1–2 ngày.
+                </p>
+              </div>
+            </div>
+
+            <div class="security-row">
+              <div class="sec-badge">
+                <svg
+                  width="12"
+                  height="12"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                >
+                  <rect x="3" y="11" width="18" height="11" rx="2" />
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4" /></svg
+                >SSL 256-bit
+              </div>
+              <div class="sec-badge">
+                <svg
+                  width="12"
+                  height="12"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg
+                >PCI-DSS
+              </div>
+              <div class="sec-badge">
+                <svg
+                  width="12"
+                  height="12"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                >
+                  <polyline points="20 6 9 17 4 12" /></svg
+                >Verified Secure
+              </div>
+            </div>
+          </div>
+
+          <hr class="blk-divider" />
+
+          <!-- AGREE & SUBMIT -->
+          <div>
+            <label class="check-row"
+              ><input type="checkbox" id="agreeTerms" checked /><span
+                >Tôi đồng ý với <a href="#">Điều khoản dịch vụ</a> và
+                <a href="#">Chính sách bảo mật</a> của Sole District</span
+              ></label
+            >
+            <label class="check-row"
+              ><input type="checkbox" /><span
+                >Nhận drop notification, restocks và ưu đãi độc quyền</span
+              ></label
+            >
+
+            <button class="btn-order" id="orderBtn" onclick="placeOrder()">
+              <svg
+                width="16"
+                height="16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <rect x="3" y="11" width="18" height="11" rx="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+              </svg>
+              Đặt hàng — 7.281.000₫
+            </button>
+            <button class="btn-back-link" onclick="history.back()">
+              ← Quay lại giỏ hàng
+            </button>
+          </div>
+        </div>
+        <!-- end form-panel -->
+
+        <!-- ORDER PANEL -->
+        <div class="order-panel">
+          <h2 class="op-title">ORDER<br />SUMMARY</h2>
+
+          <div class="op-items">
+            <div class="op-item">
+              <div class="op-img">
+                <div class="op-img-shoe c-black">
+                  <div class="s-upper"></div>
+                  <div class="s-sole"></div>
+                </div>
+                <span class="op-qty">1</span>
+              </div>
+              <div class="op-info">
+                <div class="op-name">Air Jordan 1 Retro High OG</div>
+                <div class="op-meta">Black / Yellow · US 7.5</div>
+                <div class="op-auth">
+                  <svg
+                    width="9"
+                    height="9"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <polyline points="20 6 9 17 4 12" /></svg
+                  >Auth Verified
+                </div>
+              </div>
+              <div class="op-price">5.200.000₫</div>
+            </div>
+            <div class="op-item">
+              <div class="op-img">
+                <div class="op-img-shoe c-white">
+                  <div class="s-upper"></div>
+                  <div class="s-sole"></div>
+                </div>
+                <span class="op-qty">1</span>
+              </div>
+              <div class="op-info">
+                <div class="op-name">Stan Smith Lux</div>
+                <div class="op-meta">Cloud White · US 8</div>
+                <div class="op-auth">
+                  <svg
+                    width="9"
+                    height="9"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <polyline points="20 6 9 17 4 12" /></svg
+                  >Auth Verified
+                </div>
+              </div>
+              <div class="op-price">2.890.000₫</div>
+            </div>
+          </div>
+
+          <div class="op-coupon">
+            <span
+              ><svg
+                width="10"
+                height="10"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <polyline points="20 6 9 17 4 12" /></svg
+              >SOLE10 — Giảm 809.000₫</span
+            >
+          </div>
+
+          <div class="op-row">
+            <span class="l">Tạm tính</span><span class="v">8.090.000₫</span>
+          </div>
+          <div class="op-row">
+            <span class="l">Giảm giá</span><span class="v disc">−809.000₫</span>
+          </div>
+          <div class="op-row">
+            <span class="l">Vận chuyển</span
+            ><span class="v free">Miễn phí</span>
+          </div>
+          <div class="op-row">
+            <span class="l">VAT (10%)</span><span class="v">Đã bao gồm</span>
+          </div>
+          <hr class="op-div" />
+          <div class="op-total">
+            <span class="l">Total</span><span class="v">7.281.000₫</span>
+          </div>
+          <p class="op-vat">// Đã bao gồm VAT 10%</p>
+
+          <div class="delivery-box">
+            <svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+            >
+              <rect x="1" y="3" width="15" height="13" />
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+              <circle cx="5.5" cy="18.5" r="2.5" />
+              <circle cx="18.5" cy="18.5" r="2.5" />
+            </svg>
+            <p>
+              Dự kiến giao: <strong>20–22 tháng 5, 2025</strong><br />Giao hàng
+              tiêu chuẩn miễn phí
+            </p>
+          </div>
+        </div>
+        <!-- end order-panel -->
+      </div>
+      <!-- end checkout-layout -->
+    </div>
+    <!-- end page-wrap -->
+
+    <!-- SUCCESS MODAL -->
+    <div class="modal-overlay" id="successModal">
+      <div class="modal">
+        <div class="modal-icon">
+          <svg
+            width="28"
+            height="28"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+          >
+            <polyline points="20 6 9 17 4 12" />
+          </svg>
+        </div>
+        <div class="modal-eyebrow">// Order confirmed</div>
+        <h2 class="modal-title">YOU'RE<br />ALL SET!</h2>
+        <p class="modal-order">Order ID: <strong>#SD-2025-04721</strong></p>
+        <p class="modal-desc">
+          Đơn hàng đã được xác nhận. Chúng tôi sẽ gửi email xác nhận và tracking
+          link ngay sau khi đóng gói. Dự kiến giao trong 3–5 ngày làm việc.
+        </p>
+        <div class="modal-btns">
+          <a href="sole-index.html" class="modal-btn-primary"
+            >← Tiếp tục mua sắm</a
+          >
+          <button class="modal-btn-sec" onclick="closeModal()">
+            Track Order →
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-grid">
+        <div>
+          <span class="footer-logo"
+            >SOLE<span class="dot">·</span>DISTRICT</span
+          >
+          <p class="footer-desc">
+            Điểm đến của sneakerheads Việt Nam. 100% Authentic.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="sole-products.html">All Sneakers</a></li>
+            <li><a href="#">Drops</a></li>
+            <li><a href="#">Sale</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">Auth Check</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 SOLE DISTRICT. All rights reserved.</p>
+        <div class="footer-pays">
+          <span class="pay-tag">VISA</span><span class="pay-tag">MC</span
+          ><span class="pay-tag">MOMO</span><span class="pay-tag">VNPAY</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/checkout.js"></script>
+  </body>
+</html>

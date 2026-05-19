@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\12 - ASP.NET\\Anh Minh H\u00E0\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A9B337-49FD-4948-809A-B65D114AC359}|NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay.csproj|d:\\12 - asp.net\\anh minh h\u00E0\\aspnet-dx22tt8-nguyenminhha-bangiay\\src\\nguyenminhha_bangiay\\nguyenminhha_bangiay\\nguyenminhha_bangiay.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A2A9B337-49FD-4948-809A-B65D114AC359}|NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay.csproj|solutionrelative:nguyenminhha_bangiay\\nguyenminhha_bangiay.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 383,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NguyenMinhHa_BanGiay",
+              "DocumentMoniker": "D:\\12 - ASP.NET\\Anh Minh H\u00E0\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay.csproj",
+              "RelativeDocumentMoniker": "NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay.csproj",
+              "ToolTip": "D:\\12 - ASP.NET\\Anh Minh H\u00E0\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay.csproj*",
+              "RelativeToolTip": "NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay.csproj*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-18T03:20:36.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
