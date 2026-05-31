@@ -1,0 +1,160 @@
+﻿@model NguyenMinhHa_BanGiay.Models.ProductModel
+@{
+    ViewData["Title"] = "Edit Product Admin";
+    var ProductSize = ViewBag.productsize as List<NguyenMinhHa_BanGiay.Models.ProductSizeModel>;
+}
+
+<div class="container-xxl flex-grow-1 container-p-y">
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span> SỬA SẢN PHẨM</h4>
+    <div class="row">
+        <div class="col-xl">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <form asp-action="Edit" method="post" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <label class="form-label" for="basic-default-fullname">Tên Sản phẩm</label>
+                            <input type="text" class="form-control" id="basic-default-fullname" placeholder="Nhập tên danh mục" asp-for="Name" value="@Model.Name" />
+                        </div>
+                        <div>
+                            <label for="exampleFormControlTextarea1" class="form-label">Mô tả</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" asp-for="Description"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlSelect1" class="form-label">Thương hiệu</label>
+                            <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example" asp-for="CategoryId" asp-items="ViewBag.categories">                                
+                            </select>
+                        </div>
+                        <div>
+                            <label for="exampleFormControlTextarea1" class="form-label">Nội dung</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" asp-for="Content"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="basic-default-fullname">Giá</label>
+                            <input type="text" class="form-control" id="basic-default-fullname" placeholder="Nhập giá" asp-for="Price" value="@Model.Price" />
+                        </div>                       
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Hình ảnh</label>
+                            <input class="form-control" type="file" id="formFile" asp-for="Image" />
+                            @if (!string.IsNullOrEmpty(@Model.ImageUrl))
+                            {
+                                <div style="position:relative; margin: 10px">
+                                    <img src="@Url.Content("~/upload/product/" + @Model.ImageUrl)" width="200" height="200" style="border: solid 5px #5f61e6; border-radius: 15px" />
+                                </div>
+                            }
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="basic-default-fullname">Trạng thái</label>
+                            <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example" asp-for="Status">
+                                <option value="0">Tắt</option>
+                                <option value="1">Bật</option>
+                            </select>
+                        </div>                   
+                        
+                        <div class="card mb-5">
+                            <div class="card-body">
+                                <div class="demo-inline-spacing">
+                                    <button type="button"
+                                            id="btnOpenCreateModel"
+                                            class="btn btn-sm btn-dark"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#createProductSize"
+                                            onclick="openCreateProductSize(@Model.Id)">
+                                        <i class="bx bx-plus me-1"></i>
+                                        THÊM SIZE
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="table-responsive text-nowrap">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Size</th>
+                                            <th>Số lượng</th>                                            
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-border-bottom-0">
+                                        @foreach (var item in ViewBag.ProductSize)
+                                        {
+                                            <tr>
+                                                <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>@item.size</strong></td>
+                                                <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>@item.Quantity</strong></td>                                                
+                                                <td>
+                                                    <button type="button" class="btn btn-sm btn-dark" href="javascript:void(0);"
+                                                            data-id="item.Id"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#updateProductSize"
+                                                            onclick="openPopupEditProductSize(@item.Id, @item.size, @item.Quantity)">
+                                                        <i class="bx bx-pencil me-1"></i> Sửa
+                                                    </button>
+                                                    <button type="button" class="btn btn-sm btn-danger" data-request-success="window.location.reload()" data-request-confirm="Xóa bản ghi đã chọn ?" onclick="onDeleteOrderDetail(@item.Id)"><i class="bx bx-trash me-1"></i> Xóa</button>
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Lưu</button>
+                        <a href="@Url.Action("Index", "Product")" class="btn btn-outline-secondary">Trở về</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@await Html.PartialAsync("EditModal", new ProductSizeModel())
+@await Html.PartialAsync("CreateModal", new NguyenMinhHa_BanGiay.Models.ProductSizeModel())
+
+
+<script>
+    document.getElementById("btnOpenCreateModel").addEventListener("click", () => {
+        document.getElementById("productSizeId").value = @Model.Id;
+        new bootstrap.Modal(document.getElementById("createOrder")).show();
+    });
+
+        window.openPopupEditOrder = function (id, productid, quantity, size) {
+        $.ajax({
+            url: '/Admin/Product/EditModal',
+            data: { Id: id, ProductId: productid, Quantity: quantity, Size: size },
+            dataType: 'json',
+            type: "GET",
+            success: function (data) {
+                $("#productsizeid").val(data.id);
+                $("#size").val(data.size);
+                $("#quantity").val(data.quantity);
+
+                var modal = new bootstrap.Modal(document.getElementById("updateProductSize"));
+                modal.show();
+            }
+        });
+    }
+
+    window.onDeleteOrderDetail = function (id) {
+        $.ajax({
+            url: '/Admin/Product/DeleteModal', //additional parameters
+            data: { Id: id },
+            dataType: 'json',
+            type: "POST",
+            success: function (data) {
+                window.location.reload()
+            }
+        });
+    }
+
+    window.openCreateOrderDetail = function (id) {
+        $.ajax({
+            url: '/Admin/Product/CreateModal', //additional parameters
+            data: { Id: id },
+            dataType: 'json',
+            type: "POST",
+            success: function (data) {
+                $("#productSizeId").val(data.Id);
+                var modal = new bootstrap.Modal(document.getElementById("createProductSize"));
+                modal.show();
+            }
+        });
+    }
+</script>

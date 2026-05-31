@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOLE DISTRICT — Order Confirmed</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0a0a0a;--surface:#111111;--surface2:#1a1a1a;--border:#222222;--border2:#2e2e2e;--text:#f0f0f0;--muted:#666666;--dim:#3a3a3a;--accent:#e8ff00;--accent2:#ff3d00;--accent3:#00d4ff;--white:#ffffff;--display:'Bebas Neue',sans-serif;--body:'Space Grotesk',sans-serif;--mono:'DM Mono',monospace;--success:#39d353}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--bg);color:var(--text);overflow-x:hidden;cursor:crosshair}
+a{text-decoration:none;color:inherit}
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:9998;opacity:0.4}
+/* PARTICLE CANVAS */
+#particle-canvas{position:fixed;inset:0;pointer-events:none;z-index:9997}
+/* HEADER */
+header{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:60px;background:rgba(10,10,10,0.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.logo{font-family:var(--display);font-size:28px;letter-spacing:0.08em;color:var(--white);display:flex;align-items:center;gap:6px}
+.logo .dot{color:var(--accent);font-size:32px;line-height:0}
+nav{display:flex;gap:32px;align-items:center}
+nav a{font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);transition:color 0.2s}
+nav a:hover{color:var(--accent)}
+.header-right{display:flex;align-items:center;gap:16px}
+.hbtn{background:none;border:none;cursor:crosshair;color:var(--muted);display:flex;align-items:center;padding:4px;transition:color 0.2s}
+.hbtn:hover{color:var(--accent)}
+.cart-pill{display:flex;align-items:center;gap:8px;background:var(--accent);color:var(--bg);font-size:11px;font-weight:700;letter-spacing:0.08em;padding:7px 14px;text-transform:uppercase;transition:background 0.2s}
+.cart-pill:hover,.cart-pill:visited{color:var(--bg)}.cart-pill:hover{background:#c8dc00}
+/* TICKER */
+.ticker{position:fixed;top:60px;left:0;right:0;z-index:99;background:var(--accent);color:var(--bg);height:32px;overflow:hidden;display:flex;align-items:center}
+.ticker-track{display:flex;white-space:nowrap;animation:ticker 20s linear infinite}
+.ticker-item{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:0.08em;padding:0 40px;display:flex;align-items:center;gap:16px}
+.ticker-sep{color:var(--accent2);font-size:16px}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ── HERO ── */
+.success-hero{
+  margin-top:92px;
+  min-height:calc(100vh - 92px);
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  position:relative;
+}
+
+/* LEFT */
+.hero-left{
+  background:var(--surface);
+  border-right:1px solid var(--border);
+  padding:80px 60px;
+  display:flex;flex-direction:column;justify-content:center;
+  position:relative;overflow:hidden;
+}
+.hero-left::before{
+  content:'';position:absolute;top:-120px;left:-120px;
+  width:400px;height:400px;
+  background:radial-gradient(circle,rgba(232,255,0,0.07) 0%,transparent 70%);
+  pointer-events:none;
+}
+
+/* Animated check */
+.check-wrap{
+  width:96px;height:96px;
+  border:1px solid var(--accent);
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:36px;position:relative;
+  animation:zoomIn 0.5s cubic-bezier(0.25,0.46,0.45,0.94) both;
+}
+.check-wrap::before{
+  content:'';position:absolute;inset:-8px;
+  border:1px solid rgba(232,255,0,0.2);
+  animation:pulse 2.5s ease-out infinite;
+}
+.check-wrap::after{
+  content:'';position:absolute;inset:-18px;
+  border:1px solid rgba(232,255,0,0.08);
+  animation:pulse 2.5s 0.4s ease-out infinite;
+}
+.check-wrap svg{color:var(--accent);z-index:1}
+@keyframes zoomIn{from{transform:scale(0) rotate(-180deg);opacity:0}to{transform:scale(1) rotate(0deg);opacity:1}}
+@keyframes pulse{0%{transform:scale(1);opacity:0.6}100%{transform:scale(1.5);opacity:0}}
+
+.hero-eyebrow{
+  font-family:var(--mono);font-size:10px;color:var(--accent);
+  letter-spacing:0.18em;text-transform:uppercase;margin-bottom:14px;
+  display:flex;align-items:center;gap:10px;
+  animation:slideIn 0.6s 0.2s ease both;
+}
+.hero-eyebrow::before{content:'//'}
+.hero-title{
+  font-family:var(--display);
+  font-size:clamp(64px,8vw,112px);
+  line-height:0.88;letter-spacing:0.02em;color:var(--white);
+  margin-bottom:24px;
+  animation:slideIn 0.6s 0.3s ease both;
+}
+.hero-title .acc{color:var(--accent)}
+.hero-title .out{-webkit-text-stroke:1px var(--dim);color:transparent}
+.hero-sub{
+  font-size:14px;color:var(--muted);line-height:1.8;
+  max-width:400px;margin-bottom:40px;
+  animation:slideIn 0.6s 0.4s ease both;
+}
+@keyframes slideIn{from{opacity:0;transform:translateX(-20px)}to{opacity:1;transform:translateX(0)}}
+
+/* Order ID */
+.order-id-row{
+  background:var(--surface2);border:1px solid var(--border2);
+  padding:16px 20px;display:flex;align-items:center;gap:16px;
+  margin-bottom:36px;
+  animation:slideIn 0.6s 0.5s ease both;
+}
+.oid-label{font-family:var(--mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.oid-val{font-family:var(--display);font-size:24px;color:var(--accent);letter-spacing:0.06em}
+.oid-copy{margin-left:auto;background:none;border:1px solid var(--border2);color:var(--muted);width:36px;height:36px;display:flex;align-items:center;justify-content:center;cursor:crosshair;transition:all 0.2s}
+.oid-copy:hover{border-color:var(--accent);color:var(--accent)}
+
+/* CTAs */
+.hero-ctas{display:flex;gap:10px;flex-wrap:wrap;animation:slideIn 0.6s 0.6s ease both}
+.btn-primary{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:var(--bg);font-weight:700;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;padding:16px 28px;border:none;cursor:crosshair;transition:all 0.2s;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px));font-family:var(--body)}
+.btn-primary:hover{background:var(--white)}.btn-primary:visited{color:var(--bg)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;background:none;border:1px solid var(--border2);color:var(--muted);font-family:var(--mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;padding:14px 22px;cursor:crosshair;transition:all 0.2s}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+
+/* Decorative bg text */
+.hero-bg-text{
+  position:absolute;bottom:-20px;right:-20px;
+  font-family:var(--display);font-size:180px;
+  color:rgba(232,255,0,0.025);letter-spacing:0.02em;
+  pointer-events:none;line-height:1;white-space:nowrap;
+}
+
+/* RIGHT */
+.hero-right{
+  padding:52px 52px 60px;
+  overflow-y:auto;
+  animation:fadeUp 0.7s 0.2s ease both;
+}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+
+/* SECTION HEADER */
+.sec-hd{font-family:var(--mono);font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.sec-hd::before{content:'//'}
+.sec-hd::after{content:'';flex:1;height:1px;background:var(--border)}
+
+/* TIMELINE */
+.timeline{margin-bottom:44px}
+.tl-steps{position:relative;padding-left:32px}
+.tl-steps::before{content:'';position:absolute;left:9px;top:8px;bottom:8px;width:1px;background:var(--border)}
+.tl-step{position:relative;padding-bottom:24px}
+.tl-step:last-child{padding-bottom:0}
+.tl-dot{
+  position:absolute;left:-32px;top:2px;
+  width:20px;height:20px;border:1px solid var(--dim);background:var(--bg);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--mono);font-size:9px;font-weight:700;
+  transition:all 0.3s;
+}
+.tl-dot.done{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.tl-dot.active{border-color:var(--accent);color:var(--accent);box-shadow:0 0 0 3px rgba(232,255,0,0.12)}
+.tl-name{font-size:13px;font-weight:600;color:var(--muted);margin-bottom:2px}
+.tl-step.done .tl-name,.tl-step.active .tl-name{color:var(--text)}
+.tl-step.active .tl-name{color:var(--accent)}
+.tl-desc{font-family:var(--mono);font-size:10px;color:var(--muted)}
+
+/* ORDER ITEMS */
+.order-items{margin-bottom:32px}
+.oi-row{display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid var(--border)}
+.oi-row:first-of-type{border-top:1px solid var(--border)}
+.oi-img{width:60px;height:60px;background:var(--surface2);border:1px solid var(--border);flex-shrink:0;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.oi-img::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 40%,rgba(232,255,0,0.05),transparent);pointer-events:none}
+.shoe-mini{position:relative;width:40px;height:22px}
+.s-upper,.s-sole{position:absolute}
+.s-upper{bottom:8px;left:0;right:14px;height:14px;border-radius:3px 28px 3px 3px}
+.s-sole{bottom:0;left:-4px;right:-4px;height:8px;border-radius:1px 24px 5px 1px}
+.c-black .s-upper{background:linear-gradient(160deg,#2a2a2a,#111)}.c-black .s-sole{background:var(--accent)}
+.c-white .s-upper{background:linear-gradient(160deg,#e0e0e0,#c8c8c8)}.c-white .s-sole{background:#888}
+.oi-qty{position:absolute;top:-7px;right:-7px;background:var(--accent);color:var(--bg);width:18px;height:18px;border-radius:50%;font-family:var(--mono);font-size:9px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.oi-info{flex:1}
+.oi-brand{font-family:var(--mono);font-size:9px;color:var(--muted);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:2px}
+.oi-name{font-size:13px;font-weight:600;color:var(--text);margin-bottom:2px}
+.oi-meta{font-family:var(--mono);font-size:9px;color:var(--muted)}
+.oi-auth{font-family:var(--mono);font-size:9px;color:var(--accent3);display:flex;align-items:center;gap:4px;margin-top:3px}
+.oi-price{font-size:14px;font-weight:700;color:var(--accent);white-space:nowrap}
+
+/* TOTALS */
+.totals{margin-bottom:28px}
+.tot-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;font-size:13px}
+.tot-row .l{color:var(--muted)}.tot-row .v{font-weight:600}
+.tot-row .v.disc{color:var(--accent)}.tot-row .v.free{color:var(--success)}
+.tot-div{border:none;border-top:1px solid var(--border2);margin:14px 0}
+.tot-total{display:flex;align-items:baseline;justify-content:space-between}
+.tot-total .l{font-family:var(--mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted)}
+.tot-total .v{font-family:var(--display);font-size:32px;color:var(--accent);letter-spacing:0.02em}
+
+/* DELIVERY BOX */
+.delivery-box{background:var(--surface2);border:1px solid var(--border2);border-left:2px solid var(--accent3);padding:14px 16px;display:flex;align-items:flex-start;gap:12px;margin-bottom:28px}
+.delivery-box svg{color:var(--accent3);flex-shrink:0;margin-top:2px}
+.db-title{font-size:12px;font-weight:600;color:var(--text);margin-bottom:3px}
+.db-text{font-family:var(--mono);font-size:10px;color:var(--muted);line-height:1.6}
+
+/* SHARE */
+.share-row{display:flex;gap:6px;flex-wrap:wrap}
+.share-btn{background:none;border:1px solid var(--border2);font-family:var(--mono);font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);padding:8px 14px;cursor:crosshair;transition:all 0.2s}
+.share-btn:hover{border-color:var(--accent);color:var(--accent)}
+
+/* ── BIG MARQUEE ── */
+.result-marquee{border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--surface);padding:16px 0;overflow:hidden}
+.rm-track{display:flex;white-space:nowrap;animation:ticker 18s linear infinite}
+.rm-item{font-family:var(--display);font-size:42px;color:var(--dim);padding:0 40px;display:flex;align-items:center;gap:40px;letter-spacing:0.04em}
+.rm-item .acc{color:var(--accent)}
+
+/* ── RECS ── */
+.recs-section{padding:64px 48px 80px}
+.recs-eyebrow{font-family:var(--mono);font-size:10px;color:var(--accent);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:8px;display:flex;align-items:center;gap:10px}
+.recs-eyebrow::before{content:'';width:20px;height:1px;background:var(--accent)}
+.recs-title{font-family:var(--display);font-size:52px;color:var(--white);letter-spacing:0.02em;margin-bottom:32px;line-height:0.95}
+.recs-title .out{-webkit-text-stroke:1px var(--dim);color:transparent}
+.recs-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px}
+.rec-card{background:var(--surface);border:1px solid var(--border);cursor:crosshair;transition:border-color 0.3s;position:relative;overflow:hidden}
+.rec-card:hover{border-color:var(--border2)}
+.rec-img{aspect-ratio:1;background:var(--surface2);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.rec-shoe{position:relative;transition:transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94)}
+.rec-card:hover .rec-shoe{transform:scale(1.05) rotate(-2deg)}
+.rs-upper{position:absolute;bottom:10px;left:0;right:24px;height:48px;border-radius:5px 44px 5px 5px}
+.rs-sole{position:absolute;bottom:0;left:-6px;right:-6px;height:12px;border-radius:2px 36px 8px 2px}
+.c2-black .rs-upper{background:linear-gradient(160deg,#2a2a2a,#111)}.c2-black .rs-sole{background:var(--accent)}
+.c2-red .rs-upper{background:linear-gradient(160deg,#c0392b,#922b21)}.c2-red .rs-sole{background:#1a1a1a}
+.c2-blue .rs-upper{background:linear-gradient(160deg,#1a5276,#154360)}.c2-blue .rs-sole{background:var(--accent3)}
+.c2-orange .rs-upper{background:linear-gradient(160deg,#d35400,#a04000)}.c2-orange .rs-sole{background:#f0f0f0}
+.rec-add{position:absolute;bottom:12px;right:12px;background:var(--accent);border:none;color:var(--bg);width:32px;height:32px;display:flex;align-items:center;justify-content:center;cursor:crosshair;font-size:18px;opacity:0;transition:opacity 0.2s;font-weight:700}
+.rec-card:hover .rec-add{opacity:1}
+.rec-info{padding:14px 14px 16px}
+.rec-brand{font-family:var(--mono);font-size:9px;color:var(--muted);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:3px}
+.rec-name{font-size:13px;font-weight:600;color:var(--text);margin-bottom:6px;line-height:1.25}
+.rec-price{font-size:14px;font-weight:700;color:var(--accent)}
+
+/* LOYALTY BLOCK */
+.loyalty-block{margin:0 48px 80px;background:var(--surface);border:1px solid var(--border);display:grid;grid-template-columns:1fr 1fr;overflow:hidden}
+.lb-left{padding:48px 52px;border-right:1px solid var(--border);position:relative}
+.lb-left::before{content:'';position:absolute;top:-60px;right:-60px;width:240px;height:240px;background:radial-gradient(circle,rgba(232,255,0,0.05),transparent 70%);pointer-events:none}
+.lb-eyebrow{font-family:var(--mono);font-size:9px;color:var(--accent);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:10px}
+.lb-title{font-family:var(--display);font-size:40px;color:var(--white);letter-spacing:0.02em;line-height:0.95;margin-bottom:14px}
+.lb-desc{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:28px}
+.lb-points{display:flex;align-items:center;gap:16px;background:var(--surface2);border:1px solid var(--border2);padding:16px 20px;margin-bottom:24px}
+.lb-pts-num{font-family:var(--display);font-size:48px;color:var(--accent);line-height:1}
+.lb-pts-label{font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase;line-height:1.5}
+.lb-right{padding:48px 52px;display:flex;flex-direction:column;justify-content:center}
+.lb-perks{display:flex;flex-direction:column;gap:16px}
+.lb-perk{display:flex;align-items:flex-start;gap:14px;padding-bottom:16px;border-bottom:1px solid var(--border)}
+.lb-perk:last-child{border-bottom:none;padding-bottom:0}
+.lb-perk-icon{width:36px;height:36px;border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--accent)}
+.lb-perk-title{font-size:13px;font-weight:600;color:var(--text);margin-bottom:2px}
+.lb-perk-desc{font-family:var(--mono);font-size:10px;color:var(--muted);line-height:1.5}
+
+/* FOOTER */
+footer{border-top:1px solid var(--border);padding:60px 48px 40px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:60px;margin-bottom:60px}
+.footer-logo{font-family:var(--display);font-size:28px;color:var(--white);letter-spacing:0.08em;margin-bottom:14px;display:block}
+.footer-logo .dot{color:var(--accent)}
+.footer-desc{font-size:13px;color:var(--muted);line-height:1.7;max-width:240px;margin-bottom:20px}
+.footer-col h4{font-family:var(--mono);font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-col ul li a{font-size:13px;color:var(--dim);transition:color 0.2s}
+.footer-col ul li a:hover{color:var(--accent)}
+.footer-bottom{border-top:1px solid var(--border);padding-top:28px;display:flex;align-items:center;justify-content:space-between}
+.footer-bottom p{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.footer-pays{display:flex;gap:8px}
+.pay-tag{font-family:var(--mono);font-size:9px;font-weight:500;border:1px solid var(--border2);color:var(--muted);padding:4px 10px}
+</style>
+</head>
+<body>
+
+<canvas id="particle-canvas"></canvas>
+
+<!-- HEADER -->
+<header>
+  <a href="sole-index.html" class="logo">SOLE<span class="dot">·</span>DISTRICT</a>
+  <nav><a href="sole-products.html">Sneakers</a><a href="#">Brands</a><a href="#">Drops</a><a href="#">Sale</a></nav>
+  <div class="header-right">
+    <button class="hbtn"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 3.5 3.5"/></svg></button>
+    <a href="sole-products.html" class="cart-pill">
+      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      Shop More
+    </a>
+  </div>
+</header>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track">
+    <div class="ticker-item">ORDER CONFIRMED <span class="ticker-sep">★</span> THANK YOU FOR SHOPPING WITH US <span class="ticker-sep">★</span> AUTH VERIFIED <span class="ticker-sep">★</span> TRACKING EMAIL SENT <span class="ticker-sep">★</span></div>
+    <div class="ticker-item">ORDER CONFIRMED <span class="ticker-sep">★</span> THANK YOU FOR SHOPPING WITH US <span class="ticker-sep">★</span> AUTH VERIFIED <span class="ticker-sep">★</span> TRACKING EMAIL SENT <span class="ticker-sep">★</span></div>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="success-hero">
+
+  <!-- LEFT -->
+  <div class="hero-left">
+    <div class="check-wrap">
+      <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+    <div class="hero-eyebrow">Order confirmed</div>
+    <h1 class="hero-title">YOU<br><span class="out">GOT</span><br><span class="acc">THEM!</span></h1>
+    <p class="hero-sub">Cú cop chuẩn chỉnh! Đơn hàng của bạn đã được xác nhận và đang được đóng gói. Email xác nhận đã gửi đến hộp thư của bạn.</p>
+
+    <div class="order-id-row">
+      <div>
+        <div class="oid-label">Order ID</div>
+        <div class="oid-val">#SD-2025-04721</div>
+      </div>
+      <button class="oid-copy" onclick="copyId()" title="Sao chép mã đơn hàng">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+      </button>
+    </div>
+
+    <div class="hero-ctas">
+      <a href="sole-products.html" class="btn-primary">
+        Shop More Drops
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <button class="btn-ghost" onclick="window.print()">
+        <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        In hóa đơn
+      </button>
+    </div>
+
+    <div class="hero-bg-text">SD</div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="hero-right">
+
+    <!-- TIMELINE -->
+    <div class="timeline">
+      <div class="sec-hd">Trạng thái đơn hàng</div>
+      <div class="tl-steps">
+        <div class="tl-step done">
+          <div class="tl-dot done">✓</div>
+          <div class="tl-name">Đơn hàng xác nhận</div>
+          <div class="tl-desc">Hôm nay 14:32 — #SD-2025-04721</div>
+        </div>
+        <div class="tl-step active">
+          <div class="tl-dot active">▶</div>
+          <div class="tl-name">Auth verification & Đóng gói</div>
+          <div class="tl-desc">Mỗi đôi được xác thực 12 bước trước khi giao</div>
+        </div>
+        <div class="tl-step">
+          <div class="tl-dot"></div>
+          <div class="tl-name">Bàn giao GHN Express</div>
+          <div class="tl-desc">Dự kiến 21/05/2025</div>
+        </div>
+        <div class="tl-step">
+          <div class="tl-dot"></div>
+          <div class="tl-name">Đang trên đường giao</div>
+          <div class="tl-desc">Dự kiến 22–23/05/2025</div>
+        </div>
+        <div class="tl-step">
+          <div class="tl-dot"></div>
+          <div class="tl-name">Giao thành công 🎉</div>
+          <div class="tl-desc">123 Nguyễn Huệ, Q.1, TP.HCM</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ORDER ITEMS -->
+    <div class="order-items">
+      <div class="sec-hd">Sản phẩm đã đặt</div>
+
+      <div class="oi-row">
+        <div class="oi-img">
+          <div class="shoe-mini c-black"><div class="s-upper"></div><div class="s-sole"></div></div>
+          <span class="oi-qty">1</span>
+        </div>
+        <div class="oi-info">
+          <div class="oi-brand">Nike</div>
+          <div class="oi-name">Air Jordan 1 Retro High OG</div>
+          <div class="oi-meta">Black / Yellow · US 7.5</div>
+          <div class="oi-auth"><svg width="9" height="9" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Auth Verified</div>
+        </div>
+        <div class="oi-price">5.200.000₫</div>
+      </div>
+
+      <div class="oi-row">
+        <div class="oi-img">
+          <div class="shoe-mini c-white"><div class="s-upper"></div><div class="s-sole"></div></div>
+          <span class="oi-qty">1</span>
+        </div>
+        <div class="oi-info">
+          <div class="oi-brand">Adidas</div>
+          <div class="oi-name">Stan Smith Lux</div>
+          <div class="oi-meta">Cloud White · US 8</div>
+          <div class="oi-auth"><svg width="9" height="9" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Auth Verified</div>
+        </div>
+        <div class="oi-price">2.890.000₫</div>
+      </div>
+    </div>
+
+    <!-- TOTALS -->
+    <div class="totals">
+      <div class="tot-row"><span class="l">Tạm tính</span><span class="v">8.090.000₫</span></div>
+      <div class="tot-row"><span class="l">Giảm giá (SOLE10)</span><span class="v disc">−809.000₫</span></div>
+      <div class="tot-row"><span class="l">Vận chuyển</span><span class="v free">Miễn phí</span></div>
+      <div class="tot-div"></div>
+      <div class="tot-total"><span class="l">Total Paid</span><span class="v">7.281.000₫</span></div>
+    </div>
+
+    <!-- DELIVERY -->
+    <div class="delivery-box">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+      <div>
+        <div class="db-title">Giao tới: Nguyễn Minh Tuấn</div>
+        <div class="db-text">123 Nguyễn Huệ, P. Bến Nghé, Q.1, TP.HCM · 0901 234 567<br>ETA: <strong style="color:var(--text)">22–23 tháng 5, 2025</strong> · GHN Express</div>
+      </div>
+    </div>
+
+    <!-- SHARE -->
+    <div>
+      <div class="sec-hd">Flex với cộng đồng</div>
+      <div class="share-row">
+        <button class="share-btn">Instagram</button>
+        <button class="share-btn">Facebook</button>
+        <button class="share-btn">TikTok</button>
+        <button class="share-btn">Copy link</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- MARQUEE -->
+<div class="result-marquee">
+  <div class="rm-track">
+    <div class="rm-item">ORDER CONFIRMED <span class="acc">✦</span> YOU GOT THEM <span class="acc">✦</span> SOLE DISTRICT <span class="acc">✦</span> STAY FRESH <span class="acc">✦</span> AUTH ONLY <span class="acc">✦</span></div>
+    <div class="rm-item">ORDER CONFIRMED <span class="acc">✦</span> YOU GOT THEM <span class="acc">✦</span> SOLE DISTRICT <span class="acc">✦</span> STAY FRESH <span class="acc">✦</span> AUTH ONLY <span class="acc">✦</span></div>
+  </div>
+</div>
+
+<!-- RECOMMENDATIONS -->
+<div class="recs-section">
+  <div class="recs-eyebrow">Complete the rotation</div>
+  <h2 class="recs-title">NEXT ON<br><span class="out">YOUR LIST</span></h2>
+  <div class="recs-grid">
+    <div class="rec-card">
+      <div class="rec-img">
+        <div class="rec-shoe c2-red" style="position:relative;width:110px;height:60px;">
+          <div class="rs-upper" style="bottom:8px;left:0;right:20px;height:46px;border-radius:5px 44px 5px 5px;"></div>
+          <div class="rs-sole" style="bottom:0;left:-5px;right:-5px;height:12px;border-radius:2px 36px 8px 2px;"></div>
+        </div>
+      </div>
+      <button class="rec-add">+</button>
+      <div class="rec-info"><div class="rec-brand">Jordan</div><div class="rec-name">Jordan 4 Red Cement</div><div class="rec-price">6.800.000₫</div></div>
+    </div>
+    <div class="rec-card">
+      <div class="rec-img">
+        <div class="rec-shoe c2-blue" style="position:relative;width:110px;height:60px;">
+          <div class="rs-upper" style="bottom:8px;left:0;right:20px;height:46px;border-radius:5px 44px 5px 5px;"></div>
+          <div class="rs-sole" style="bottom:0;left:-5px;right:-5px;height:12px;border-radius:2px 36px 8px 2px;"></div>
+        </div>
+      </div>
+      <button class="rec-add">+</button>
+      <div class="rec-info"><div class="rec-brand">New Balance</div><div class="rec-name">990v6 Made in USA</div><div class="rec-price">3.750.000₫</div></div>
+    </div>
+    <div class="rec-card">
+      <div class="rec-img">
+        <div class="rec-shoe c2-orange" style="position:relative;width:110px;height:60px;">
+          <div class="rs-upper" style="bottom:8px;left:0;right:20px;height:46px;border-radius:5px 44px 5px 5px;"></div>
+          <div class="rs-sole" style="bottom:0;left:-5px;right:-5px;height:12px;border-radius:2px 36px 8px 2px;"></div>
+        </div>
+      </div>
+      <button class="rec-add">+</button>
+      <div class="rec-info"><div class="rec-brand">Nike</div><div class="rec-name">Dunk Low Orange Blaze</div><div class="rec-price">3.200.000₫</div></div>
+    </div>
+    <div class="rec-card">
+      <div class="rec-img">
+        <div class="rec-shoe c2-black" style="position:relative;width:110px;height:60px;">
+          <div class="rs-upper" style="bottom:8px;left:0;right:20px;height:46px;border-radius:5px 44px 5px 5px;"></div>
+          <div class="rs-sole" style="bottom:0;left:-5px;right:-5px;height:12px;border-radius:2px 36px 8px 2px;"></div>
+        </div>
+      </div>
+      <button class="rec-add">+</button>
+      <div class="rec-info"><div class="rec-brand">Adidas</div><div class="rec-name">Yeezy 350 V2 Black</div><div class="rec-price">8.500.000₫</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- LOYALTY -->
+<div class="loyalty-block">
+  <div class="lb-left">
+    <div class="lb-eyebrow">// Sole Points</div>
+    <h3 class="lb-title">EARN & FLEX</h3>
+    <p class="lb-desc">Mỗi đồng bạn chi tại Sole District đều tích lũy điểm thưởng. Đổi điểm lấy giày, voucher và quyền truy cập drop độc quyền.</p>
+    <div class="lb-points">
+      <div class="lb-pts-num">728</div>
+      <div class="lb-pts-label">Points earned<br>từ đơn hàng này</div>
+    </div>
+    <button class="btn-ghost" style="width:100%;justify-content:center;">Xem điểm tích lũy →</button>
+  </div>
+  <div class="lb-right">
+    <div class="lb-perks">
+      <div class="lb-perk">
+        <div class="lb-perk-icon"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <div><div class="lb-perk-title">Early Drop Access</div><div class="lb-perk-desc">Được thông báo trước 48h cho mọi drop giới hạn</div></div>
+      </div>
+      <div class="lb-perk">
+        <div class="lb-perk-icon"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <div><div class="lb-perk-title">Cashback 5%</div><div class="lb-perk-desc">Tích điểm tương đương 5% giá trị mỗi đơn hàng</div></div>
+      </div>
+      <div class="lb-perk">
+        <div class="lb-perk-icon"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div><div class="lb-perk-title">Free Auth Priority</div><div class="lb-perk-desc">Xác thực nhanh trong 2 giờ cho thành viên VIP</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div><span class="footer-logo">SOLE<span class="dot">·</span>DISTRICT</span><p class="footer-desc">Điểm đến của sneakerheads Việt Nam. 100% Authentic.</p></div>
+    <div class="footer-col"><h4>Shop</h4><ul><li><a href="sole-products.html">All Sneakers</a></li><li><a href="#">Nike / Jordan</a></li><li><a href="#">Drops</a></li><li><a href="#">Sale</a></li></ul></div>
+    <div class="footer-col"><h4>Support</h4><ul><li><a href="#">Size Guide</a></li><li><a href="#">Auth Check</a></li><li><a href="#">Returns</a></li><li><a href="#">FAQ</a></li></ul></div>
+    <div class="footer-col"><h4>Company</h4><ul><li><a href="#">About</a></li><li><a href="#">Blog</a></li><li><a href="#">Contact</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 SOLE DISTRICT. All rights reserved.</p>
+    <div class="footer-pays"><span class="pay-tag">VISA</span><span class="pay-tag">MC</span><span class="pay-tag">MOMO</span><span class="pay-tag">VNPAY</span></div>
+  </div>
+</footer>
+
+<script>
+/* ── PARTICLE EXPLOSION ── */
+(function(){
+  const canvas=document.getElementById('particle-canvas');
+  const ctx=canvas.getContext('2d');
+  canvas.width=window.innerWidth;
+  canvas.height=window.innerHeight;
+  const colors=['#e8ff00','#ff3d00','#00d4ff','#ffffff','#e8ff00','#e8ff00'];
+  const particles=[];
+  for(let i=0;i<160;i++){
+    const angle=Math.random()*Math.PI*2;
+    const speed=Math.random()*8+2;
+    particles.push({
+      x:canvas.width/2, y:canvas.height/2,
+      vx:Math.cos(angle)*speed, vy:Math.sin(angle)*speed-5,
+      size:Math.random()*6+2,
+      color:colors[Math.floor(Math.random()*colors.length)],
+      shape:Math.random()>0.5?'rect':'circle',
+      rot:Math.random()*Math.PI*2, rotV:(Math.random()-0.5)*0.15,
+      gravity:0.18, drag:0.97,
+      life:1, decay:Math.random()*0.012+0.008
+    });
+  }
+  let frame=0;
+  function animate(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    let alive=false;
+    particles.forEach(p=>{
+      if(p.life<=0)return;
+      alive=true;
+      p.vx*=p.drag; p.vy*=p.drag; p.vy+=p.gravity;
+      p.x+=p.vx; p.y+=p.vy; p.rot+=p.rotV;
+      p.life-=p.decay;
+      ctx.save(); ctx.globalAlpha=Math.max(0,p.life);
+      ctx.translate(p.x,p.y); ctx.rotate(p.rot);
+      ctx.fillStyle=p.color;
+      if(p.shape==='circle'){ctx.beginPath();ctx.arc(0,0,p.size/2,0,Math.PI*2);ctx.fill();}
+      else{ctx.fillRect(-p.size/2,-p.size/3,p.size,p.size*0.6);}
+      ctx.restore();
+    });
+    frame++;
+    if(alive&&frame<300)requestAnimationFrame(animate);
+    else ctx.clearRect(0,0,canvas.width,canvas.height);
+  }
+  setTimeout(()=>animate(),300);
+})();
+
+/* ── COPY ORDER ID ── */
+function copyId(){
+  navigator.clipboard.writeText('#SD-2025-04721').then(()=>{
+    const btn=document.querySelector('.oid-copy');
+    const orig=btn.innerHTML;
+    btn.innerHTML='<svg width="14" height="14" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>';
+    btn.style.borderColor='var(--accent)';
+    setTimeout(()=>{btn.innerHTML=orig;btn.style.borderColor='';},2000);
+  });
+}
+
+window.addEventListener('resize',()=>{
+  const c=document.getElementById('particle-canvas');
+  c.width=window.innerWidth;c.height=window.innerHeight;
+});
+</script>
+</body>
+</html>

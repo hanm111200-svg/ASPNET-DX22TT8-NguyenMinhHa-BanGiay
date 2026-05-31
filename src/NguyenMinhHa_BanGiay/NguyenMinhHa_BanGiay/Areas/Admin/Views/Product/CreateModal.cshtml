@@ -1,0 +1,32 @@
+﻿@model NguyenMinhHa_BanGiay.Models.ProductSizeModel
+
+<div class="modal fade" id="createProductSize" data-bs-backdrop="static" tabindex="-1">
+    <div class="modal-dialog">
+        <form class="modal-content" method="post" asp-controller="Product" asp-action="CreateModal" enctype="multipart/form-data">
+            <div class="modal-header">
+                <h5 class="modal-title">Thêm size</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <input type="hidden" asp-for="ProductId" id="productSizeId" />
+                <div class="mb-3">
+                    <label class="form-label">Size</label>
+                    <input type="text" asp-for="size" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Số lượng</label>
+                    <input type="number" asp-for="Quantity" class="form-control" />
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                    Đóng
+                </button>
+                <button type="submit" class="btn btn-primary">Lưu</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,564 @@
+﻿@{
+	ViewData["Title"] = "Detail Products";	
+	var size = ViewBag.Size as List<NguyenMinhHa_BanGiay.Models.ProductSizeModel>;
+}
+<!-- TICKER -->
+<div class="ticker">
+    <div class="ticker-track">
+        <div class="ticker-item">
+            MIỄN PHÍ SHIP ĐƠN TRÊN 2 TRIỆU <span class="ticker-sep">★</span> XÁC
+            THỰC 100% CHÍNH HÃNG <span class="ticker-sep">★</span> ĐỔI TRẢ 30 NGÀY
+            <span class="ticker-sep">★</span> DROP MỚI MỖI THỨ SÁU
+            <span class="ticker-sep">★</span>
+        </div>
+        <div class="ticker-item">
+            MIỄN PHÍ SHIP ĐƠN TRÊN 2 TRIỆU <span class="ticker-sep">★</span> XÁC
+            THỰC 100% CHÍNH HÃNG <span class="ticker-sep">★</span> ĐỔI TRẢ 30 NGÀY
+            <span class="ticker-sep">★</span> DROP MỚI MỖI THỨ SÁU
+            <span class="ticker-sep">★</span>
+        </div>
+    </div>
+</div>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+    <a href="sole-index.html">Home</a><span class="sep">/</span>
+    <a href="sole-products.html">Sneakers</a><span class="sep">/</span>
+    <a href="sole-products.html">Nike</a><span class="sep">/</span>
+    <span style="color: var(--text)">Air Jordan 1 Retro High OG</span>
+</div>
+
+<!-- PRODUCT DETAIL -->
+<div class="product-detail">
+    <!-- GALLERY -->
+    <div class="gallery">
+        <div class="thumbs-rail">
+            <div class="thumb active">
+                <div style="
+                width: 32px;
+                height: 40px;
+                background: linear-gradient(160deg, #2a2a2a, #111);
+                border-radius: 4px 20px 4px 4px;
+                position: relative;
+              ">
+                    <div style="
+                  position: absolute;
+                  bottom: 0;
+                  left: -3px;
+                  right: -3px;
+                  height: 7px;
+                  background: var(--accent);
+                  border-radius: 1px 18px 4px 1px;
+                "></div>
+                </div>
+            </div>
+            <div class="thumb">
+                <div style="
+                width: 36px;
+                height: 24px;
+                background: linear-gradient(160deg, #2a2a2a, #111);
+                border-radius: 3px 24px 3px 3px;
+                position: relative;
+              ">
+                    <div style="
+                  position: absolute;
+                  bottom: 0;
+                  left: -3px;
+                  right: -3px;
+                  height: 6px;
+                  background: var(--accent);
+                  border-radius: 1px 16px 3px 1px;
+                "></div>
+                </div>
+            </div>
+            <div class="thumb">
+                <div style="
+                width: 40px;
+                height: 16px;
+                background: #1a1a1a;
+                border-radius: 2px;
+                border: 1px solid var(--border2);
+              "></div>
+            </div>
+            <div class="thumb">
+                <div style="
+                width: 34px;
+                height: 36px;
+                background: linear-gradient(180deg, #222, #111);
+                border-radius: 3px;
+                border: 1px solid rgba(232, 255, 0, 0.1);
+              "></div>
+            </div>
+        </div>
+        <div class="gallery-main">
+            <div class="gallery-badge">
+                <span class="g-badge auth">✓ Auth Verified</span>
+                <span class="g-badge limited">Limited Drop</span>
+            </div>
+            <div class="main-display">
+                <div class="shoe-3d">
+                    <div class="s3-upper">
+                        <div class="s3-collar"></div>
+                        <div class="s3-tongue"></div>
+                        <div class="s3-laces">
+                            <div class="s3-lace" style="width: 70px"></div>
+                            <div class="s3-lace" style="width: 60px"></div>
+                            <div class="s3-lace" style="width: 50px"></div>
+                            <div class="s3-lace" style="width: 40px"></div>
+                        </div>
+                        <div class="s3-swoosh"></div>
+                    </div>
+                    <div class="s3-midsole"></div>
+                    <div class="s3-sole"></div>
+                    <div class="s3-tag">NEW DROP</div>
+                </div>
+            </div>
+            <div class="gallery-ctrl">
+                <button class="gctrl-btn">←</button>
+                <button class="gctrl-btn">→</button>
+                <button class="gctrl-btn" title="Phóng to">⤢</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- INFO PANEL -->
+    <div class="info-panel">
+        <div class="info-eyebrow">Nike / Jordan Brand</div>
+        <div class="info-brand">NIKE</div>
+        <h1 class="info-title">AIR JORDAN 1<br />RETRO HIGH OG</h1>
+        <p class="info-subtitle">Black / Opti Yellow / White — FD1437-701</p>
+
+        <div class="rating-row">
+            <span class="stars">★★★★★</span>
+            <span class="rating-num">4.9</span>
+            <span class="rating-sep">·</span>
+            <a href="#" class="rev-link">86 đánh giá</a>
+            <span class="rating-sep">·</span>
+            <span class="verified">
+                <svg width="12"
+                     height="12"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     viewBox="0 0 24 24">
+                    <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Auth Verified
+            </span>
+        </div>
+
+        <div class="price-block">
+            <div style="display: flex; align-items: baseline; gap: 4px">
+                <span class="price-main">5.200.000₫</span>
+            </div>
+            <p class="price-note">
+                // Giá đã bao gồm VAT · Miễn phí ship toàn quốc
+            </p>
+        </div>
+
+        <!-- Color -->
+        <div class="opt-block">
+            <div class="opt-label">
+                Màu sắc:
+                <span id="colorLabel" style="color: var(--text)">Black / Yellow</span>
+            </div>
+            <div class="color-opts">
+                <div class="c-opt active"
+                     style="
+                background: linear-gradient(
+                  135deg,
+                  #111 50%,
+                  var(--accent) 50%
+                );
+              "
+                     onclick="selectColor(this, 'Black / Yellow')"
+                     title="Black / Yellow"></div>
+                <div class="c-opt"
+                     style="
+                background: linear-gradient(135deg, #e0e0e0 50%, #c0392b 50%);
+              "
+                     onclick="selectColor(this, 'White / Red')"
+                     title="White / Red"></div>
+                <div class="c-opt"
+                     style="
+                background: linear-gradient(135deg, #1a5276 50%, #f0f0f0 50%);
+              "
+                     onclick="selectColor(this, 'Royal Blue / White')"
+                     title="Royal Blue"></div>
+                <div class="c-opt"
+                     style="
+                background: linear-gradient(135deg, #1e8449 50%, #f5f5f0 50%);
+              "
+                     onclick="selectColor(this, 'Dark Mocha')"
+                     title="Dark Mocha"></div>
+            </div>
+        </div>
+
+        <!-- Size -->
+        <div class="opt-block">
+            <div class="opt-label">
+                Size (US Men's):
+                <span id="sizeLabel" style="color: var(--accent)">Chưa chọn</span>
+                <a href="#">Size Guide →</a>
+            </div>
+            <div class="size-grid">
+                <button class="sz-opt sold" title="Hết hàng">6 / 38</button>
+                <button class="sz-opt" onclick="selectSize(this, '6.5')">
+                    6.5 / 39
+                </button>
+                <button class="sz-opt" onclick="selectSize(this, '7')">
+                    7 / 40
+                </button>
+                <button class="sz-opt active" onclick="selectSize(this, '7.5')">
+                    7.5 / 41
+                </button>
+                <button class="sz-opt" onclick="selectSize(this, '8')">
+                    8 / 42
+                </button>
+                <button class="sz-opt" onclick="selectSize(this, '8.5')">
+                    8.5 / 43
+                </button>
+                <button class="sz-opt" onclick="selectSize(this, '9')">
+                    9 / 44
+                </button>
+                <button class="sz-opt sold" title="Hết hàng">9.5 / 44.5</button>
+                <button class="sz-opt" onclick="selectSize(this, '10')">
+                    10 / 45
+                </button>
+                <button class="sz-opt" onclick="selectSize(this, '11')">
+                    11 / 46
+                </button>
+                <button class="sz-opt sold" title="Hết hàng">12 / 47</button>
+                <button class="sz-opt" onclick="selectSize(this, '13')">
+                    13 / 48
+                </button>
+            </div>
+            <p style="
+              font-family: var(--mono);
+              font-size: 10px;
+              color: var(--muted);
+              margin-top: 8px;
+            ">
+                // Chỉ còn <span style="color: var(--accent2)">3 đôi</span> size 7–9
+            </p>
+        </div>
+
+        <!-- QTY -->
+        <div class="qty-row">
+            <button class="qty-btn" onclick="changeQty(-1)">−</button>
+            <div class="qty-num" id="qty">1</div>
+            <button class="qty-btn" onclick="changeQty(1)">+</button>
+        </div>
+
+        <!-- CTA -->
+        <div class="cta-row">
+            <button class="btn-cart" onclick="window.location = 'sole-cart.html'">
+                <svg width="16"
+                     height="16"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     viewBox="0 0 24 24">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <path d="M16 10a4 4 0 0 1-8 0" />
+                </svg>
+                Thêm vào giỏ
+            </button>
+            <button class="btn-wish">♡</button>
+        </div>
+        <button class="btn-buy"
+                style="width: 100%; margin-bottom: 24px"
+                onclick="window.location = 'sole-checkout.html'">
+            ⚡ MUA NGAY — 5.200.000₫
+        </button>
+
+        <!-- TRUST -->
+        <div class="trust-row">
+            <div class="trust-item">
+                <svg width="16"
+                     height="16"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="1.5"
+                     viewBox="0 0 24 24">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+                <div class="trust-text">
+                    <p>Auth 100%</p>
+                    <p>Cam kết chính hãng</p>
+                </div>
+            </div>
+            <div class="trust-item">
+                <svg width="16"
+                     height="16"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="1.5"
+                     viewBox="0 0 24 24">
+                    <rect x="1" y="3" width="15" height="13" />
+                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                    <circle cx="5.5" cy="18.5" r="2.5" />
+                    <circle cx="18.5" cy="18.5" r="2.5" />
+                </svg>
+                <div class="trust-text">
+                    <p>Free Shipping</p>
+                    <p>Giao toàn quốc 48H</p>
+                </div>
+            </div>
+            <div class="trust-item">
+                <svg width="16"
+                     height="16"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="1.5"
+                     viewBox="0 0 24 24">
+                    <polyline points="1 4 1 10 7 10" />
+                    <path d="M3.51 15a9 9 0 1 0 .49-3.5" />
+                </svg>
+                <div class="trust-text">
+                    <p>Đổi trả 30 ngày</p>
+                    <p>Miễn phí đổi size</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- TABS -->
+        <div class="tabs-nav">
+            <button class="tab-btn active" onclick="openTab(this, 'desc')">
+                Mô tả
+            </button>
+            <button class="tab-btn" onclick="openTab(this, 'specs')">
+                Thông số
+            </button>
+            <button class="tab-btn" onclick="openTab(this, 'auth')">
+                Xác thực
+            </button>
+            <button class="tab-btn" onclick="openTab(this, 'reviews')">
+                Reviews (86)
+            </button>
+        </div>
+
+        <div class="tab-content active" id="tab-desc">
+            <p>
+                Air Jordan 1 Retro High OG ra đời từ năm 1985 và đã trở thành biểu
+                tượng văn hóa vượt thời gian. Phiên bản Black / Yellow 2025 là sự
+                kết hợp hoàn hảo giữa di sản bóng rổ và streetwear hiện đại.
+            </p>
+            <p>
+                Phần upper làm từ da cao cấp nhiều lớp, đường may chắc chắn. Đế
+                Air-Sole mang lại cảm giác êm ái vượt trội. Mỗi đôi đều có hộp đựng
+                chính hãng, tag Nike và certificate xác thực từ Sole District.
+            </p>
+        </div>
+        <div class="tab-content" id="tab-specs">
+            <table class="spec-tbl">
+                <tr>
+                    <td>SKU</td>
+                    <td>FD1437-701</td>
+                </tr>
+                <tr>
+                    <td>Colorway</td>
+                    <td>Black / Opti Yellow / White</td>
+                </tr>
+                <tr>
+                    <td>Upper</td>
+                    <td>Full-grain leather + Tumbled leather</td>
+                </tr>
+                <tr>
+                    <td>Midsole</td>
+                    <td>Polyurethane với Air-Sole unit</td>
+                </tr>
+                <tr>
+                    <td>Outsole</td>
+                    <td>Cao su tổng hợp herringbone</td>
+                </tr>
+                <tr>
+                    <td>Năm phát hành</td>
+                    <td>2025 (Retro)</td>
+                </tr>
+                <tr>
+                    <td>Số lượng</td>
+                    <td>Limited — 3,000 đôi toàn cầu</td>
+                </tr>
+                <tr>
+                    <td>Trọng lượng</td>
+                    <td>~420g / đôi (size 9)</td>
+                </tr>
+            </table>
+        </div>
+        <div class="tab-content" id="tab-auth">
+            <p>
+                Mỗi đôi giày tại Sole District đều trải qua quy trình xác thực 12
+                bước nghiêm ngặt bởi các chuyên gia sneaker với hơn 10 năm kinh
+                nghiệm.
+            </p>
+            <table class="spec-tbl">
+                <tr>
+                    <td>Bước 1-4</td>
+                    <td>Kiểm tra tag, box, receipt gốc</td>
+                </tr>
+                <tr>
+                    <td>Bước 5-8</td>
+                    <td>Scan QR Nike, đo đạc tỉ lệ chi tiết</td>
+                </tr>
+                <tr>
+                    <td>Bước 9-12</td>
+                    <td>Kiểm tra chất liệu, mùi, UV light test</td>
+                </tr>
+                <tr>
+                    <td>Chứng nhận</td>
+                    <td>Certificate số + QR verify online</td>
+                </tr>
+                <tr>
+                    <td>Bảo hành</td>
+                    <td>Hoàn tiền 100% nếu phát hiện fake</td>
+                </tr>
+            </table>
+        </div>
+        <div class="tab-content" id="tab-reviews">
+            <div class="rev-summary">
+                <div style="text-align: center">
+                    <div class="rev-score-big">4.9</div>
+                    <div class="rev-stars-big">★★★★★</div>
+                    <div class="rev-total">86 reviews</div>
+                </div>
+                <div class="bar-rows">
+                    <div class="bar-row">
+                        <span>5★</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 88%"></div>
+                        </div>
+                        <span>76</span>
+                    </div>
+                    <div class="bar-row">
+                        <span>4★</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 8%"></div>
+                        </div>
+                        <span>7</span>
+                    </div>
+                    <div class="bar-row">
+                        <span>3★</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 3%"></div>
+                        </div>
+                        <span>3</span>
+                    </div>
+                    <div class="bar-row">
+                        <span>2★</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 0%"></div>
+                        </div>
+                        <span>0</span>
+                    </div>
+                    <div class="bar-row">
+                        <span>1★</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 0%"></div>
+                        </div>
+                        <span>0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="rev-card">
+                <div class="rev-top">
+                    <span class="rev-name">tuan</span><span class="rev-date">12/05/2025</span>
+                </div>
+                <div class="rev-stars">★★★★★</div>
+                <p class="rev-text">
+                    Auth 100% luôn. Mình đã flex với 3 đứa bạn chuyên check giày,
+                    không đứa nào nghi ngờ. Box đẹp, đủ phụ kiện. Ship nhanh hơn dự
+                    kiến 1 ngày!
+                </p>
+            </div>
+            <div class="rev-card">
+                <div class="rev-top">
+                    <span class="rev-name">hoang</span><span class="rev-date">08/05/2025</span>
+                </div>
+                <div class="rev-stars">★★★★★</div>
+                <p class="rev-text">
+                    Đây là lần thứ 5 mình mua ở Sole District. Lần nào cũng chill,
+                    không lo fake. AJ1 lần này chất da xịn hơn cả lần trước.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- end info-panel -->
+</div>
+<!-- end product-detail -->
+<!-- RELATED -->
+<section class="related">
+    <div class="rel-eyebrow">You May Also Like</div>
+    <h2 class="rel-title">RELATED DROPS</h2>
+    <div class="rel-grid">
+        <div class="rel-card">
+            <div class="rel-img">
+                <div class="shoe-thumb c-white" style="width: 120px; height: 64px">
+                    <div class="s-upper" style="height: 50px"></div>
+                    <div class="s-sole"></div>
+                    <div class="s-laces">
+                        <div class="s-lace" style="width: 48px"></div>
+                        <div class="s-lace" style="width: 40px"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="rel-info">
+                <div class="rel-brand">Adidas</div>
+                <div class="rel-name">Stan Smith Lux</div>
+                <div class="rel-price">2.890.000₫</div>
+            </div>
+        </div>
+        <div class="rel-card">
+            <div class="rel-img">
+                <div class="shoe-thumb c-red" style="width: 120px; height: 64px">
+                    <div class="s-upper" style="height: 50px"></div>
+                    <div class="s-sole"></div>
+                    <div class="s-laces">
+                        <div class="s-lace" style="width: 48px"></div>
+                        <div class="s-lace" style="width: 40px"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="rel-info">
+                <div class="rel-brand">Jordan</div>
+                <div class="rel-name">Jordan 4 Red Cement</div>
+                <div class="rel-price">6.800.000₫</div>
+            </div>
+        </div>
+        <div class="rel-card">
+            <div class="rel-img">
+                <div class="shoe-thumb c-blue" style="width: 120px; height: 64px">
+                    <div class="s-upper" style="height: 50px"></div>
+                    <div class="s-sole"></div>
+                    <div class="s-laces">
+                        <div class="s-lace" style="width: 48px"></div>
+                        <div class="s-lace" style="width: 40px"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="rel-info">
+                <div class="rel-brand">New Balance</div>
+                <div class="rel-name">990v6 Made in USA</div>
+                <div class="rel-price">3.750.000₫</div>
+            </div>
+        </div>
+        <div class="rel-card">
+            <div class="rel-img">
+                <div class="shoe-thumb c-orange" style="width: 120px; height: 64px">
+                    <div class="s-upper" style="height: 50px"></div>
+                    <div class="s-sole"></div>
+                    <div class="s-laces">
+                        <div class="s-lace" style="width: 48px"></div>
+                        <div class="s-lace" style="width: 40px"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="rel-info">
+                <div class="rel-brand">Nike</div>
+                <div class="rel-name">Dunk Low Orange</div>
+                <div class="rel-price">3.200.000₫</div>
+            </div>
+        </div>
+    </div>
+</section></div>

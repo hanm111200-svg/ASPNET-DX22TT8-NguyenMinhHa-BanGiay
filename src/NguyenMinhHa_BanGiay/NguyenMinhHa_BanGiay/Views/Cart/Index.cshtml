@@ -1,0 +1,425 @@
+﻿@model IEnumerable<NguyenMinhHa_BanGiay.Models.CartModel>
+@{
+    ViewData["Title"] = "Cart";
+}
+<div class="ticker">
+    <div class="ticker-track">
+        <div class="ticker-item">
+            MIỄN PHÍ SHIP ĐƠN TRÊN 2 TRIỆU <span class="ticker-sep">★</span> XÁC
+            THỰC 100% CHÍNH HÃNG <span class="ticker-sep">★</span> ĐỔI TRẢ 30 NGÀY
+            <span class="ticker-sep">★</span>
+        </div>
+        <div class="ticker-item">
+            MIỄN PHÍ SHIP ĐƠN TRÊN 2 TRIỆU <span class="ticker-sep">★</span> XÁC
+            THỰC 100% CHÍNH HÃNG <span class="ticker-sep">★</span> ĐỔI TRẢ 30 NGÀY
+            <span class="ticker-sep">★</span>
+        </div>
+    </div>
+</div>
+
+<div class="page-wrap">
+    <div class="page-top">
+        <div class="breadcrumb">
+            <a href="sole-index.html">Home</a><span class="sep">/</span><span style="color: var(--text)">Cart</span>
+        </div>
+        <div class="page-title-row">
+            <h1 class="page-title">
+                YOUR<br /><span class="outline">CART</span>
+            </h1>
+            <span style="
+              font-family: var(--mono);
+              font-size: 11px;
+              color: var(--muted);
+              align-self: flex-end;
+              padding-bottom: 8px;
+            ">// 2 items</span>
+        </div>
+    </div>
+
+    <div class="steps">
+        <div class="step active"><span class="step-num">1</span>Cart</div>
+        <div class="step-line"></div>
+        <div class="step"><span class="step-num">2</span>Info</div>
+        <div class="step-line"></div>
+        <div class="step"><span class="step-num">3</span>Shipping</div>
+        <div class="step-line"></div>
+        <div class="step"><span class="step-num">4</span>Payment</div>
+    </div>
+
+    <div class="cart-layout">
+        <!-- MAIN -->
+        <div class="cart-main">
+            <div class="cart-header">
+                <span>Sản phẩm</span><span>Đơn giá</span><span>Số lượng</span><span>Thành tiền</span>
+            </div>
+
+            <!-- Item 1 -->
+            <div class="cart-item" id="ci1">
+                <div class="item-prod">
+                    <div class="item-img">
+                        <div class="shoe-thumb c-black"
+                             style="width: 64px; height: 34px">
+                            <div class="s-upper" style="height: 26px"></div>
+                            <div class="s-sole"></div>
+                            <div class="s-laces">
+                                <div class="s-lace" style="width: 26px"></div>
+                                <div class="s-lace" style="width: 22px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-details">
+                        <div class="item-brand">Nike</div>
+                        <div class="item-name">Air Jordan 1 Retro High OG</div>
+                        <div class="item-meta">
+                            Black / Yellow · US 7.5 / EU 41 · Auth ✓
+                        </div>
+                        <div class="item-auth">
+                            <svg width="10"
+                                 height="10"
+                                 fill="none"
+                                 stroke="currentColor"
+                                 stroke-width="2"
+                                 viewBox="0 0 24 24">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>Verified authentic
+                        </div>
+                        <button class="item-remove" onclick="removeItem('ci1')">
+                            <svg width="10"
+                                 height="10"
+                                 fill="none"
+                                 stroke="currentColor"
+                                 stroke-width="1.5"
+                                 viewBox="0 0 24 24">
+                                <polyline points="3 6 5 6 21 6" />
+                                <path d="M19 6l-1 14H6L5 6" />
+                                <path d="M9 6V4h6v2" />
+                            </svg>
+                            Xóa
+                        </button>
+                    </div>
+                </div>
+                <div class="item-price-col">
+                    <span class="item-price">5.200.000₫</span>
+                </div>
+                <div style="display: flex; justify-content: center">
+                    <div class="qty-ctrl">
+                        <button class="qty-b" onclick="chQty('q1', 'p1', -1, 5200000)">
+                            −
+                        </button>
+                        <div class="qty-n" id="q1">1</div>
+                        <button class="qty-b" onclick="chQty('q1', 'p1', 1, 5200000)">
+                            +
+                        </button>
+                    </div>
+                </div>
+                <div class="item-total-col">
+                    <span class="item-total" id="p1">5.200.000₫</span>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="cart-item" id="ci2">
+                <div class="item-prod">
+                    <div class="item-img">
+                        <div class="shoe-thumb c-white"
+                             style="width: 64px; height: 34px">
+                            <div class="s-upper" style="height: 26px"></div>
+                            <div class="s-sole"></div>
+                            <div class="s-laces">
+                                <div class="s-lace" style="width: 26px"></div>
+                                <div class="s-lace" style="width: 22px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-details">
+                        <div class="item-brand">Adidas</div>
+                        <div class="item-name">Stan Smith Lux</div>
+                        <div class="item-meta">Cloud White · US 8 / EU 42 · Auth ✓</div>
+                        <div class="item-auth">
+                            <svg width="10"
+                                 height="10"
+                                 fill="none"
+                                 stroke="currentColor"
+                                 stroke-width="2"
+                                 viewBox="0 0 24 24">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>Verified authentic
+                        </div>
+                        <button class="item-remove" onclick="removeItem('ci2')">
+                            <svg width="10"
+                                 height="10"
+                                 fill="none"
+                                 stroke="currentColor"
+                                 stroke-width="1.5"
+                                 viewBox="0 0 24 24">
+                                <polyline points="3 6 5 6 21 6" />
+                                <path d="M19 6l-1 14H6L5 6" />
+                                <path d="M9 6V4h6v2" />
+                            </svg>
+                            Xóa
+                        </button>
+                    </div>
+                </div>
+                <div class="item-price-col">
+                    <span class="item-price">2.890.000₫</span><span class="item-price-was">3.500.000₫</span>
+                </div>
+                <div style="display: flex; justify-content: center">
+                    <div class="qty-ctrl">
+                        <button class="qty-b" onclick="chQty('q2', 'p2', -1, 2890000)">
+                            −
+                        </button>
+                        <div class="qty-n" id="q2">1</div>
+                        <button class="qty-b" onclick="chQty('q2', 'p2', 1, 2890000)">
+                            +
+                        </button>
+                    </div>
+                </div>
+                <div class="item-total-col">
+                    <span class="item-total" id="p2">2.890.000₫</span>
+                </div>
+            </div>
+
+            <div class="cart-actions">
+                <a href="sole-products.html" class="back-link">← Tiếp tục mua sắm</a>
+                <button class="update-btn">Cập nhật giỏ</button>
+            </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="cart-sidebar">
+            <h2 class="sidebar-title">ORDER<br />SUMMARY</h2>
+
+            <div class="mini-items">
+                <div class="mini-item">
+                    <div class="mini-img">
+                        <div class="shoe-thumb c-black"
+                             style="width: 32px; height: 17px">
+                            <div class="s-upper" style="height: 13px"></div>
+                            <div class="s-sole" style="height: 6px"></div>
+                        </div>
+                        <span class="mini-qty">1</span>
+                    </div>
+                    <div class="mini-info">
+                        <div class="mini-name">Air Jordan 1 Retro High OG</div>
+                        <div class="mini-meta">Black / Yellow · US 7.5</div>
+                    </div>
+                    <div class="mini-price">5.200.000₫</div>
+                </div>
+                <div class="mini-item">
+                    <div class="mini-img">
+                        <div class="shoe-thumb c-white"
+                             style="width: 32px; height: 17px">
+                            <div class="s-upper" style="height: 13px"></div>
+                            <div class="s-sole" style="height: 6px"></div>
+                        </div>
+                        <span class="mini-qty">1</span>
+                    </div>
+                    <div class="mini-info">
+                        <div class="mini-name">Stan Smith Lux</div>
+                        <div class="mini-meta">Cloud White · US 8</div>
+                    </div>
+                    <div class="mini-price">2.890.000₫</div>
+                </div>
+            </div>
+
+            <!-- Shipping -->
+            <p style="
+              font-family: var(--mono);
+              font-size: 10px;
+              letter-spacing: 0.12em;
+              text-transform: uppercase;
+              color: var(--muted);
+              margin-bottom: 10px;
+            ">
+                Vận chuyển
+            </p>
+            <div class="ship-opts">
+                <label class="ship-opt active" onclick="selectShip(this, 0)">
+                    <input type="radio" name="ship" checked />
+                    <div class="ship-info">
+                        <div class="ship-name">Tiêu chuẩn (3–5 ngày)</div>
+                        <div class="ship-desc">Giao hàng toàn quốc</div>
+                    </div>
+                    <span class="ship-price">Free</span>
+                </label>
+                <label class="ship-opt" onclick="selectShip(this, 40000)">
+                    <input type="radio" name="ship" />
+                    <div class="ship-info">
+                        <div class="ship-name">Nhanh (1–2 ngày)</div>
+                        <div class="ship-desc">GHN Express</div>
+                    </div>
+                    <span class="ship-price">40.000₫</span>
+                </label>
+                <label class="ship-opt" onclick="selectShip(this, 80000)">
+                    <input type="radio" name="ship" />
+                    <div class="ship-info">
+                        <div class="ship-name">Hỏa tốc (trong ngày)</div>
+                        <div class="ship-desc">HCM & HN</div>
+                    </div>
+                    <span class="ship-price">80.000₫</span>
+                </label>
+            </div>
+
+            <!-- Coupon -->
+            <p style="
+              font-family: var(--mono);
+              font-size: 10px;
+              letter-spacing: 0.12em;
+              text-transform: uppercase;
+              color: var(--muted);
+              margin-bottom: 10px;
+            ">
+                Mã giảm giá
+            </p>
+            <div class="coupon-applied" id="couponApplied">
+                <span>
+                    <svg width="10"
+                         height="10"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         viewBox="0 0 24 24">
+                        <polyline points="20 6 9 17 4 12" />
+                    </svg>SOLE10 — Giảm 809.000₫
+                </span>
+                <button onclick="removeCoupon()">Xóa</button>
+            </div>
+            <div class="coupon-row" id="couponRow" style="display: none">
+                <input class="coupon-inp" id="couponInp" placeholder="ENTER CODE" />
+                <button class="coupon-btn" onclick="applyCoupon()">Apply</button>
+            </div>
+
+            <hr style="
+              border: none;
+              border-top: 1px solid var(--border);
+              margin: 16px 0;
+            " />
+            <div class="sum-row">
+                <span class="lbl">Tạm tính</span><span class="val" id="subtotal">8.090.000₫</span>
+            </div>
+            <div class="sum-row">
+                <span class="lbl">Giảm giá (SOLE10)</span><span class="val disc" id="discount">−809.000₫</span>
+            </div>
+            <div class="sum-row">
+                <span class="lbl">Vận chuyển</span><span class="val free" id="shipping">Miễn phí</span>
+            </div>
+            <hr class="sum-div" />
+            <div class="sum-total">
+                <span class="lbl">Total</span><span class="val" id="grandTotal">7.281.000₫</span>
+            </div>
+            <p class="sum-note">// Đã bao gồm VAT 10%</p>
+
+            <a href="sole-checkout.html" class="btn-checkout">
+                <svg width="14"
+                     height="14"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     viewBox="0 0 24 24">
+                    <rect x="3" y="11" width="18" height="11" rx="2" />
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                </svg>
+                Checkout — 7.281.000₫
+            </a>
+
+            <div class="alt-pays">
+                <button class="alt-pay momo">MoMo</button>
+                <button class="alt-pay vnpay">VNPay</button>
+                <button class="alt-pay" style="background: #000">Apple Pay</button>
+            </div>
+
+            <div class="secure-note">
+                <svg width="11"
+                     height="11"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     viewBox="0 0 24 24">
+                    <rect x="3" y="11" width="18" height="11" rx="2" />
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                </svg>
+                SSL Encrypted · Secure Checkout
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- UPSELL -->
+<div class="upsell">
+    <div class="ups-eyebrow">Don't miss out</div>
+    <h2 class="ups-title">COMPLETE THE FIT</h2>
+    <div class="ups-grid">
+        <div class="ups-card">
+            <div class="ups-img">
+                <div class="shoe-thumb c-red" style="width: 110px; height: 60px">
+                    <div class="s-upper" style="height: 46px"></div>
+                    <div class="s-sole"></div>
+                    <div class="s-laces">
+                        <div class="s-lace" style="width: 44px"></div>
+                        <div class="s-lace" style="width: 36px"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="ups-add">+</button>
+            <div class="ups-info">
+                <div class="ups-brand">Jordan</div>
+                <div class="ups-name">Jordan 4 Red Cement</div>
+                <div class="ups-price">6.800.000₫</div>
+            </div>
+        </div>
+        <div class="ups-card">
+            <div class="ups-img">
+                <div class="shoe-thumb c-green" style="width: 110px; height: 60px">
+                    <div class="s-upper" style="height: 46px"></div>
+                    <div class="s-sole"></div>
+                    <div class="s-laces">
+                        <div class="s-lace" style="width: 44px"></div>
+                        <div class="s-lace" style="width: 36px"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="ups-add">+</button>
+            <div class="ups-info">
+                <div class="ups-brand">Vans</div>
+                <div class="ups-name">Old Skool Pro Skate</div>
+                <div class="ups-price">1.650.000₫</div>
+            </div>
+        </div>
+        <div class="ups-card">
+            <div class="ups-img">
+                <div class="shoe-thumb c-orange" style="width: 110px; height: 60px">
+                    <div class="s-upper" style="height: 46px"></div>
+                    <div class="s-sole"></div>
+                    <div class="s-laces">
+                        <div class="s-lace" style="width: 44px"></div>
+                        <div class="s-lace" style="width: 36px"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="ups-add">+</button>
+            <div class="ups-info">
+                <div class="ups-brand">Nike</div>
+                <div class="ups-name">Dunk Low Orange</div>
+                <div class="ups-price">3.200.000₫</div>
+            </div>
+        </div>
+        <div class="ups-card">
+            <div class="ups-img">
+                <div class="shoe-thumb c-purple" style="width: 110px; height: 60px">
+                    <div class="s-upper" style="height: 46px"></div>
+                    <div class="s-sole"></div>
+                    <div class="s-laces">
+                        <div class="s-lace" style="width: 44px"></div>
+                        <div class="s-lace" style="width: 36px"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="ups-add">+</button>
+            <div class="ups-info">
+                <div class="ups-brand">Converse</div>
+                <div class="ups-name">Chuck 70 Hi Canvas</div>
+                <div class="ups-price">1.990.000₫</div>
+            </div>
+        </div>
+    </div>
+</div>

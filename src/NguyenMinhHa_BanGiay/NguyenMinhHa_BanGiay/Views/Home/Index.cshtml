@@ -1,8 +1,553 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model IEnumerable<NguyenMinhHa_BanGiay.Models.ProductModel>
+@{
+	ViewData["Title"] = "Home Page";
+	var categories = ViewBag.categories as List<NguyenMinhHa_BanGiay.Models.CategoryModel>;
+	var products = ViewBag.products as List<NguyenMinhHa_BanGiay.Models.ProductModel>;
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!-- TICKER -->
+<div class="ticker">
+    <div class="ticker-track">
+        <div class="ticker-item">
+            MIỄN PHÍ SHIP ĐƠN TRÊN 2 TRIỆU <span class="ticker-sep">★</span> XÁC
+            THỰC 100% CHÍNH HÃNG <span class="ticker-sep">★</span> ĐỔI TRẢ 30 NGÀY
+            <span class="ticker-sep">★</span> DROP MỚI MỖI THỨ SÁU
+            <span class="ticker-sep">★</span> THANH TOÁN AN TOÀN SSL
+            <span class="ticker-sep">★</span>
+        </div>
+        <div class="ticker-item">
+            MIỄN PHÍ SHIP ĐƠN TRÊN 2 TRIỆU <span class="ticker-sep">★</span> XÁC
+            THỰC 100% CHÍNH HÃNG <span class="ticker-sep">★</span> ĐỔI TRẢ 30 NGÀY
+            <span class="ticker-sep">★</span> DROP MỚI MỖI THỨ SÁU
+            <span class="ticker-sep">★</span> THANH TOÁN AN TOÀN SSL
+            <span class="ticker-sep">★</span>
+        </div>
+    </div>
 </div>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-left">
+        <div class="hero-tag">New Drop — SS2025</div>
+        <h1 class="hero-title">
+            WEAR<br />
+            THE<br />
+            <span class="accent">STREETS</span>
+        </h1>
+        <p class="hero-sub">
+            Không chỉ là giày — đây là tuyên ngôn của bạn. Sneakers chính hãng,
+            phiên bản giới hạn, giao nhanh toàn quốc.
+        </p>
+        <div class="hero-ctas">
+            <a href="sole-products.html" class="btn-primary">
+                Shop Now
+                <svg width="16"
+                     height="16"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+            </a>
+            <button class="btn-secondary">Xem Drops mới →</button>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <div class="stat-num">500+</div>
+                <div class="stat-label">Mẫu giày</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">100%</div>
+                <div class="stat-label">Chính hãng</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">48H</div>
+                <div class="stat-label">Giao hàng</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-right">
+        <div class="hero-shoe-display">
+            <div class="shoe-visual">
+                <div class="shoe-body">
+                    <div class="shoe-upper">
+                        <div class="shoe-laces">
+                            <div class="lace" style="width: 80px"></div>
+                            <div class="lace" style="width: 68px"></div>
+                            <div class="lace" style="width: 56px"></div>
+                            <div class="lace" style="width: 44px"></div>
+                        </div>
+                    </div>
+                    <div class="shoe-sole"></div>
+                    <div class="shoe-logo-mark">SD</div>
+                </div>
+                <div class="shoe-tag">NEW DROP</div>
+            </div>
+            <div class="hero-badge-row">
+                <span class="hero-badge lit">Limited</span>
+                <span class="hero-badge">Size 36–46</span>
+                <span class="hero-badge">Auth Verified</span>
+            </div>
+        </div>
+        <div class="hero-scroll">SCROLL DOWN</div>
+    </div>
+</section>
+
+<!-- BRANDS -->
+<div class="brands-strip">
+    <span class="brands-label">Official Brands</span>
+    <div class="brands-list">
+        <span class="brand-name">NIKE</span>
+        <span class="brand-name">ADIDAS</span>
+        <span class="brand-name">NEW BALANCE</span>
+        <span class="brand-name">JORDAN</span>
+        <span class="brand-name">CONVERSE</span>
+        <span class="brand-name">VANS</span>
+        <span class="brand-name">PUMA</span>
+        <span class="brand-name">REEBOK</span>
+        <span class="brand-name">ASICS</span>
+    </div>
+</div>
+
+<!-- FEATURED PRODUCTS -->
+<div class="sec-hd">
+    <div>
+        <div class="sec-eyebrow">Hot This Week</div>
+        <h2 class="sec-title">
+            BEST<br /><span class="outline">SELLERS</span>
+        </h2>
+    </div>
+    <a href="sole-products.html" class="view-all-link">Xem tất cả →</a>
+</div>
+
+<div class="product-grid">
+    <!-- Featured card (2x2) -->
+    <div class="product-card featured">
+        <div class="card-img">
+            <span class="card-badge rare">Rare</span>
+            <div class="shoe-thumb c-black" style="width: 220px; height: 130px">
+                <div class="s-upper" style="height: 100px"></div>
+                <div class="s-sole"></div>
+                <div class="s-laces">
+                    <div class="s-lace" style="width: 90px"></div>
+                    <div class="s-lace" style="width: 76px"></div>
+                    <div class="s-lace" style="width: 62px"></div>
+                </div>
+            </div>
+            <div class="card-overlay">
+                <button class="ov-btn"
+                        onclick="window.location = 'sole-product-detail.html'">
+                    Xem Chi Tiết
+                </button>
+                <button class="ov-btn wish">♡</button>
+            </div>
+        </div>
+        <div class="card-info">
+            <div class="card-brand">Nike</div>
+            <div class="card-name">
+                <a href="sole-product-detail.html">Air Jordan 1 Retro High OG</a>
+            </div>
+            <div class="card-colorways">Black / Yellow / White · 6 màu</div>
+            <div class="card-footer">
+                <div><span class="card-price">5.200.000₫</span></div>
+                <div class="card-sizes">
+                    <span class="sz">40</span><span class="sz">41</span><span class="sz">42</span><span class="sz">43</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="product-card">
+        <div class="card-img">
+            <span class="card-badge new">New</span>
+            <div class="shoe-thumb c-white">
+                <div class="s-upper"></div>
+                <div class="s-sole"></div>
+                <div class="s-laces">
+                    <div class="s-lace" style="width: 50px"></div>
+                    <div class="s-lace" style="width: 42px"></div>
+                </div>
+            </div>
+            <div class="card-overlay">
+                <button class="ov-btn"
+                        onclick="window.location = 'sole-product-detail.html'">
+                    Thêm vào giỏ
+                </button><button class="ov-btn wish">♡</button>
+            </div>
+        </div>
+        <div class="card-info">
+            <div class="card-brand">Adidas</div>
+            <div class="card-name">
+                <a href="sole-product-detail.html">Stan Smith Lux</a>
+            </div>
+            <div class="card-colorways">Cloud White · 3 màu</div>
+            <div class="card-footer">
+                <span class="card-price">2.890.000₫</span>
+                <div class="card-sizes">
+                    <span class="sz">39</span><span class="sz">40</span><span class="sz">41</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="product-card">
+        <div class="card-img">
+            <span class="card-badge sale">-25%</span>
+            <div class="shoe-thumb c-blue">
+                <div class="s-upper"></div>
+                <div class="s-sole"></div>
+                <div class="s-laces">
+                    <div class="s-lace" style="width: 52px"></div>
+                    <div class="s-lace" style="width: 44px"></div>
+                </div>
+            </div>
+            <div class="card-overlay">
+                <button class="ov-btn"
+                        onclick="window.location = 'sole-product-detail.html'">
+                    Thêm vào giỏ
+                </button><button class="ov-btn wish">♡</button>
+            </div>
+        </div>
+        <div class="card-info">
+            <div class="card-brand">New Balance</div>
+            <div class="card-name">
+                <a href="sole-product-detail.html">990v6 Made in USA</a>
+            </div>
+            <div class="card-colorways">Navy / Grey · 2 màu</div>
+            <div class="card-footer">
+                <span class="card-price">3.750.000₫</span><span class="card-price-was">5.000.000₫</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="product-card">
+        <div class="card-img">
+            <span class="card-badge hot">🔥 Hot</span>
+            <div class="shoe-thumb c-red">
+                <div class="s-upper"></div>
+                <div class="s-sole"></div>
+                <div class="s-laces">
+                    <div class="s-lace" style="width: 50px"></div>
+                    <div class="s-lace" style="width: 40px"></div>
+                </div>
+            </div>
+            <div class="card-overlay">
+                <button class="ov-btn"
+                        onclick="window.location = 'sole-product-detail.html'">
+                    Thêm vào giỏ
+                </button><button class="ov-btn wish">♡</button>
+            </div>
+        </div>
+        <div class="card-info">
+            <div class="card-brand">Jordan</div>
+            <div class="card-name">
+                <a href="sole-product-detail.html">Jordan 4 Retro Red Cement</a>
+            </div>
+            <div class="card-colorways">Fire Red / Cement · 1 màu</div>
+            <div class="card-footer">
+                <span class="card-price">6.800.000₫</span>
+                <div class="card-sizes">
+                    <span class="sz">42</span><span class="sz">43</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="product-card">
+        <div class="card-img">
+            <div class="shoe-thumb c-green">
+                <div class="s-upper"></div>
+                <div class="s-sole"></div>
+                <div class="s-laces">
+                    <div class="s-lace" style="width: 50px"></div>
+                    <div class="s-lace" style="width: 40px"></div>
+                </div>
+            </div>
+            <div class="card-overlay">
+                <button class="ov-btn"
+                        onclick="window.location = 'sole-product-detail.html'">
+                    Thêm vào giỏ
+                </button><button class="ov-btn wish">♡</button>
+            </div>
+        </div>
+        <div class="card-info">
+            <div class="card-brand">Vans</div>
+            <div class="card-name">
+                <a href="sole-product-detail.html">Old Skool Pro Skate</a>
+            </div>
+            <div class="card-colorways">Forest Green · 4 màu</div>
+            <div class="card-footer">
+                <span class="card-price">1.650.000₫</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="product-card">
+        <div class="card-img">
+            <span class="card-badge new">New</span>
+            <div class="shoe-thumb c-purple">
+                <div class="s-upper"></div>
+                <div class="s-sole"></div>
+                <div class="s-laces">
+                    <div class="s-lace" style="width: 50px"></div>
+                    <div class="s-lace" style="width: 40px"></div>
+                </div>
+            </div>
+            <div class="card-overlay">
+                <button class="ov-btn"
+                        onclick="window.location = 'sole-product-detail.html'">
+                    Thêm vào giỏ
+                </button><button class="ov-btn wish">♡</button>
+            </div>
+        </div>
+        <div class="card-info">
+            <div class="card-brand">Converse</div>
+            <div class="card-name">
+                <a href="sole-product-detail.html">Chuck 70 Hi Canvas</a>
+            </div>
+            <div class="card-colorways">Pale Purple · 5 màu</div>
+            <div class="card-footer">
+                <span class="card-price">1.990.000₫</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MARQUEE -->
+<div class="big-marquee">
+    <div class="big-marquee-track">
+        <div class="big-marquee-item">
+            SNEAKER HEAD <span>·</span> STREET CULTURE <span>·</span> AUTHENTIC
+            ONLY <span>·</span> SOLE DISTRICT <span>·</span> WEAR YOUR STORY
+            <span>·</span>
+        </div>
+        <div class="big-marquee-item">
+            SNEAKER HEAD <span>·</span> STREET CULTURE <span>·</span> AUTHENTIC
+            ONLY <span>·</span> SOLE DISTRICT <span>·</span> WEAR YOUR STORY
+            <span>·</span>
+        </div>
+    </div>
+</div>
+
+<!-- DROPS -->
+<div class="sec-hd">
+    <div>
+        <div class="sec-eyebrow">Exclusive</div>
+        <h2 class="sec-title">
+            UPCOMING<br /><span class="outline">DROPS</span>
+        </h2>
+    </div>
+</div>
+<div class="drops-section">
+    <div class="drops-grid">
+        <div class="drop-card">
+            <div class="drop-img">
+                <div class="drop-shoe">
+                    <div class="shoe-thumb c-orange"
+                         style="width: 130px; height: 70px">
+                        <div class="s-upper" style="height: 52px"></div>
+                        <div class="s-sole"></div>
+                        <div class="s-laces">
+                            <div class="s-lace" style="width: 50px"></div>
+                            <div class="s-lace" style="width: 40px"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="drop-info">
+                <div class="drop-label">📅 Drop ngày 24/05/2025</div>
+                <div class="drop-name">NIKE DUNK LOW ORANGE BLAZE</div>
+                <div class="drop-desc">
+                    Phiên bản giới hạn — chỉ 120 đôi tại Việt Nam. Đăng ký ngay để
+                    nhận thông báo.
+                </div>
+                <div class="drop-footer">
+                    <span class="drop-price">3.800.000₫</span>
+                    <button class="drop-btn">Đăng ký ngay</button>
+                </div>
+            </div>
+        </div>
+        <div class="drop-card">
+            <div class="drop-img">
+                <div class="drop-shoe">
+                    <div class="shoe-thumb c-grey" style="width: 130px; height: 70px">
+                        <div class="s-upper" style="height: 52px"></div>
+                        <div class="s-sole"></div>
+                        <div class="s-laces">
+                            <div class="s-lace" style="width: 50px"></div>
+                            <div class="s-lace" style="width: 40px"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="drop-info">
+                <div class="drop-label">📅 Drop ngày 31/05/2025</div>
+                <div class="drop-name">YEEZY 350 V3 GREY FOG</div>
+                <div class="drop-desc">
+                    Comeback sau 3 năm. Adidas Yeezy 350 V3 phiên bản Grey Fog huyền
+                    thoại trở lại.
+                </div>
+                <div class="drop-footer">
+                    <span class="drop-price">7.500.000₫</span>
+                    <button class="drop-btn">Đăng ký ngay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CATEGORIES -->
+<div class="sec-hd">
+    <div>
+        <div class="sec-eyebrow">Shop by Style</div>
+        <h2 class="sec-title">DANH<br /><span class="outline">MỤC</span></h2>
+    </div>
+</div>
+<div class="categories">
+    <div class="cat-grid">
+        <div class="cat-card" onclick="window.location = 'sole-products.html'">
+            <div class="cat-icon">
+                <div class="shoe-thumb c-black" style="width: 64px; height: 36px">
+                    <div class="s-upper" style="height: 26px"></div>
+                    <div class="s-sole"></div>
+                </div>
+            </div>
+            <div class="cat-name">RUNNING</div>
+            <div class="cat-count">124 sản phẩm</div>
+        </div>
+        <div class="cat-card" onclick="window.location = 'sole-products.html'">
+            <div class="cat-icon">
+                <div class="shoe-thumb c-white" style="width: 64px; height: 36px">
+                    <div class="s-upper" style="height: 26px"></div>
+                    <div class="s-sole"></div>
+                </div>
+            </div>
+            <div class="cat-name">LIFESTYLE</div>
+            <div class="cat-count">89 sản phẩm</div>
+        </div>
+        <div class="cat-card" onclick="window.location = 'sole-products.html'">
+            <div class="cat-icon">
+                <div class="shoe-thumb c-red" style="width: 64px; height: 36px">
+                    <div class="s-upper" style="height: 26px"></div>
+                    <div class="s-sole"></div>
+                </div>
+            </div>
+            <div class="cat-name">BASKETBALL</div>
+            <div class="cat-count">56 sản phẩm</div>
+        </div>
+        <div class="cat-card" onclick="window.location = 'sole-products.html'">
+            <div class="cat-icon">
+                <div class="shoe-thumb c-blue" style="width: 64px; height: 36px">
+                    <div class="s-upper" style="height: 26px"></div>
+                    <div class="s-sole"></div>
+                </div>
+            </div>
+            <div class="cat-name">SKATE</div>
+            <div class="cat-count">43 sản phẩm</div>
+        </div>
+        <div class="cat-card" onclick="window.location = 'sole-products.html'">
+            <div class="cat-icon">
+                <div class="shoe-thumb c-green" style="width: 64px; height: 36px">
+                    <div class="s-upper" style="height: 26px"></div>
+                    <div class="s-sole"></div>
+                </div>
+            </div>
+            <div class="cat-name">COLLAB</div>
+            <div class="cat-count">28 sản phẩm</div>
+        </div>
+    </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<div class="sec-hd" style="padding-bottom: 0">
+    <div>
+        <div class="sec-eyebrow">Community</div>
+        <h2 class="sec-title">
+            WHAT THEY<br /><span class="outline">SAY</span>
+        </h2>
+    </div>
+</div>
+<div class="testimonials">
+    <div class="test-grid">
+        <div class="test-card">
+            <div class="test-quote">"</div>
+            <p class="test-text">
+                Air Jordan 1 mình mua ở đây đúng auth 100%. Đóng gói cẩn thận, ship
+                nhanh hơn dự kiến. Giày đẹp không chê vào đâu được!
+            </p>
+            <div class="test-author">
+                <div class="test-avatar">T</div>
+                <div>
+                    <div class="test-name">Trần Minh Tuấn</div>
+                    <div class="test-meta">Hà Nội</div>
+                </div>
+            </div>
+            <div class="test-stars">★★★★★</div>
+        </div>
+        <div class="test-card">
+            <div class="test-quote">"</div>
+            <p class="test-text">
+                Đã mua 4 đôi ở Sole District. Mỗi lần đều được authenticate kỹ
+                lưỡng. Giá tốt hơn so với nhiều shop khác mình từng mua.
+            </p>
+            <div class="test-author">
+                <div class="test-avatar">L</div>
+                <div>
+                    <div class="test-name">Lê Thị Hoa</div>
+                    <div class="test-meta">TP.HCM</div>
+                </div>
+            </div>
+            <div class="test-stars">★★★★★</div>
+        </div>
+        <div class="test-card">
+            <div class="test-quote">"</div>
+            <p class="test-text">
+                Mình catch được Yeezy limited nhờ hệ thống drop notification. Team
+                support phản hồi cực nhanh. Sẽ quay lại dài dài!
+            </p>
+            <div class="test-author">
+                <div class="test-avatar">H</div>
+                <div>
+                    <div class="test-name">Hoàng Phi</div>
+                    <div class="test-meta">Đà Nẵng</div>
+                </div>
+            </div>
+            <div class="test-stars">★★★★★</div>
+        </div>
+    </div>
+</div>
+
+<!-- NEWSLETTER -->
+<div class="newsletter">
+    <div>
+        <div class="nl-eyebrow">// Đừng bỏ lỡ</div>
+        <h2 class="nl-title">
+            CATCH EVERY<br /><span class="dim">NEW DROP</span>
+        </h2>
+    </div>
+    <div>
+        <p style="
+            font-size: 13px;
+            color: var(--muted);
+            line-height: 1.7;
+            margin-bottom: 20px;
+          ">
+            Đăng ký nhận thông báo drop mới, restocks, và ưu đãi độc quyền dành
+            riêng cho cộng đồng Sole District.
+        </p>
+        <div class="nl-form">
+            <div class="nl-field">
+                <input type="email" placeholder="your@email.com" />
+                <button>Đăng ký</button>
+            </div>
+            <p class="nl-note">// Không spam. Hủy đăng ký bất cứ lúc nào.</p>
+        </div>
+    </div>
+</div></div>
