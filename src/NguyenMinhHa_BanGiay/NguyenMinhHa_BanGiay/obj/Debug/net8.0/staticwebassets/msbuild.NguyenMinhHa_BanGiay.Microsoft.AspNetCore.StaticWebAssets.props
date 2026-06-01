@@ -3558,8 +3558,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>pxkd3ff1o2</Fingerprint>
-      <Integrity>w6W5VizNMd28kkHu99R8vtgcoj1/tJxFHDgjCCx3ezQ=</Integrity>
+      <Fingerprint>jqzintk67n</Fingerprint>
+      <Integrity>la/KpXr0kKaOK8YBz2q/mP9qNXXt7+EmuxIOyrFNlVE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\blog\assets\css\cart.css'))</OriginalItemSpec>
@@ -3612,8 +3612,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>245qbkezbe</Fingerprint>
-      <Integrity>nghWR5jz883JfOSRC/opqE0tSBBswXzlrNvDLgXLYCo=</Integrity>
+      <Fingerprint>29hsnsybi9</Fingerprint>
+      <Integrity>Vo1uUbdq6MN0myjoYt7pvWqlAYygL6OuUb6AZK80OFg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\blog\assets\css\detail.css'))</OriginalItemSpec>
@@ -3654,6 +3654,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\blog\assets\css\product.css'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\blog\assets\css\thankyou.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NguyenMinhHa_BanGiay</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NguyenMinhHa_BanGiay</BasePath>
+      <RelativePath>assets/blog/assets/css/thankyou.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>8aq9v3zzof</Fingerprint>
+      <Integrity>sLf4OI1CJBCvrOUD4CaPtEyin/joTGdUWQhdBT8Epxo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\blog\assets\css\thankyou.css'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\blog\assets\js\cart.js'))">
       <SourceType>Package</SourceType>
       <SourceId>NguyenMinhHa_BanGiay</SourceId>
@@ -3684,8 +3702,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>c6bxrx3qb3</Fingerprint>
-      <Integrity>1IWhnAGZHrda5Q92y1tGD0D0AVAi/AmUhrHtMQG5ZeM=</Integrity>
+      <Fingerprint>uvqzalv1ic</Fingerprint>
+      <Integrity>Jp9Ddxh75BGKpFa+LQ7pmweATcJjd+BDNdvazZvktlg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\blog\assets\js\checkout.js'))</OriginalItemSpec>
@@ -3720,8 +3738,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>yzp3zv3b1v</Fingerprint>
-      <Integrity>XnWUwH+TkYcAFW3Y0j8H/G5wtp9n9EHXKeGFFrZ+dWA=</Integrity>
+      <Fingerprint>c6tst7l3sh</Fingerprint>
+      <Integrity>TLSyGcurMtrf0tiPApcuILhuiHSW5MIS5dZC0UXOvzM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\blog\assets\js\detail.js'))</OriginalItemSpec>
@@ -3743,6 +3761,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\blog\assets\js\product.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\blog\assets\js\thankyou.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NguyenMinhHa_BanGiay</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NguyenMinhHa_BanGiay</BasePath>
+      <RelativePath>assets/blog/assets/js/thankyou.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>66bkfumcib</Fingerprint>
+      <Integrity>jnzyfuql4RFXoO9XiSrmJFvd4vNcj1D3rcXgJYwc53M=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\blog\assets\js\thankyou.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))">
       <SourceType>Package</SourceType>

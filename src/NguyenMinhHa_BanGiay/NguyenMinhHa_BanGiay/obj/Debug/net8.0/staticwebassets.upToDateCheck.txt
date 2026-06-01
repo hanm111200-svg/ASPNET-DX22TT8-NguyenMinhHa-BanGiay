@@ -201,11 +201,13 @@ wwwroot\assets\blog\assets\css\customer.css
 wwwroot\assets\blog\assets\css\detail.css
 wwwroot\assets\blog\assets\css\index.css
 wwwroot\assets\blog\assets\css\product.css
+wwwroot\assets\blog\assets\css\thankyou.css
 wwwroot\assets\blog\assets\js\cart.js
 wwwroot\assets\blog\assets\js\checkout.js
 wwwroot\assets\blog\assets\js\customer.js
 wwwroot\assets\blog\assets\js\detail.js
 wwwroot\assets\blog\assets\js\product.js
+wwwroot\assets\blog\assets\js\thankyou.js
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js

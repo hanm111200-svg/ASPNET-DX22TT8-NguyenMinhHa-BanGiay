@@ -35,8 +35,3 @@ document.querySelectorAll(".thumb").forEach((t) => {
     t.classList.add("active");
   });
 });
-document.querySelector(".btn-wish").addEventListener("click", function () {
-  this.textContent = this.textContent === "♡" ? "♥" : "♡";
-  this.style.color =
-    this.textContent === "♥" ? "var(--accent2)" : "var(--muted)";
-});

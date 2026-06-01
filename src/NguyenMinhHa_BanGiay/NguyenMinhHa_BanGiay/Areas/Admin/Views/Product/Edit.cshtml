@@ -77,14 +77,14 @@
                                         @foreach (var item in ViewBag.ProductSize)
                                         {
                                             <tr>
-                                                <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>@item.size</strong></td>
+                                                <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>@item.Size</strong></td>
                                                 <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>@item.Quantity</strong></td>                                                
                                                 <td>
                                                     <button type="button" class="btn btn-sm btn-dark" href="javascript:void(0);"
                                                             data-id="item.Id"
                                                             data-bs-toggle="modal"
                                                             data-bs-target="#updateProductSize"
-                                                            onclick="openPopupEditProductSize(@item.Id, @item.size, @item.Quantity)">
+                                                            onclick="openPopupEditProductSize(@item.Id, @item.Size, @item.Quantity)">
                                                         <i class="bx bx-pencil me-1"></i> Sửa
                                                     </button>
                                                     <button type="button" class="btn btn-sm btn-danger" data-request-success="window.location.reload()" data-request-confirm="Xóa bản ghi đã chọn ?" onclick="onDeleteOrderDetail(@item.Id)"><i class="bx bx-trash me-1"></i> Xóa</button>

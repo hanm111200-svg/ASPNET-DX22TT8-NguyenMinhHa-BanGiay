@@ -1,7 +1,6 @@
 ﻿using NguyenMinhHa_BanGiay.Models;
 using Microsoft.AspNetCore.Mvc;
 using NguyenMinhHa_BanGiay.Extensions;
-using NguyenMinhHa_BanGiay.Models;
 using NguyenMinhHa_BanGiay.Repository;
 
 namespace NguyenMinhHa_BanGiay.Controllers
@@ -14,7 +13,7 @@ namespace NguyenMinhHa_BanGiay.Controllers
             _dataContext = context;
         }
         public IActionResult Index()
-        {            
+        {
             var cart = HttpContext.Session.GetObjectFromJson<List<CartModel>>("cart");
             Decimal subtotal = 0;
             Decimal total = 0;
@@ -43,7 +42,7 @@ namespace NguyenMinhHa_BanGiay.Controllers
             return View(cart);
         }
 
-        public IActionResult AddToCart(int Id, string Name, decimal Price, int quantity, int Type, string imageUrl)
+        public IActionResult AddToCart(int Id, string Name, decimal Price, int quantity, int Type, string imageUrl, string size = "")
         {
             var cart = HttpContext.Session.GetObjectFromJson<List<CartModel>>("cart");
             //Nếu giỏ hàng trống -> thêm sản phẩm vào giỏ hàng
@@ -52,9 +51,8 @@ namespace NguyenMinhHa_BanGiay.Controllers
                 cart = new List<CartModel>();
             }
 
-            //Check xem sản phảm đó đã có trong giỏ hàng hay chưa?
-            var item = cart.FirstOrDefault(c => c.Id == Id);
-            //Nếu chưa có sản phẩm -> thêm sản phẩm vào giỏ hàng
+            // Check trùng: cùng Id VÀ cùng Size mới cộng dồn
+            var item = cart.FirstOrDefault(c => c.Id == Id && c.Size == size);
             if (item == null)
             {
                 cart.Add(new CartModel
@@ -63,12 +61,13 @@ namespace NguyenMinhHa_BanGiay.Controllers
                     Name = Name,
                     Price = Price,
                     Quantity = quantity,
-                    ImageUrl = imageUrl
+                    ImageUrl = imageUrl,
+                    Size = size
                 });
-            }//Nếu đã có sản phẩm -> Tăng số lượng sản phẩm
+            }
             else
             {
-                item.Quantity++;
+                item.Quantity += quantity;
             }
             HttpContext.Session.SetObjectAsJson("cart", cart);
             if (Type == 1)
@@ -81,51 +80,32 @@ namespace NguyenMinhHa_BanGiay.Controllers
         [HttpPost]
         public IActionResult UpdateQuantity(int productId, string action)
         {
-            var cart = HttpContext.Session.GetObjectFromJson<List<CartItem>>("cart");
-            if (cart == null)
-            {
-                cart = new List<CartItem>();
-            }
+            var cart = HttpContext.Session.GetObjectFromJson<List<CartModel>>("cart");
+            if (cart == null) return RedirectToAction("Index");
+
             var item = cart.FirstOrDefault(c => c.Id == productId);
             if (item != null)
             {
                 if (action == "increase")
-                {
                     item.Quantity++;
-                }
                 else if (action == "decrease" && item.Quantity > 1)
-                {
                     item.Quantity--;
-                }
-
-                var product = _dataContext.Products.Find(productId);
-                item.ImageUrl = product.ImageUrl;
-                item.Price = product.Price;
-                item.Name = product.Name;
-
             }
 
             HttpContext.Session.SetObjectAsJson("cart", cart);
-            ViewData["SubTotal"] = 0;
             return RedirectToAction("Index");
         }
 
         [HttpPost]
         public IActionResult RemoveCart(int id)
         {
-            System.Diagnostics.Debug.WriteLine(id);
-            var cart = HttpContext.Session.GetObjectFromJson<List<CartItem>>("cart");
-            if (cart == null)
+            var cart = HttpContext.Session.GetObjectFromJson<List<CartModel>>("cart");
+            if (cart != null)
             {
-                cart = new List<CartItem>();
+                var item = cart.FirstOrDefault(c => c.Id == id);
+                if (item != null) cart.Remove(item);
+                HttpContext.Session.SetObjectAsJson("cart", cart);
             }
-            var itemCart = cart.FirstOrDefault(c => c.Id == id);
-            if (itemCart != null)
-            {
-                cart.Remove(itemCart);
-            }
-            HttpContext.Session.SetObjectAsJson("cart", cart);
-            ViewData["SubTotal"] = 0;
             return RedirectToAction("Index");
         }
     }

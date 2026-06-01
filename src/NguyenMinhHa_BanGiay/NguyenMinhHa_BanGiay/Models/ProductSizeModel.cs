@@ -8,7 +8,7 @@ namespace NguyenMinhHa_BanGiay.Models
     {
         [Key]
         public int Id { get; set; }
-        public string? size { get; set; }
+        public string? Size { get; set; }
         [DefaultValue(0)]
         public int Quantity { get; set; }
         public int? ProductId { get; set; }

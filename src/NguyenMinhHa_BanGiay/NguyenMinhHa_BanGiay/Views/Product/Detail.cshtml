@@ -39,85 +39,33 @@
     <!-- GALLERY -->
     <div class="gallery">
         <div class="thumbs-rail">
-            <div class="thumb active">
-                <div style="
-                width: 32px;
-                height: 40px;
-                background: linear-gradient(160deg, #2a2a2a, #111);
-                border-radius: 4px 20px 4px 4px;
-                position: relative;
-              ">
-                    <div style="
-                  position: absolute;
-                  bottom: 0;
-                  left: -3px;
-                  right: -3px;
-                  height: 7px;
-                  background: var(--accent);
-                  border-radius: 1px 18px 4px 1px;
-                "></div>
-                </div>
-            </div>
-            <div class="thumb">
-                <div style="
-                width: 36px;
-                height: 24px;
-                background: linear-gradient(160deg, #2a2a2a, #111);
-                border-radius: 3px 24px 3px 3px;
-                position: relative;
-              ">
-                    <div style="
-                  position: absolute;
-                  bottom: 0;
-                  left: -3px;
-                  right: -3px;
-                  height: 6px;
-                  background: var(--accent);
-                  border-radius: 1px 16px 3px 1px;
-                "></div>
-                </div>
-            </div>
-            <div class="thumb">
-                <div style="
-                width: 40px;
-                height: 16px;
-                background: #1a1a1a;
-                border-radius: 2px;
-                border: 1px solid var(--border2);
-              "></div>
-            </div>
-            <div class="thumb">
-                <div style="
-                width: 34px;
-                height: 36px;
-                background: linear-gradient(180deg, #222, #111);
-                border-radius: 3px;
-                border: 1px solid rgba(232, 255, 0, 0.1);
-              "></div>
-            </div>
         </div>
         <div class="gallery-main">
-            <div class="gallery-badge">
-                <span class="g-badge auth">✓ Auth Verified</span>
-                <span class="g-badge limited">Limited Drop</span>
-            </div>
             <div class="main-display">
-                <div class="shoe-3d">
-                    <div class="s3-upper">
-                        <div class="s3-collar"></div>
-                        <div class="s3-tongue"></div>
-                        <div class="s3-laces">
-                            <div class="s3-lace" style="width: 70px"></div>
-                            <div class="s3-lace" style="width: 60px"></div>
-                            <div class="s3-lace" style="width: 50px"></div>
-                            <div class="s3-lace" style="width: 40px"></div>
+                @if (!string.IsNullOrEmpty(Model?.ImageUrl))
+                {
+                    <img src="@Url.Content("~/upload/product/" + Model.ImageUrl)"
+                         alt="@Model.Name" class="gallery-main-img" />
+                }
+                else
+                {
+                    <div class="shoe-3d">
+                        <div class="s3-upper">
+                            <div class="s3-collar"></div>
+                            <div class="s3-tongue"></div>
+                            <div class="s3-laces">
+                                <div class="s3-lace" style="width: 70px"></div>
+                                <div class="s3-lace" style="width: 60px"></div>
+                                <div class="s3-lace" style="width: 50px"></div>
+                                <div class="s3-lace" style="width: 40px"></div>
+                            </div>
+                            <div class="s3-swoosh"></div>
                         </div>
-                        <div class="s3-swoosh"></div>
+                        <div class="s3-midsole"></div>
+                        <div class="s3-sole"></div>
+                        <div class="s3-tag">NEW DROP</div>
                     </div>
-                    <div class="s3-midsole"></div>
-                    <div class="s3-sole"></div>
-                    <div class="s3-tag">NEW DROP</div>
-                </div>
+                }
             </div>
             <div class="gallery-ctrl">
                 <button class="gctrl-btn">←</button>
@@ -137,25 +85,6 @@
             <p class="info-subtitle">@Model.Description</p>
         }
 
-        <div class="rating-row">
-            <span class="stars">★★★★★</span>
-            <span class="rating-num">4.9</span>
-            <span class="rating-sep">·</span>
-            <a href="#" class="rev-link">86 đánh giá</a>
-            <span class="rating-sep">·</span>
-            <span class="verified">
-                <svg width="12"
-                     height="12"
-                     fill="none"
-                     stroke="currentColor"
-                     stroke-width="2"
-                     viewBox="0 0 24 24">
-                    <polyline points="20 6 9 17 4 12" />
-                </svg>
-                Auth Verified
-            </span>
-        </div>
-
         <div class="price-block">
             <div style="display: flex; align-items: baseline; gap: 4px">
                 <span class="price-main">@Model?.Price.ToString("N0")₫</span>
@@ -164,50 +93,11 @@
                 // Giá đã bao gồm VAT · Miễn phí ship toàn quốc
             </p>
         </div>
-
-        <!-- Color -->
-        <div class="opt-block">
-            <div class="opt-label">
-                Màu sắc:
-                <span id="colorLabel" style="color: var(--text)">Black / Yellow</span>
-            </div>
-            <div class="color-opts">
-                <div class="c-opt active"
-                     style="
-                background: linear-gradient(
-                  135deg,
-                  #111 50%,
-                  var(--accent) 50%
-                );
-              "
-                     onclick="selectColor(this, 'Black / Yellow')"
-                     title="Black / Yellow"></div>
-                <div class="c-opt"
-                     style="
-                background: linear-gradient(135deg, #e0e0e0 50%, #c0392b 50%);
-              "
-                     onclick="selectColor(this, 'White / Red')"
-                     title="White / Red"></div>
-                <div class="c-opt"
-                     style="
-                background: linear-gradient(135deg, #1a5276 50%, #f0f0f0 50%);
-              "
-                     onclick="selectColor(this, 'Royal Blue / White')"
-                     title="Royal Blue"></div>
-                <div class="c-opt"
-                     style="
-                background: linear-gradient(135deg, #1e8449 50%, #f5f5f0 50%);
-              "
-                     onclick="selectColor(this, 'Dark Mocha')"
-                     title="Dark Mocha"></div>
-            </div>
-        </div>
-
         <!-- Size -->
         <div class="opt-block">
             <div class="opt-label">
                 Size (US Men's):
-                <span id="sizeLabel" style="color: var(--accent)">Chưa chọn</span>
+                <span id="sizelabel" style="color: var(--accent)">Chưa chọn</span>
                 <a href="#">Size Guide →</a>
             </div>
             <div class="size-grid">
@@ -217,11 +107,11 @@
                     {
                         if (s.Quantity <= 0)
                         {
-                            <button class="sz-opt sold" title="Hết hàng" disabled>@s.size</button>
+                            <button class="sz-opt sold" title="Hết hàng" disabled>@s.Size</button>
                         }
                         else
                         {
-                            <button class="sz-opt" onclick="selectSize(this, '@s.size')">@s.size</button>
+                            <button type="button" class="sz-opt" onclick="productSelectSize(this)">@s.Size</button>
                         }
                     }
                 }
@@ -237,34 +127,33 @@
 
         <!-- QTY -->
         <div class="qty-row">
-            <button class="qty-btn" onclick="changeQty(-1)">−</button>
+            <button type="button" class="qty-btn" onclick="productChangeQty(-1)">−</button>
             <div class="qty-num" id="qty">1</div>
-            <button class="qty-btn" onclick="changeQty(1)">+</button>
+            <button type="button" class="qty-btn" onclick="productChangeQty(1)">+</button>
         </div>
 
         <!-- CTA -->
-        <div class="cta-row">
-            <button class="btn-cart" onclick="addToCart(@Model.Id, document.querySelector('.sz-opt.active')?.dataset?.size)">
-                <svg width="16"
-                     height="16"
-                     fill="none"
-                     stroke="currentColor"
-                     stroke-width="2"
-                     viewBox="0 0 24 24">
-                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
-                    <line x1="3" y1="6" x2="21" y2="6" />
-                    <path d="M16 10a4 4 0 0 1-8 0" />
-                </svg>
-                Thêm vào giỏ
-            </button>
-            <button class="btn-wish">♡</button>
-        </div>
-        <button class="btn-buy"
-                style="width: 100%; margin-bottom: 24px"
-                onclick="window.location='@Url.Action("Index", "Checkout")'">
-            ⚡ MUA NGAY — @Model?.Price.ToString("N0")₫
-        </button>
+        <form asp-controller="Cart" asp-action="AddToCart" method="get" onsubmit="return handleAddToCart(event)">
+            <input type="hidden" name="Id" value="@Model.Id" />
+            <input type="hidden" name="Name" value="@Model.Name" />
+            <input type="hidden" name="Price" value="@Model.Price" />
+            <input type="hidden" name="imageUrl" value="@Model.ImageUrl" />
+            <input type="hidden" name="Type" value="0" /> 
+            <input type="hidden" name="quantity" id="cartQty" value="1" />
+            <input type="hidden" name="size" id="cartsize" value="" />
 
+            <div class="cta-row">
+                <button type="submit" class="btn-cart">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <path d="M16 10a4 4 0 0 1-8 0" />
+                    </svg>
+                    Thêm vào giỏ
+                </button>
+            </div>
+        </form>
+        
         <!-- TRUST -->
         <div class="trust-row">
             <div class="trust-item">
@@ -323,12 +212,6 @@
             <button class="tab-btn" onclick="openTab(this, 'specs')">
                 Thông số
             </button>
-            <button class="tab-btn" onclick="openTab(this, 'auth')">
-                Xác thực
-            </button>
-            <button class="tab-btn" onclick="openTab(this, 'reviews')">
-                Reviews (86)
-            </button>
         </div>
 
         <div class="tab-content active" id="tab-desc">
@@ -356,106 +239,10 @@
                 {
                     <tr>
                         <td>Size có sẵn</td>
-                        <td>@string.Join(", ", sizes.Where(s => s.Quantity > 0).Select(s => s.size))</td>
+                        <td>@string.Join(", ", sizes.Where(s => s.Quantity > 0).Select(s => s.Size))</td>
                     </tr>
                 }
             </table>
-        </div>
-        <div class="tab-content" id="tab-auth">
-            <p>
-                Mỗi đôi giày tại Sole District đều trải qua quy trình xác thực 12
-                bước nghiêm ngặt bởi các chuyên gia sneaker với hơn 10 năm kinh
-                nghiệm.
-            </p>
-            <table class="spec-tbl">
-                <tr>
-                    <td>Bước 1-4</td>
-                    <td>Kiểm tra tag, box, receipt gốc</td>
-                </tr>
-                <tr>
-                    <td>Bước 5-8</td>
-                    <td>Scan QR Nike, đo đạc tỉ lệ chi tiết</td>
-                </tr>
-                <tr>
-                    <td>Bước 9-12</td>
-                    <td>Kiểm tra chất liệu, mùi, UV light test</td>
-                </tr>
-                <tr>
-                    <td>Chứng nhận</td>
-                    <td>Certificate số + QR verify online</td>
-                </tr>
-                <tr>
-                    <td>Bảo hành</td>
-                    <td>Hoàn tiền 100% nếu phát hiện fake</td>
-                </tr>
-            </table>
-        </div>
-        <div class="tab-content" id="tab-reviews">
-            <div class="rev-summary">
-                <div style="text-align: center">
-                    <div class="rev-score-big">4.9</div>
-                    <div class="rev-stars-big">★★★★★</div>
-                    <div class="rev-total">86 reviews</div>
-                </div>
-                <div class="bar-rows">
-                    <div class="bar-row">
-                        <span>5★</span>
-                        <div class="bar-track">
-                            <div class="bar-fill" style="width: 88%"></div>
-                        </div>
-                        <span>76</span>
-                    </div>
-                    <div class="bar-row">
-                        <span>4★</span>
-                        <div class="bar-track">
-                            <div class="bar-fill" style="width: 8%"></div>
-                        </div>
-                        <span>7</span>
-                    </div>
-                    <div class="bar-row">
-                        <span>3★</span>
-                        <div class="bar-track">
-                            <div class="bar-fill" style="width: 3%"></div>
-                        </div>
-                        <span>3</span>
-                    </div>
-                    <div class="bar-row">
-                        <span>2★</span>
-                        <div class="bar-track">
-                            <div class="bar-fill" style="width: 0%"></div>
-                        </div>
-                        <span>0</span>
-                    </div>
-                    <div class="bar-row">
-                        <span>1★</span>
-                        <div class="bar-track">
-                            <div class="bar-fill" style="width: 0%"></div>
-                        </div>
-                        <span>0</span>
-                    </div>
-                </div>
-            </div>
-            <div class="rev-card">
-                <div class="rev-top">
-                    <span class="rev-name">tuan</span><span class="rev-date">12/05/2025</span>
-                </div>
-                <div class="rev-stars">★★★★★</div>
-                <p class="rev-text">
-                    Auth 100% luôn. Mình đã flex với 3 đứa bạn chuyên check giày,
-                    không đứa nào nghi ngờ. Box đẹp, đủ phụ kiện. Ship nhanh hơn dự
-                    kiến 1 ngày!
-                </p>
-            </div>
-            <div class="rev-card">
-                <div class="rev-top">
-                    <span class="rev-name">hoang</span><span class="rev-date">08/05/2025</span>
-                </div>
-                <div class="rev-stars">★★★★★</div>
-                <p class="rev-text">
-                    Đây là lần thứ 5 mình mua ở Sole District. Lần nào cũng chill,
-                    không lo fake. AJ1 lần này chất da xịn hơn cả lần trước.
-                </p>
-            </div>
         </div>
     </div>
     <!-- end info-panel -->
@@ -480,8 +267,7 @@
                     <div class="rel-img">
                         @if (!string.IsNullOrEmpty(rel.ImageUrl))
                         {
-                            <img src="@rel.ImageUrl" alt="@rel.Name"
-                                 style="width:120px;height:64px;object-fit:cover;border-radius:4px;" />
+                            <img src="@Url.Content("~/upload/product/" + rel.ImageUrl)" alt="@rel.Name" class="rel-main-img" />
                         }
                         else
                         {
@@ -506,4 +292,83 @@
             }
         }
     </div>
-</section></div>
+</section>
+<script>
+    // 1. Hàm chọn size chuẩn hóa, không bị detail.js ghi đè
+    function productSelectSize(btn) {
+        // Xóa active của các nút khác và thêm vào nút hiện tại
+        document.querySelectorAll('.sz-opt').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        // Lấy giá trị size từ chữ trên nút bấm
+        var sizeVal = btn.innerText.trim();
+
+        // Tìm các phần tử trên giao diện theo ID viết thường
+        var lbl = document.getElementById('sizelabel');
+        var inputSize = document.getElementById('cartsize');
+
+        // Kiểm tra an toàn trước khi gán giá trị để tránh lỗi "Cannot set properties of null"
+        if (lbl) {
+            lbl.textContent = "US " + sizeVal;
+        } else {
+            console.error("Không tìm thấy phần tử có id='sizelabel' trên trang!");
+        }
+
+        if (inputSize) {
+            inputSize.value = sizeVal;
+            console.log("=== ĐÃ LẤY SIZE THÀNH CÔNG ===");
+            console.log("Giá trị nạp vào input ẩn:", inputSize.value);
+        } else {
+            console.error("Không tìm thấy phần tử có id='cartsize' trên trang!");
+        }
+    }
+
+    // 2. Hàm tăng giảm số lượng
+    var currentProductQty = 1; // Khởi tạo biến đếm nội bộ
+
+    function productChangeQty(delta) {
+        // Giới hạn số lượng tối thiểu là 1, tối đa là 10 (bạn có thể tăng nếu muốn)
+        currentProductQty = Math.max(1, Math.min(10, currentProductQty + delta));
+
+        var qtyText = document.getElementById('qty');
+        var qtyInput = document.getElementById('cartQty');
+
+        // Gán số lượng mới hiển thị ra giao diện
+        if (qtyText) {
+            qtyText.textContent = currentProductQty;
+        }
+
+        // Nạp số lượng mới vào ô input ẩn để sẵn sàng gửi lên Controller
+        if (qtyInput) {
+            qtyInput.value = currentProductQty;
+        }
+
+        // Xuất log trực quan dưới F12 cho bạn kiểm tra
+        console.log("=== CẬP NHẬT SỐ LƯỢNG ===");
+        console.log("Số lượng hiển thị trên web:", currentProductQty);
+        console.log("Giá trị thực tế trong input ẩn (gửi đi):", qtyInput ? qtyInput.value : "Không tìm thấy input cartQty");
+    }
+
+    // 3. Hàm kiểm tra chặn Submit nếu chưa chọn size
+    function handleAddToCart(e) {
+        var hasSizesOnUI = document.querySelectorAll('.sz-opt').length > 0;
+        var sizeInput = document.getElementById('cartsize');
+        var selectedSize = sizeInput ? sizeInput.value.trim() : "";
+
+        if (hasSizesOnUI && selectedSize === "") {
+            e.preventDefault(); // Chặn gửi form
+
+            // Nháy đỏ cảnh báo trực quan
+            var grid = document.querySelector('.size-grid');
+            if (grid) {
+                grid.style.outline = '2px solid red';
+                grid.style.borderRadius = '4px';
+                setTimeout(() => { grid.style.outline = ''; }, 1500);
+            }
+
+            alert("Vui lòng chọn Size giày trước khi thêm vào giỏ hàng!");
+            return false;
+        }
+        return true;
+    }
+</script>

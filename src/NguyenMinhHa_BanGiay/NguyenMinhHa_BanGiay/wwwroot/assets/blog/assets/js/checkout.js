@@ -65,6 +65,6 @@ function closeModal() {
   btn.style.opacity = "1";
   btn.disabled = false;
 }
-document.getElementById("successModal").addEventListener("click", function (e) {
-  if (e.target === this) closeModal();
-});
+//document.getElementById("successModal").addEventListener("click", function (e) {
+//  if (e.target === this) closeModal();
+//});

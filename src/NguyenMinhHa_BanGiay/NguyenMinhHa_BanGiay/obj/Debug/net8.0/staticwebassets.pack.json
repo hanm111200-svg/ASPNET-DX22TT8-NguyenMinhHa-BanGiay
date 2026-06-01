@@ -817,6 +817,10 @@
       "PackagePath": "staticwebassets\\assets\\blog\\assets\\css\\product.css"
     },
     {
+      "Id": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\assets\\blog\\assets\\css\\thankyou.css",
+      "PackagePath": "staticwebassets\\assets\\blog\\assets\\css\\thankyou.css"
+    },
+    {
       "Id": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\assets\\blog\\assets\\js\\cart.js",
       "PackagePath": "staticwebassets\\assets\\blog\\assets\\js\\cart.js"
     },
@@ -835,6 +839,10 @@
     {
       "Id": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\assets\\blog\\assets\\js\\product.js",
       "PackagePath": "staticwebassets\\assets\\blog\\assets\\js\\product.js"
+    },
+    {
+      "Id": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\assets\\blog\\assets\\js\\thankyou.js",
+      "PackagePath": "staticwebassets\\assets\\blog\\assets\\js\\thankyou.js"
     },
     {
       "Id": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\css\\site.css",

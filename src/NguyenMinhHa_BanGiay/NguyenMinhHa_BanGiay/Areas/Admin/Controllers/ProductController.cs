@@ -195,7 +195,7 @@ namespace NguyenMinhHa_BanGiay.Areas.Admin.Controllers
         public async Task<IActionResult> CreateModal(ProductSizeModel productsize)
         {
             bool exists = await _dataContext.ProductSize
-                .AnyAsync(x => x.ProductId == productsize.ProductId && x.size == productsize.size);
+                .AnyAsync(x => x.ProductId == productsize.ProductId && x.Size == productsize.Size);
             if (exists)
             {
                 return Redirect(HttpContext.Request.Headers["Referer"]);
@@ -219,7 +219,7 @@ namespace NguyenMinhHa_BanGiay.Areas.Admin.Controllers
             bool exists = await _dataContext.ProductSize
                 .AnyAsync(x =>
                     x.ProductId == productsize.ProductId &&
-                    x.size == productsize.size &&
+                    x.Size == productsize.Size &&
                     x.Id != productsize.Id
                 );
 
@@ -229,7 +229,7 @@ namespace NguyenMinhHa_BanGiay.Areas.Admin.Controllers
             }
 
             var productSize = await _dataContext.ProductSize.FindAsync(productsize.Id);
-            productSize.size = productsize.size;
+            productSize.Size = productsize.Size;
             productSize.Quantity = productsize.Quantity;
             _dataContext.Update(productSize);
             await _dataContext.SaveChangesAsync();
