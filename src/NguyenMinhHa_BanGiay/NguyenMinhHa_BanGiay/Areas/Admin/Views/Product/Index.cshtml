@@ -15,10 +15,9 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th>Tên sản phẩm</th>
-                        <th>Thương hiệu</th>
-                        <th>Tồn kho</th>
-                        <th>Hỉnh ảnh</th>
+                        <th>Tên giày</th>
+                        <th>Loại</th>                        
+                        <th>Hỉnh</th>
                         <th>Trạng thái</th>
                         <th></th>
                     </tr>
@@ -28,8 +27,7 @@
                     {
                         <tr>
                             <td><i class="fab fa-angular fa-lg text-danger me-3"></i><a href="@Url.Action("Edit", "Product", new { id = product.Id })"><strong>@product.Name</strong></a></td>
-                            <td>@product.Category.Name</td>
-                            <td>@product.Quantity</td>
+                            <td>@product.Category.Name</td>                            
                             <td>
                                 @if (!string.IsNullOrEmpty(product.ImageUrl))
                                 {
@@ -42,7 +40,7 @@
                             </td>
                             <td><span class="badge bg-label-@(product.Status == 1 ? "success" : "danger") me-1">@(product.Status == 1 ? "Bật" : "Tắt")</span></td>
                             <td>
-                                <a class="btn btn-dark" href="@Url.Action("Edit", "Product", new { id = product.Id })"><i class="bx bx-pencil me-1"></i>Chi tiết</a>
+                                <a class="btn btn-dark" href="@Url.Action("Edit", "Product", new { id = product.Id })"><i class="bx bx-pencil me-1"></i>Xem</a>
                                 <a class="btn btn-danger" href="@Url.Action("Delete", "Product", new { id = product.Id })"><i class="bx bx-trash me-1"></i>Xóa </a>
                             </td>
                         </tr>

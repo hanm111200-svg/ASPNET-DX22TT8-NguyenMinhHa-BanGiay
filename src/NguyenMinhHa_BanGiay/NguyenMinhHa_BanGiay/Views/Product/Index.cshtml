@@ -177,8 +177,7 @@
                         else if ((DateTime.Now - product.Created_at).TotalDays <= 7)
                         {
                             <span class="card-badge new">New</span>
-                        }
-                        <button class="wish-btn">♡</button>
+                        }                        
                         @if (product.ImageUrl != null)
                         {
                             <img src="@Url.Content("~/upload/product/" + @product.ImageUrl)" alt="@product.Name" />
@@ -195,8 +194,7 @@
                             </div>
                         }
                         <div class="card-overlay">
-                            <button class="ov-btn" onclick="window.location='@detailUrl'">Xem ngay</button>
-                            <button class="ov-btn" style="padding:9px" onlick="window.location='@Url.Action("AddToCart", "Cart", new { Id = @product.Id,  Name = @product.Name, Price = @product.Price, imageUrl = @product.ImageUrl})'">+ Thêm vào giỏ hàng</button>
+                            <button class="ov-btn" onclick="window.location='@detailUrl'">Xem ngay</button>                            
                         </div>
                     </div>
                     <div class="card-info">
@@ -226,20 +224,5 @@
             }
         </div>
         <!-- end grid -->
-
-        @* <div class="pagination">
-            <button class="pg-btn prev-next">← Prev</button>
-            <button class="pg-btn active">01</button>
-            <button class="pg-btn">02</button>
-            <button class="pg-btn">03</button>
-            <span style="
-              color: var(--dim);
-              padding: 0 8px;
-              font-family: var(--mono);
-              font-size: 12px;
-            ">···</span>
-            <button class="pg-btn">08</button>
-            <button class="pg-btn prev-next">Next →</button>
-        </div> *@
     </div>
 </div>

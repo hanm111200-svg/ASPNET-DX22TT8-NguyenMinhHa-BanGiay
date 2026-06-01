@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using NguyenMinhHa_BanGiay.Extensions;
 using NguyenMinhHa_BanGiay.Models;
 using NguyenMinhHa_BanGiay.Repository;
@@ -18,40 +19,20 @@ namespace NguyenMinhHa_BanGiay.Controllers
             _dataContext = context;
             _momoService = momoService;
             _vnPayService = vnPayService;
-        }        
+        }
         [Route("Checkout")]
         public IActionResult Index()
         {
             var cart = HttpContext.Session.GetObjectFromJson<List<CartModel>>("cart");
-            Decimal subtotal = 0;
-            Decimal total = 0;
-            int countItem = 0;
-            if (cart != null)
-            {
-                //Tính tổng giá tiền giỏ hàng
-                foreach (var item in cart)
-                {
-                    var product = _dataContext.Products.Where(p => p.Id == item.Id).FirstOrDefault();
-                    if (product != null)
-                    {
-                        if (product.Quantity > 0 && product.Quantity >= item.Quantity)
-                        {
-                            subtotal += item.Price * item.Quantity;
-                            total += item.Price * item.Quantity;
-                            countItem++;
-                        }
-                        else
-                        {
-                            return RedirectToAction("Index", "Cart");
-                        }
-                    }
-                    else
-                    {
-                        HttpContext.Session.Remove("cart");
-                        return RedirectToAction("Index", "Cart");
-                    }
-                }
-            }
+
+            // Nếu giỏ hàng trống thì redirect về cart
+            if (cart == null || !cart.Any())
+                return RedirectToAction("Index", "Cart");
+
+            Decimal subtotal = cart.Sum(i => i.Price * i.Quantity);
+            Decimal total = subtotal;
+            int countItem = cart.Count;
+
             ViewData["SubTotal"] = subtotal.ToString("#,0");
             ViewData["Total"] = total.ToString("#,0");
             ViewData["CountItemCart"] = countItem;
@@ -61,9 +42,9 @@ namespace NguyenMinhHa_BanGiay.Controllers
         [HttpPost]
         [Route("Checkout")]
         public async Task<IActionResult> Index(string name, string address, string email, string phone, decimal subtotal, decimal discount, decimal total, string paymentmethod)
-        {            
+        {
             HttpContext.Session.SetDecimal("CustomerTotal", total);
-            HttpContext.Session.SetDecimal("CustomerSubTotal", subtotal);            
+            HttpContext.Session.SetDecimal("CustomerSubTotal", subtotal);
 
             var order = new OrderModel
             {
@@ -72,8 +53,8 @@ namespace NguyenMinhHa_BanGiay.Controllers
                 Address = address,
                 Email = email,
                 Phone = phone,
-                PaymentMethod = Convert.ToInt32(paymentmethod),                
-                Status = 1,                
+                PaymentMethod = Convert.ToInt32(paymentmethod),
+                Status = 1,
                 Total = total,
                 Created_at = DateTime.Now
             };
@@ -81,7 +62,7 @@ namespace NguyenMinhHa_BanGiay.Controllers
             _dataContext.Orders.Add(order);
             await _dataContext.SaveChangesAsync();
 
-            var cart = HttpContext.Session.GetObjectFromJson<List<CartItem>>("cart");
+            var cart = HttpContext.Session.GetObjectFromJson<List<CartModel>>("cart");
             if (cart == null || !cart.Any())
             {
                 throw new ArgumentException("Giỏ hàng không có sản phẩm!");
@@ -89,21 +70,31 @@ namespace NguyenMinhHa_BanGiay.Controllers
             else
             {
                 foreach (var item in cart)
-                {                    
-                    var product = await _dataContext.Products.FindAsync(item.Id);
-                    if (product != null)
+                {
+                    // Tìm đúng size của sản phẩm trong cart
+                    var productSize = await _dataContext.ProductSize
+                        .Where(ps => ps.ProductId == item.Id && ps.Size == item.Size)
+                        .FirstOrDefaultAsync();
+
+                    if (productSize != null)
                     {
-                        if (product.Quantity > 0 && product.Quantity >= item.Quantity)
+                        if (productSize.Quantity >= item.Quantity)
                         {
-                            product.Quantity = product.Quantity - item.Quantity;
-                            _dataContext.Products.Update(product);
+                            // Trừ tồn kho theo size
+                            productSize.Quantity -= item.Quantity;
+                            _dataContext.ProductSize.Update(productSize);
                             await _dataContext.SaveChangesAsync();
                         }
                         else
                         {
+                            // Không đủ hàng - xóa order vừa tạo và về cart
+                            _dataContext.Orders.Remove(order);
+                            await _dataContext.SaveChangesAsync();
+                            TempData["ErrorMessage"] = $"Sản phẩm '{item.Name}' size {item.Size} không đủ số lượng!";
                             return RedirectToAction("Index", "Cart");
                         }
                     }
+                    // Nếu không có size (sản phẩm không quản lý size) thì bỏ qua check
                 }
             }
 
@@ -117,16 +108,16 @@ namespace NguyenMinhHa_BanGiay.Controllers
 
             _dataContext.OrderDetails.AddRange(orderDetails);
             _dataContext.SaveChanges();
-            HttpContext.Session.Remove("cart");            
+            HttpContext.Session.Remove("cart");
             switch (paymentmethod)
             {
                 case "1": //Thanh toán tại cửa hàng    
-                    return RedirectToAction("Index", "Approve");                    
+                    return RedirectToAction("Index", "Approve");
                 case "2": //Momo
-                    var response = await _momoService.CreatePaymentAsync(order);                    
+                    var response = await _momoService.CreatePaymentAsync(order);
                     return Redirect(response.PayUrl);
                 case "3": //VNPay                                 
-                    var url = _vnPayService.CreatePaymentUrl(order, HttpContext);                    
+                    var url = _vnPayService.CreatePaymentUrl(order, HttpContext);
                     return Redirect(url);
                 default:
                     return View();

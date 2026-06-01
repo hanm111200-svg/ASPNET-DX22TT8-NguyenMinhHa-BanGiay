@@ -3666,8 +3666,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>8aq9v3zzof</Fingerprint>
-      <Integrity>sLf4OI1CJBCvrOUD4CaPtEyin/joTGdUWQhdBT8Epxo=</Integrity>
+      <Fingerprint>tl9xdwnxdr</Fingerprint>
+      <Integrity>H/T8rT7BYT/SGrimKCR73MY5Dmz4sjwusml2p5CDZKw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\blog\assets\css\thankyou.css'))</OriginalItemSpec>
@@ -3774,8 +3774,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>66bkfumcib</Fingerprint>
-      <Integrity>jnzyfuql4RFXoO9XiSrmJFvd4vNcj1D3rcXgJYwc53M=</Integrity>
+      <Fingerprint>zjj3qsy4xz</Fingerprint>
+      <Integrity>v+88qMR5c7Uhsg6kldtitsfZGadzTXYmcZUQDsESHXE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\blog\assets\js\thankyou.js'))</OriginalItemSpec>

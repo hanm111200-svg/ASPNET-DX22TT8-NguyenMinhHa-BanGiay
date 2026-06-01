@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "T2kobC2tmMI/FzybDZS6nbYQChCUtVGNOMy+uhIyGZ0=",
+  "Hash": "O361OG3Lzdc33O+1ZEybuUD3wSnLEP9P1C9kicvFExs=",
   "Source": "NguyenMinhHa_BanGiay",
   "BasePath": "_content/NguyenMinhHa_BanGiay",
   "Mode": "Default",
@@ -4336,8 +4336,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "8aq9v3zzof",
-      "Integrity": "sLf4OI1CJBCvrOUD4CaPtEyin/joTGdUWQhdBT8Epxo=",
+      "Fingerprint": "tl9xdwnxdr",
+      "Integrity": "H/T8rT7BYT/SGrimKCR73MY5Dmz4sjwusml2p5CDZKw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\blog\\assets\\css\\thankyou.css"
@@ -4462,8 +4462,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "66bkfumcib",
-      "Integrity": "jnzyfuql4RFXoO9XiSrmJFvd4vNcj1D3rcXgJYwc53M=",
+      "Fingerprint": "zjj3qsy4xz",
+      "Integrity": "v+88qMR5c7Uhsg6kldtitsfZGadzTXYmcZUQDsESHXE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\blog\\assets\\js\\thankyou.js"
@@ -22566,51 +22566,6 @@
       ]
     },
     {
-      "Route": "assets/blog/assets/css/thankyou.8aq9v3zzof.css",
-      "AssetFile": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\assets\\blog\\assets\\css\\thankyou.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1528"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"sLf4OI1CJBCvrOUD4CaPtEyin/joTGdUWQhdBT8Epxo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 18 May 2026 04:20:16 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "8aq9v3zzof"
-        },
-        {
-          "Name": "label",
-          "Value": "assets/blog/assets/css/thankyou.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-sLf4OI1CJBCvrOUD4CaPtEyin/joTGdUWQhdBT8Epxo="
-        }
-      ]
-    },
-    {
       "Route": "assets/blog/assets/css/thankyou.css",
       "AssetFile": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\assets\\blog\\assets\\css\\thankyou.css",
       "Selectors": [],
@@ -22621,7 +22576,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1528"
+          "Value": "24469"
         },
         {
           "Name": "Content-Type",
@@ -22629,11 +22584,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"sLf4OI1CJBCvrOUD4CaPtEyin/joTGdUWQhdBT8Epxo=\""
+          "Value": "\"H/T8rT7BYT/SGrimKCR73MY5Dmz4sjwusml2p5CDZKw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 May 2026 04:20:16 GMT"
+          "Value": "Mon, 01 Jun 2026 08:53:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22643,7 +22598,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-sLf4OI1CJBCvrOUD4CaPtEyin/joTGdUWQhdBT8Epxo="
+          "Value": "sha256-H/T8rT7BYT/SGrimKCR73MY5Dmz4sjwusml2p5CDZKw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/blog/assets/css/thankyou.tl9xdwnxdr.css",
+      "AssetFile": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\assets\\blog\\assets\\css\\thankyou.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24469"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H/T8rT7BYT/SGrimKCR73MY5Dmz4sjwusml2p5CDZKw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Jun 2026 08:53:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tl9xdwnxdr"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/blog/assets/css/thankyou.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-H/T8rT7BYT/SGrimKCR73MY5Dmz4sjwusml2p5CDZKw="
         }
       ]
     },
@@ -23058,51 +23058,6 @@
       ]
     },
     {
-      "Route": "assets/blog/assets/js/thankyou.66bkfumcib.js",
-      "AssetFile": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\assets\\blog\\assets\\js\\thankyou.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3223"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"jnzyfuql4RFXoO9XiSrmJFvd4vNcj1D3rcXgJYwc53M=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 31 May 2026 06:27:17 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "66bkfumcib"
-        },
-        {
-          "Name": "label",
-          "Value": "assets/blog/assets/js/thankyou.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-jnzyfuql4RFXoO9XiSrmJFvd4vNcj1D3rcXgJYwc53M="
-        }
-      ]
-    },
-    {
       "Route": "assets/blog/assets/js/thankyou.js",
       "AssetFile": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\assets\\blog\\assets\\js\\thankyou.js",
       "Selectors": [],
@@ -23113,7 +23068,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3223"
+          "Value": "3063"
         },
         {
           "Name": "Content-Type",
@@ -23121,11 +23076,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"jnzyfuql4RFXoO9XiSrmJFvd4vNcj1D3rcXgJYwc53M=\""
+          "Value": "\"v+88qMR5c7Uhsg6kldtitsfZGadzTXYmcZUQDsESHXE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 31 May 2026 06:27:17 GMT"
+          "Value": "Mon, 01 Jun 2026 08:53:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23135,7 +23090,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-jnzyfuql4RFXoO9XiSrmJFvd4vNcj1D3rcXgJYwc53M="
+          "Value": "sha256-v+88qMR5c7Uhsg6kldtitsfZGadzTXYmcZUQDsESHXE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/blog/assets/js/thankyou.zjj3qsy4xz.js",
+      "AssetFile": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\assets\\blog\\assets\\js\\thankyou.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3063"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v+88qMR5c7Uhsg6kldtitsfZGadzTXYmcZUQDsESHXE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Jun 2026 08:53:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zjj3qsy4xz"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/blog/assets/js/thankyou.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-v+88qMR5c7Uhsg6kldtitsfZGadzTXYmcZUQDsESHXE="
         }
       ]
     },

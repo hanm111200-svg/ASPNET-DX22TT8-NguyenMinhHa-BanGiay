@@ -10,6 +10,12 @@ namespace NguyenMinhHa_BanGiay.Areas.Admin.Controllers
     {
         public IActionResult Index()
         {
+            var name = HttpContext.Session.GetString("Username");
+
+            if (string.IsNullOrEmpty(name))
+            {
+                return RedirectToAction("Index", "Login");
+            }
             return View();
         }
     }

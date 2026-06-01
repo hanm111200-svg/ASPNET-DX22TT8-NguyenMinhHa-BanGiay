@@ -15,21 +15,7 @@
                 <line x1="3" y1="6" x2="21" y2="6" />
                 <path d="M16 10a4 4 0 0 1-8 0" />
             </svg>
-            Giỏ · 2
+            Giỏ Hàng
         </a>
     </div>
 </header>
-
-<script>
-	function searchProduct() {
-		var params = new window.URLSearchParams(window.location.search);
-		var search = $('#search').val();		
-		var category = params.get('category');
-		
-		if (category === 'null' || category === null) {
-			category = "";
-		}
-
-		window.location.href = '/Product?category=' + category + '&search=' + search;
-	}
-</script>

@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A9B337-49FD-4948-809A-B65D114AC359}|NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay.csproj|d:\\12 - asp.net\\aspnet 2026\\aspnet-dx22tt8-nguyenminhha-bangiay\\src\\nguyenminhha_bangiay\\nguyenminhha_bangiay\\views\\product\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2A9B337-49FD-4948-809A-B65D114AC359}|NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay.csproj|solutionrelative:nguyenminhha_bangiay\\views\\product\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A9B337-49FD-4948-809A-B65D114AC359}|NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay.csproj|d:\\12 - asp.net\\aspnet 2026\\aspnet-dx22tt8-nguyenminhha-bangiay\\src\\nguyenminhha_bangiay\\nguyenminhha_bangiay\\areas\\admin\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2A9B337-49FD-4948-809A-B65D114AC359}|NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay.csproj|solutionrelative:nguyenminhha_bangiay\\areas\\admin\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,37 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
-              "RelativeDocumentMoniker": "NguyenMinhHa_BanGiay\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
-              "ToolTip": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
-              "RelativeToolTip": "NguyenMinhHa_BanGiay\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-01T06:15:09.495Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Detail.cshtml",
-              "DocumentMoniker": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\Views\\Product\\Detail.cshtml",
-              "RelativeDocumentMoniker": "NguyenMinhHa_BanGiay\\Views\\Product\\Detail.cshtml",
-              "ToolTip": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\Views\\Product\\Detail.cshtml",
-              "RelativeToolTip": "NguyenMinhHa_BanGiay\\Views\\Product\\Detail.cshtml",
-              "ViewState": "AgIAAAMBAAAAAAAAAAAywCQBAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-01T06:14:29.579Z",
-              "EditorCaption": ""
             }
           ]
         }

@@ -1,47 +1,73 @@
 ﻿@{
     ViewData["Title"] = "Approve";
 }
+<canvas id="particle-canvas"></canvas>
 
-<div class="breadcrumbs">
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<p class="bread"><span><a href="/">Trang chủ</a></span> / <span>Cảm ơn</span></p>
-			</div>
-		</div>
-	</div>
+<div class="ticker">
+    <div class="ticker-track">
+        <div class="ticker-item">
+            ORDER CONFIRMED <span class="ticker-sep">★</span> THANK YOU FOR
+            SHOPPING WITH US <span class="ticker-sep">★</span> AUTH VERIFIED
+            <span class="ticker-sep">★</span> TRACKING EMAIL SENT
+            <span class="ticker-sep">★</span>
+        </div>
+        <div class="ticker-item">
+            ORDER CONFIRMED <span class="ticker-sep">★</span> THANK YOU FOR
+            SHOPPING WITH US <span class="ticker-sep">★</span> AUTH VERIFIED
+            <span class="ticker-sep">★</span> TRACKING EMAIL SENT
+            <span class="ticker-sep">★</span>
+        </div>
+    </div>
 </div>
 
+<div class="success-hero" style="display: flex; justify-content: center; align-items: center; min-height: 60vh; padding: 40px 20px; text-align: center;">
 
-<div class="colorlib-product">
-	<div class="container">
-		<div class="row row-pb-lg">
-			<div class="col-sm-10 offset-md-1">
-				<div class="process-wrap">
-					<div class="process text-center">
-						<p><span style="background-color: #88c8bc; border-radius: 50%; color: white">01</span></p>
-						<h3>Giỏ hàng</h3>
-					</div>
-					<div class="process text-center">
-						<p><span style="background-color: #88c8bc; border-radius: 50%; color: white">02</span></p>
-						<h3>Thanh toán</h3>
-					</div>
-					<div class="process text-center">
-						<p><span style="background-color: #88c8bc; border-radius: 50%; color: white">03</span></p>
-						<h3>Cảm ơn</h3>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-10 offset-sm-1 text-center">
-				<p class="icon-addcart"><span><i class="icon-check"></i></span></p>
-				<h2 class="mb-4">Cảm ơn bạn đã tin tưởng và mua hàng.</h2>
-				<p>
-					<a href="/" class="btn btn-primary btn-outline-primary">Trở về rang chủ</a>
-					<a href="/Product" class="btn btn-primary btn-outline-primary"><i class="icon-shopping-cart"></i> Tiếp tục mua sắm</a>
-				</p>
-			</div>
-		</div>
-	</div>
+    <div class="hero-left" style="display: flex; flex-direction: column; align-items: center; justify-content: center; max-width: 650px; margin: 0 auto;">
+
+        <div class="check-wrap" style="display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+            <svg width="48"
+                 height="48"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="1.5"
+                 viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+            </svg>
+        </div>
+
+        <div class="hero-eyebrow" style="text-transform: uppercase; letter-spacing: 0.2em; font-size: 13px; margin-bottom: 12px; color: var(--muted);">
+            // Order confirmed
+        </div>
+
+        <h1 class="hero-title" style="font-size: clamp(48px, 8vw, 80px); line-height: 0.9; margin-bottom: 24px; text-align: center;">
+            YOU <span class="out" style="-webkit-text-stroke: 1px var(--text); color: transparent;">GOT</span> <span class="acc" style="color: var(--accent);">THEM!</span>
+        </h1>
+
+        <p class="hero-sub" style="font-size: 15px; color: var(--text); line-height: 1.6; max-width: 500px; margin: 0 auto; opacity: 0.85;">
+            Cú cop chuẩn chỉnh! Đơn hàng của bạn đã được xác nhận và đang được đóng gói. Email xác nhận đã gửi đến hộp thư của bạn.
+        </p>
+
+        <div style="margin-top: 36px;">
+            <a href="@Url.Action("Index", "Home")" style="display: inline-block; padding: 14px 32px; background: var(--text); color: var(--bg); font-family: var(--mono); font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.1em; border-radius: 4px; transition: all 0.2s;">
+                ← Tiếp Tục Mua Sắm
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="result-marquee">
+    <div class="rm-track">
+        <div class="rm-item">
+            ORDER CONFIRMED <span class="acc">✦</span> YOU GOT THEM
+            <span class="acc">✦</span> SOLE DISTRICT
+            <span class="acc">✦</span> STAY FRESH <span class="acc">✦</span> AUTH
+            ONLY <span class="acc">✦</span>
+        </div>
+        <div class="rm-item">
+            ORDER CONFIRMED <span class="acc">✦</span> YOU GOT THEM
+            <span class="acc">✦</span> SOLE DISTRICT
+            <span class="acc">✦</span> STAY FRESH <span class="acc">✦</span> AUTH
+            ONLY <span class="acc">✦</span>
+        </div>
+    </div>
 </div>
