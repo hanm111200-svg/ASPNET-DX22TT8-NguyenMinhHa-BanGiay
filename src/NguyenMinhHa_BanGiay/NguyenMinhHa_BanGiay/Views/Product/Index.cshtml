@@ -1,6 +1,11 @@
-﻿@model IEnumerable<ProductModel>
+﻿@model IEnumerable<NguyenMinhHa_BanGiay.Models.ProductModel>
 @{
-	ViewData["Title"] = "Product";
+    ViewData["Title"] = "Product";
+    var categories = ViewBag.Categories as IEnumerable<dynamic>;
+    var products = ViewBag.products as IEnumerable<dynamic>;
+    string currentCategory = ViewBag.CurrentCategory ?? "";
+    string currentSearch = ViewBag.CurrentSearch ?? "";
+    string currentSort = ViewBag.CurrentSort ?? "";
 }
 <div class="ticker">
     <div class="ticker-track">
@@ -22,20 +27,23 @@
 <div class="page-top">
     <div>
         <div class="breadcrumb">
-            <a href="sole-index.html">Home</a><span class="sep">/</span><span style="color: var(--text)">Sneakers</span>
+            <a href="@Url.Action("Index", "Home")">Home</a><span class="sep">/</span><span style="color: var(--text)">Sneakers</span>
         </div>
         <h1 class="page-title">
             ALL<br /><span class="outline">SNEAKERS</span>
         </h1>
-        <p class="page-count">// 48 sản phẩm tìm thấy</p>
+        <p class="page-count">// @Model.Count() sản phẩm tìm thấy</p>
     </div>
     <div style="display: flex; gap: 12px; align-items: center">
-        <button class="clear-all" onclick="clearAll()">Xóa bộ lọc</button>
-        <select class="sort-sel">
-            <option>Mới nhất</option>
-            <option>Bán chạy</option>
-            <option>Giá tăng dần</option>
-            <option>Giá giảm dần</option>
+        <button class="clear-all" onclick="window.location='@Url.Action("Index", "Product")'">Xóa bộ lọc</button>
+        @{
+            var baseUrl = Url.Action("Index", "Product");
+            var sortUrl = $"{baseUrl}?category={currentCategory}&search={currentSearch}&sort=";
+            string SelIf(string val) => currentSort == val ? "selected" : "";
+        }
+        <select class="sort-sel" onchange="window.location='@sortUrl'+this.value">            
+            @Html.Raw($"<option value='price_asc' {SelIf("price_asc")}>Giá tăng dần</option>")
+            @Html.Raw($"<option value='price_desc' {SelIf("price_desc")}>Giá giảm dần</option>")
         </select>
         <div class="view-toggle">
             <button class="vbtn active" id="grid-btn" onclick="setView('grid')">
@@ -78,28 +86,17 @@
             letter-spacing: 0.1em;
             text-transform: uppercase;
           ">Quick Filter:</span>
-        <button class="filter-chip active"
-                onclick="this.classList.toggle('active')">
-            Tất cả
-        </button>
-        <button class="filter-chip" onclick="this.classList.toggle('active')">
-            Nike
-        </button>
-        <button class="filter-chip" onclick="this.classList.toggle('active')">
-            Jordan
-        </button>
-        <button class="filter-chip" onclick="this.classList.toggle('active')">
-            Adidas
-        </button>
-        <button class="filter-chip" onclick="this.classList.toggle('active')">
-            New Balance
-        </button>
-        <button class="filter-chip" onclick="this.classList.toggle('active')">
-            Sale 🔥
-        </button>
-        <button class="filter-chip" onclick="this.classList.toggle('active')">
-            Limited
-        </button>
+        @if (categories != null)
+        {
+            foreach (var cat in categories)
+            {
+                string isActive = (currentCategory == (string)cat.Slug) ? "active" : "";
+                string chipUrl = (currentCategory == (string)cat.Slug)
+                ? Url.Action("Index", "Product", new { search = currentSearch, sort = currentSort })
+                : Url.Action("Index", "Product", new { category = cat.Slug, search = currentSearch, sort = currentSort });
+                <a href="@chipUrl" class="filter-chip @isActive">@cat.Name</a>
+            }
+        }
     </div>
 </div>
 
@@ -109,112 +106,30 @@
         <div class="sb-section">
             <div class="sb-title">
                 Thương hiệu
-                <button class="clear-all" onclick="clearAll()">Xóa</button>
+                <button class="clear-all" onclick="window.location='@Url.Action("Index", "Product")'">Xóa</button>
             </div>
             <div class="brand-list">
-                <button class="brand-btn active">
-                    Nike <span class="sb-count">86</span>
-                </button>
-                <button class="brand-btn active">
-                    Jordan <span class="sb-count">24</span>
-                </button>
-                <button class="brand-btn">
-                    Adidas <span class="sb-count">62</span>
-                </button>
-                <button class="brand-btn">
-                    New Balance <span class="sb-count">38</span>
-                </button>
-                <button class="brand-btn">
-                    Converse <span class="sb-count">19</span>
-                </button>
-                <button class="brand-btn">
-                    Vans <span class="sb-count">27</span>
-                </button>
-                <button class="brand-btn">
-                    Puma <span class="sb-count">14</span>
-                </button>
-                <button class="brand-btn">
-                    Reebok <span class="sb-count">11</span>
-                </button>
-            </div>
-        </div>
-        <div class="sb-section">
-            <div class="sb-title">Khoảng giá</div>
-            <div class="price-inputs">
-                <input class="price-inp" value="500.000₫" />
-                <span class="price-sep">—</span>
-                <input class="price-inp" value="10.000.000₫" />
-            </div>
-            <button class="apply-btn">Apply</button>
-        </div>
-        <div class="sb-section">
-            <div class="sb-title">Kích cỡ</div>
-            <div class="size-btns">
-                <button class="sz-btn">
-                    36
-                </button><button class="sz-btn active">37</button>
-                <button class="sz-btn active">
-                    38
-                </button><button class="sz-btn">39</button>
-                <button class="sz-btn active">
-                    40
-                </button><button class="sz-btn">41</button>
-                <button class="sz-btn">42</button><button class="sz-btn">43</button>
-                <button class="sz-btn">44</button><button class="sz-btn">45</button>
-                <button class="sz-btn">46</button>
-            </div>
-        </div>
-        <div class="sb-section">
-            <div class="sb-title">Màu sắc</div>
-            <div class="color-swatches">
-                <div class="c-swatch active"
-                     style="background: #111110"
-                     title="Đen"></div>
-                <div class="c-swatch"
-                     style="background: #fff; border: 1px solid #333"
-                     title="Trắng"></div>
-                <div class="c-swatch" style="background: #c0392b" title="Đỏ"></div>
-                <div class="c-swatch"
-                     style="background: #1a5276"
-                     title="Xanh dương"></div>
-                <div class="c-swatch"
-                     style="background: #1e8449"
-                     title="Xanh lá"></div>
-                <div class="c-swatch" style="background: #d35400" title="Cam"></div>
-                <div class="c-swatch" style="background: #6c3483" title="Tím"></div>
-                <div class="c-swatch"
-                     style="background: var(--accent)"
-                     title="Vàng"></div>
-            </div>
-        </div>
-        <div class="sb-section">
-            <div class="sb-title">Danh mục</div>
-            <div class="sb-opt">
-                <label><input type="checkbox" checked /> Running</label><span class="sb-count">124</span>
-            </div>
-            <div class="sb-opt">
-                <label><input type="checkbox" checked /> Lifestyle</label><span class="sb-count">89</span>
-            </div>
-            <div class="sb-opt">
-                <label><input type="checkbox" /> Basketball</label><span class="sb-count">56</span>
-            </div>
-            <div class="sb-opt">
-                <label><input type="checkbox" /> Skate</label><span class="sb-count">43</span>
-            </div>
-            <div class="sb-opt">
-                <label><input type="checkbox" /> Collab</label><span class="sb-count">28</span>
-            </div>
-        </div>
-        <div class="sb-section">
-            <div class="sb-title">Tình trạng</div>
-            <div class="sb-opt">
-                <label><input type="checkbox" checked /> Còn hàng</label>
-            </div>
-            <div class="sb-opt">
-                <label><input type="checkbox" /> Pre-order</label>
-            </div>
-            <div class="sb-opt">
-                <label><input type="checkbox" /> Hết hàng</label>
+                @if (categories != null)
+                {
+                    string isAct = (currentCategory == "") ? "active" : "";
+                    <a href="/product" class="brand-btn @isAct">
+                        Tất cả <span class="sb-count">@products.Count()</span>
+                    </a>
+                    foreach (var cat in categories)
+                    {
+                        string isActive = (currentCategory == (string)cat.Slug) ? "active" : "";
+                        string catUrl = (currentCategory == (string)cat.Slug)
+                        ? Url.Action("Index", "Product", new { search = currentSearch, sort = currentSort })
+                        : Url.Action("Index", "Product", new { category = cat.Slug, search = currentSearch, sort = currentSort });
+                        <a href="@catUrl" class="brand-btn @isActive">
+                            @cat.Name <span class="sb-count">@cat.Count</span>
+                        </a>
+                    }
+                }
+                else
+                {
+                    <p style="color:var(--muted);font-size:12px;">Chưa có danh mục.</p>
+                }
             </div>
         </div>
     </aside>
@@ -222,237 +137,97 @@
     <!-- PRODUCTS -->
     <div class="products-area">
         <div class="active-tags">
-            <span style="
-              font-family: var(--mono);
-              font-size: 10px;
-              color: var(--muted);
-              text-transform: uppercase;
-              letter-spacing: 0.1em;
-            ">Đang lọc:</span>
-            <span class="a-tag">Nike <button onclick="this.parentElement.remove()">×</button></span>
-            <span class="a-tag">
-                Jordan
-                <button onclick="this.parentElement.remove()">×</button>
-            </span>
-            <span class="a-tag">
-                Size 37, 38, 40
-                <button onclick="this.parentElement.remove()">×</button>
-            </span>
+            @if (!string.IsNullOrEmpty(currentCategory) || !string.IsNullOrEmpty(currentSearch))
+            {
+                <span style="font-family:var(--mono);font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;">Đang lọc:</span>
+                if (!string.IsNullOrEmpty(currentCategory))
+                {
+                    string clearCatUrl = Url.Action("Index", "Product", new { search = currentSearch, sort = currentSort });
+                    <span class="a-tag">@currentCategory <a href="@clearCatUrl">×</a></span>
+                }
+                if (!string.IsNullOrEmpty(currentSearch))
+                {
+                    string clearSearchUrl = Url.Action("Index", "Product", new { category = currentCategory, sort = currentSort });
+                    <span class="a-tag">Tìm: "@currentSearch" <a href="@clearSearchUrl">×</a></span>
+                }
+            }
         </div>
 
         <div class="product-grid" id="pgrid">
-            <!-- 6 Product Cards -->
-            <div class="product-card">
-                <div class="card-img">
-                    <span class="card-badge rare">Rare</span><button class="wish-btn">♡</button>
-                    <div class="shoe-thumb c-black"
-                         style="width: 130px; height: 70px">
-                        <div class="s-upper" style="height: 54px"></div>
-                        <div class="s-sole"></div>
-                        <div class="s-laces">
-                            <div class="s-lace" style="width: 52px"></div>
-                            <div class="s-lace" style="width: 44px"></div>
+            @{
+                var colorClasses = new[] { "c-black", "c-white", "c-blue", "c-red", "c-green", "c-purple", "c-orange", "c-grey" };
+                int idx = 0;
+            }
+            @if (!Model.Any())
+            {
+                <div style="grid-column: 1/-1; padding: 60px; text-align:center; color: var(--muted); font-family: var(--mono);">
+                    // Không tìm thấy sản phẩm nào.
+                </div>
+            }
+            @foreach (var product in Model)
+            {
+                string colorClass = colorClasses[idx % colorClasses.Length];
+                string detailUrl = Url.Action("Detail", "Product", new { Id = product.Id });
+                <div class="product-card">
+                    <div class="card-img">
+                        @if (product.Status == 2)
+                        {
+                            <span class="card-badge sale">Sale</span>
+                        }
+                        else if ((DateTime.Now - product.Created_at).TotalDays <= 7)
+                        {
+                            <span class="card-badge new">New</span>
+                        }
+                        <button class="wish-btn">♡</button>
+                        @if (product.ImageUrl != null)
+                        {
+                            <img src="@Url.Content("~/upload/product/" + @product.ImageUrl)" alt="@product.Name" />
+                        }
+                        else
+                        {
+                            <div class="shoe-thumb @colorClass" style="width:130px;height:70px">
+                                <div class="s-upper" style="height:54px"></div>
+                                <div class="s-sole"></div>
+                                <div class="s-laces">
+                                    <div class="s-lace" style="width:52px"></div>
+                                    <div class="s-lace" style="width:44px"></div>
+                                </div>
+                            </div>
+                        }
+                        <div class="card-overlay">
+                            <button class="ov-btn" onclick="window.location='@detailUrl'">Xem ngay</button>
+                            <button class="ov-btn" style="padding:9px" onlick="window.location='@Url.Action("AddToCart", "Cart", new { Id = @product.Id,  Name = @product.Name, Price = @product.Price, imageUrl = @product.ImageUrl})'">+ Thêm vào giỏ hàng</button>
                         </div>
                     </div>
-                    <div class="card-overlay">
-                        <button class="ov-btn"
-                                onclick="window.location = 'sole-product-detail.html'">
-                            Xem ngay
-                        </button><button class="ov-btn" style="padding: 9px">+</button>
-                    </div>
-                </div>
-                <div class="card-info">
-                    <div class="card-brand">Nike</div>
-                    <div class="card-name">
-                        <a href="sole-product-detail.html">Air Jordan 1 Retro High OG</a>
-                    </div>
-                    <div class="card-meta">Black / Yellow · 6 màu</div>
-                    <div class="card-desc">
-                        Phiên bản giới hạn của huyền thoại AJ1. Auth verified 100%.
-                    </div>
-                    <div class="card-footer">
-                        <div><span class="card-price">5.200.000₫</span></div>
-                        <div class="card-sizes">
-                            <span class="sz">40</span><span class="sz">41</span><span class="sz">42</span>
+                    <div class="card-info">
+                        <div class="card-brand">@(product.Category?.Name ?? "")</div>
+                        <div class="card-name">
+                            <a href="@detailUrl">@product.Name</a>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="card-img">
-                    <span class="card-badge new">New</span><button class="wish-btn liked">♥</button>
-                    <div class="shoe-thumb c-white"
-                         style="width: 130px; height: 70px">
-                        <div class="s-upper" style="height: 54px"></div>
-                        <div class="s-sole"></div>
-                        <div class="s-laces">
-                            <div class="s-lace" style="width: 52px"></div>
-                            <div class="s-lace" style="width: 44px"></div>
-                        </div>
-                    </div>
-                    <div class="card-overlay">
-                        <button class="ov-btn"
-                                onclick="window.location = 'sole-product-detail.html'">
-                            Xem ngay
-                        </button><button class="ov-btn" style="padding: 9px">+</button>
-                    </div>
-                </div>
-                <div class="card-info">
-                    <div class="card-brand">Adidas</div>
-                    <div class="card-name">
-                        <a href="sole-product-detail.html">Stan Smith Lux</a>
-                    </div>
-                    <div class="card-meta">Cloud White · 3 màu</div>
-                    <div class="card-desc">
-                        Classic Stan Smith phiên bản Lux cao cấp, chất liệu da thật.
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-price">2.890.000₫</span>
-                        <div class="card-sizes">
-                            <span class="sz">39</span><span class="sz">40</span><span class="sz">41</span>
+                        @if (!string.IsNullOrEmpty(product.Description))
+                        {
+                            <div class="card-desc">@product.Description</div>
+                        }
+                        <div class="card-footer">
+                            <span class="card-price">@product.Price.ToString("N0")₫</span>
+                            @if (product.ProductSizes != null && product.ProductSizes.Any())
+                            {
+                                <div class="card-sizes">
+                                    @foreach (var size in product.ProductSizes.Take(4))
+                                    {
+                                        <span class="sz">@size.size</span>
+                                    }
+                                </div>
+                            }
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="product-card">
-                <div class="card-img">
-                    <span class="card-badge sale">-25%</span><button class="wish-btn">♡</button>
-                    <div class="shoe-thumb c-blue" style="width: 130px; height: 70px">
-                        <div class="s-upper" style="height: 54px"></div>
-                        <div class="s-sole"></div>
-                        <div class="s-laces">
-                            <div class="s-lace" style="width: 52px"></div>
-                            <div class="s-lace" style="width: 44px"></div>
-                        </div>
-                    </div>
-                    <div class="card-overlay">
-                        <button class="ov-btn"
-                                onclick="window.location = 'sole-product-detail.html'">
-                            Xem ngay
-                        </button><button class="ov-btn" style="padding: 9px">+</button>
-                    </div>
-                </div>
-                <div class="card-info">
-                    <div class="card-brand">New Balance</div>
-                    <div class="card-name">
-                        <a href="sole-product-detail.html">990v6 Made in USA</a>
-                    </div>
-                    <div class="card-meta">Navy / Grey · 2 màu</div>
-                    <div class="card-desc">
-                        Made in USA — tiêu chuẩn chất lượng hàng đầu New Balance.
-                    </div>
-                    <div class="card-footer">
-                        <div>
-                            <span class="card-price">3.750.000₫</span><span class="card-price-was">5.000.000₫</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="card-img">
-                    <span class="card-badge hot">🔥</span><button class="wish-btn">♡</button>
-                    <div class="shoe-thumb c-red" style="width: 130px; height: 70px">
-                        <div class="s-upper" style="height: 54px"></div>
-                        <div class="s-sole"></div>
-                        <div class="s-laces">
-                            <div class="s-lace" style="width: 52px"></div>
-                            <div class="s-lace" style="width: 44px"></div>
-                        </div>
-                    </div>
-                    <div class="card-overlay">
-                        <button class="ov-btn"
-                                onclick="window.location = 'sole-product-detail.html'">
-                            Xem ngay
-                        </button><button class="ov-btn" style="padding: 9px">+</button>
-                    </div>
-                </div>
-                <div class="card-info">
-                    <div class="card-brand">Jordan</div>
-                    <div class="card-name">
-                        <a href="sole-product-detail.html">Jordan 4 Retro Red Cement</a>
-                    </div>
-                    <div class="card-meta">Fire Red / Cement · 1 màu</div>
-                    <div class="card-desc">
-                        Iconic Jordan 4 với phối màu đỏ xi măng huyền thoại.
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-price">6.800.000₫</span>
-                        <div class="card-sizes">
-                            <span class="sz">42</span><span class="sz">43</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="card-img">
-                    <button class="wish-btn">♡</button>
-                    <div class="shoe-thumb c-green"
-                         style="width: 130px; height: 70px">
-                        <div class="s-upper" style="height: 54px"></div>
-                        <div class="s-sole"></div>
-                        <div class="s-laces">
-                            <div class="s-lace" style="width: 52px"></div>
-                            <div class="s-lace" style="width: 44px"></div>
-                        </div>
-                    </div>
-                    <div class="card-overlay">
-                        <button class="ov-btn"
-                                onclick="window.location = 'sole-product-detail.html'">
-                            Xem ngay
-                        </button><button class="ov-btn" style="padding: 9px">+</button>
-                    </div>
-                </div>
-                <div class="card-info">
-                    <div class="card-brand">Vans</div>
-                    <div class="card-name">
-                        <a href="sole-product-detail.html">Old Skool Pro Skate</a>
-                    </div>
-                    <div class="card-meta">Forest Green · 4 màu</div>
-                    <div class="card-desc">
-                        Huyền thoại skateboarding. Đế waffle signature bám đường tốt.
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-price">1.650.000₫</span>
-                    </div>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="card-img">
-                    <span class="card-badge new">New</span><button class="wish-btn">♡</button>
-                    <div class="shoe-thumb c-orange"
-                         style="width: 130px; height: 70px">
-                        <div class="s-upper" style="height: 54px"></div>
-                        <div class="s-sole"></div>
-                        <div class="s-laces">
-                            <div class="s-lace" style="width: 52px"></div>
-                            <div class="s-lace" style="width: 44px"></div>
-                        </div>
-                    </div>
-                    <div class="card-overlay">
-                        <button class="ov-btn"
-                                onclick="window.location = 'sole-product-detail.html'">
-                            Xem ngay
-                        </button><button class="ov-btn" style="padding: 9px">+</button>
-                    </div>
-                </div>
-                <div class="card-info">
-                    <div class="card-brand">Nike</div>
-                    <div class="card-name">
-                        <a href="sole-product-detail.html">Dunk Low Retro Orange</a>
-                    </div>
-                    <div class="card-meta">Safety Orange · 2 màu</div>
-                    <div class="card-desc">
-                        Nike Dunk Low phối màu cam nổi bật, hot nhất mùa hè 2025.
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-price">3.200.000₫</span>
-                    </div>
-                </div>
-            </div>
+                idx++;
+            }
         </div>
         <!-- end grid -->
 
-        <div class="pagination">
+        @* <div class="pagination">
             <button class="pg-btn prev-next">← Prev</button>
             <button class="pg-btn active">01</button>
             <button class="pg-btn">02</button>
@@ -465,6 +240,6 @@
             ">···</span>
             <button class="pg-btn">08</button>
             <button class="pg-btn prev-next">Next →</button>
-        </div>
+        </div> *@
     </div>
 </div>

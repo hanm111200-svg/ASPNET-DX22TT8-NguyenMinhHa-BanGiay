@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "15yfYtIQpiOhIY1VCetZ6AdAx1jlsJux4LJ1sg38fRo=",
+  "Hash": "d42lXgK6rtv6xAjOzIG25BpHz0LExjgRTTnG3VySefI=",
   "Source": "NguyenMinhHa_BanGiay",
   "BasePath": "_content/NguyenMinhHa_BanGiay",
   "Mode": "Default",
@@ -4294,8 +4294,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "slojz58ktt",
-      "Integrity": "sEVl3XlYmxW5bv4l4DN/G0ldTMhIOjochbR3kPVMshg=",
+      "Fingerprint": "2q740f8bmd",
+      "Integrity": "5iN+A/Q8A5OxkoWKFV/qquiZdK6d/OeiaXjst3F8LXA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\blog\\assets\\css\\index.css"
@@ -5685,6 +5685,195 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\upload\\product\\08ac21a1-ea67-40ae-8009-749bac1645c9_Giay-Air-Force-1-07-Low-White-Wolf-Grey-Sole-4-900x900.jpg",
+      "SourceId": "NguyenMinhHa_BanGiay",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\",
+      "BasePath": "_content/NguyenMinhHa_BanGiay",
+      "RelativePath": "upload/product/08ac21a1-ea67-40ae-8009-749bac1645c9_Giay-Air-Force-1-07-Low-White-Wolf-Grey-Sole-4-900x900#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "p1s5gut7ld",
+      "Integrity": "wwoxjVAnaWLkihZF9rYQUAEwZB91S04gJ40+i7VppLM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\upload\\product\\08ac21a1-ea67-40ae-8009-749bac1645c9_Giay-Air-Force-1-07-Low-White-Wolf-Grey-Sole-4-900x900.jpg"
+    },
+    {
+      "Identity": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\upload\\product\\1e01ea68-47cc-4085-9a07-6a188653e48c_Giay-Jordan-1-High-OG-Hyper-Royal-Xanh-Nhat-3-900x900.jpg",
+      "SourceId": "NguyenMinhHa_BanGiay",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\",
+      "BasePath": "_content/NguyenMinhHa_BanGiay",
+      "RelativePath": "upload/product/1e01ea68-47cc-4085-9a07-6a188653e48c_Giay-Jordan-1-High-OG-Hyper-Royal-Xanh-Nhat-3-900x900#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "frtrk0v44d",
+      "Integrity": "lax3hMrOwCjByHDEyTNsmXpfICk56qef7RfEAWzQ/Js=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\upload\\product\\1e01ea68-47cc-4085-9a07-6a188653e48c_Giay-Jordan-1-High-OG-Hyper-Royal-Xanh-Nhat-3-900x900.jpg"
+    },
+    {
+      "Identity": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\upload\\product\\222f0dd4-e5a2-4e3e-859c-3f8553345a07_Giay-Jordan-1-High-OG-Skyline-White-Multicolor-Canvas-1.jpg",
+      "SourceId": "NguyenMinhHa_BanGiay",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\",
+      "BasePath": "_content/NguyenMinhHa_BanGiay",
+      "RelativePath": "upload/product/222f0dd4-e5a2-4e3e-859c-3f8553345a07_Giay-Jordan-1-High-OG-Skyline-White-Multicolor-Canvas-1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "c8g5lhu2vy",
+      "Integrity": "bFr6yRFh1PgKfego6eG8blfoDpD7QUx5mA0UQvqn+bs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\upload\\product\\222f0dd4-e5a2-4e3e-859c-3f8553345a07_Giay-Jordan-1-High-OG-Skyline-White-Multicolor-Canvas-1.jpg"
+    },
+    {
+      "Identity": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\upload\\product\\62f31860-a5a9-4c91-90a7-a636f13c5fa5_Giay-Air-Jordan-1-Low-Bred-Toe-Do-Den-Rep-11-1.jpg",
+      "SourceId": "NguyenMinhHa_BanGiay",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\",
+      "BasePath": "_content/NguyenMinhHa_BanGiay",
+      "RelativePath": "upload/product/62f31860-a5a9-4c91-90a7-a636f13c5fa5_Giay-Air-Jordan-1-Low-Bred-Toe-Do-Den-Rep-11-1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rdkrje2pzu",
+      "Integrity": "7+qMR2CHisZXmtLXmrnZMPChi0k3glCMs7nGjnZDCWY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\upload\\product\\62f31860-a5a9-4c91-90a7-a636f13c5fa5_Giay-Air-Jordan-1-Low-Bred-Toe-Do-Den-Rep-11-1.jpg"
+    },
+    {
+      "Identity": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\upload\\product\\63478f03-ba44-471d-a217-a358724d76e3_giay-Nike-Air-Force-1-Gucci-Rep-11-2-900x900.jpg",
+      "SourceId": "NguyenMinhHa_BanGiay",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\",
+      "BasePath": "_content/NguyenMinhHa_BanGiay",
+      "RelativePath": "upload/product/63478f03-ba44-471d-a217-a358724d76e3_giay-Nike-Air-Force-1-Gucci-Rep-11-2-900x900#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "n8qceurl3c",
+      "Integrity": "KfpLmD/VlZPcmhE9kHCj5JkGF01kM+58M92CeWc0Rus=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\upload\\product\\63478f03-ba44-471d-a217-a358724d76e3_giay-Nike-Air-Force-1-Gucci-Rep-11-2-900x900.jpg"
+    },
+    {
+      "Identity": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\upload\\product\\8c8fcc7c-2b64-4ed9-a210-a28a680f17ad_Giay-Nike-Air-Max-1-86-OG-Big-Bubble-Sport-Red-trang-do-1.jpg",
+      "SourceId": "NguyenMinhHa_BanGiay",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\",
+      "BasePath": "_content/NguyenMinhHa_BanGiay",
+      "RelativePath": "upload/product/8c8fcc7c-2b64-4ed9-a210-a28a680f17ad_Giay-Nike-Air-Max-1-86-OG-Big-Bubble-Sport-Red-trang-do-1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "k57o99u6er",
+      "Integrity": "OAcbOLV5EDhzHu3aTzvewjLqMWYkH5soO06rGjVyDLI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\upload\\product\\8c8fcc7c-2b64-4ed9-a210-a28a680f17ad_Giay-Nike-Air-Max-1-86-OG-Big-Bubble-Sport-Red-trang-do-1.jpg"
+    },
+    {
+      "Identity": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\upload\\product\\9391aad6-a02f-48ff-881f-c42f04e669ae_Giay-Nike-ReactX-Rejuven8-Triple-Black-Mau-Den-2-900x900.jpg",
+      "SourceId": "NguyenMinhHa_BanGiay",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\",
+      "BasePath": "_content/NguyenMinhHa_BanGiay",
+      "RelativePath": "upload/product/9391aad6-a02f-48ff-881f-c42f04e669ae_Giay-Nike-ReactX-Rejuven8-Triple-Black-Mau-Den-2-900x900#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l7l4rvrwo7",
+      "Integrity": "YcszuJA49a8GExxJ57sYlfInSQh8N0VjrBfOyB9Kf9c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\upload\\product\\9391aad6-a02f-48ff-881f-c42f04e669ae_Giay-Nike-ReactX-Rejuven8-Triple-Black-Mau-Den-2-900x900.jpg"
+    },
+    {
+      "Identity": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\upload\\product\\cc30336b-88c5-4c6b-b25d-70107669d368_Giay-Air-Force-1-Mid-Utility-White-Black-Trang-Den-Rep-11-8-900x900.jpg",
+      "SourceId": "NguyenMinhHa_BanGiay",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\",
+      "BasePath": "_content/NguyenMinhHa_BanGiay",
+      "RelativePath": "upload/product/cc30336b-88c5-4c6b-b25d-70107669d368_Giay-Air-Force-1-Mid-Utility-White-Black-Trang-Den-Rep-11-8-900x900#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gkrmlqumtz",
+      "Integrity": "EHIlSIbrdjULuZBV8EByDVSBdWzsJd6KpNsuLwIo9mY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\upload\\product\\cc30336b-88c5-4c6b-b25d-70107669d368_Giay-Air-Force-1-Mid-Utility-White-Black-Trang-Den-Rep-11-8-900x900.jpg"
+    },
+    {
+      "Identity": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\upload\\product\\f7cffb68-660d-4fea-8e65-d73fe4cf07bd_Giay-Nike-Air-Max-1-Travis-Scott-Baroque-Brown-Nau-Kem-Rep-11-6-900x900.jpg",
+      "SourceId": "NguyenMinhHa_BanGiay",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\",
+      "BasePath": "_content/NguyenMinhHa_BanGiay",
+      "RelativePath": "upload/product/f7cffb68-660d-4fea-8e65-d73fe4cf07bd_Giay-Nike-Air-Max-1-Travis-Scott-Baroque-Brown-Nau-Kem-Rep-11-6-900x900#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h75zlnawji",
+      "Integrity": "42l+1rUOZ+/sxvRPgAtu0OSxQxgyqviXSmW0k3/mXlM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\upload\\product\\f7cffb68-660d-4fea-8e65-d73fe4cf07bd_Giay-Nike-Air-Max-1-Travis-Scott-Baroque-Brown-Nau-Kem-Rep-11-6-900x900.jpg"
     }
   ],
   "Endpoints": [
@@ -22171,6 +22360,51 @@
       ]
     },
     {
+      "Route": "assets/blog/assets/css/index.2q740f8bmd.css",
+      "AssetFile": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\assets\\blog\\assets\\css\\index.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28839"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5iN+A/Q8A5OxkoWKFV/qquiZdK6d/OeiaXjst3F8LXA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 31 May 2026 09:34:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2q740f8bmd"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/blog/assets/css/index.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5iN+A/Q8A5OxkoWKFV/qquiZdK6d/OeiaXjst3F8LXA="
+        }
+      ]
+    },
+    {
       "Route": "assets/blog/assets/css/index.css",
       "AssetFile": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\assets\\blog\\assets\\css\\index.css",
       "Selectors": [],
@@ -22181,7 +22415,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "25256"
+          "Value": "28839"
         },
         {
           "Name": "Content-Type",
@@ -22189,11 +22423,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"sEVl3XlYmxW5bv4l4DN/G0ldTMhIOjochbR3kPVMshg=\""
+          "Value": "\"5iN+A/Q8A5OxkoWKFV/qquiZdK6d/OeiaXjst3F8LXA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 May 2026 04:10:58 GMT"
+          "Value": "Sun, 31 May 2026 09:34:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22203,52 +22437,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-sEVl3XlYmxW5bv4l4DN/G0ldTMhIOjochbR3kPVMshg="
-        }
-      ]
-    },
-    {
-      "Route": "assets/blog/assets/css/index.slojz58ktt.css",
-      "AssetFile": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\assets\\blog\\assets\\css\\index.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "25256"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"sEVl3XlYmxW5bv4l4DN/G0ldTMhIOjochbR3kPVMshg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 18 May 2026 04:10:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "slojz58ktt"
-        },
-        {
-          "Name": "label",
-          "Value": "assets/blog/assets/css/index.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-sEVl3XlYmxW5bv4l4DN/G0ldTMhIOjochbR3kPVMshg="
+          "Value": "sha256-5iN+A/Q8A5OxkoWKFV/qquiZdK6d/OeiaXjst3F8LXA="
         }
       ]
     },
@@ -27825,6 +28014,744 @@
         {
           "Name": "integrity",
           "Value": "sha256-HMl0IJtjx1n62NqcdC42ou8lqLnDySpVDkw+KYie5kU="
+        }
+      ]
+    },
+    {
+      "Route": "upload/product/08ac21a1-ea67-40ae-8009-749bac1645c9_Giay-Air-Force-1-07-Low-White-Wolf-Grey-Sole-4-900x900.jpg",
+      "AssetFile": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\upload\\product\\08ac21a1-ea67-40ae-8009-749bac1645c9_Giay-Air-Force-1-07-Low-White-Wolf-Grey-Sole-4-900x900.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "104512"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wwoxjVAnaWLkihZF9rYQUAEwZB91S04gJ40+i7VppLM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 31 May 2026 08:17:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wwoxjVAnaWLkihZF9rYQUAEwZB91S04gJ40+i7VppLM="
+        }
+      ]
+    },
+    {
+      "Route": "upload/product/08ac21a1-ea67-40ae-8009-749bac1645c9_Giay-Air-Force-1-07-Low-White-Wolf-Grey-Sole-4-900x900.p1s5gut7ld.jpg",
+      "AssetFile": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\upload\\product\\08ac21a1-ea67-40ae-8009-749bac1645c9_Giay-Air-Force-1-07-Low-White-Wolf-Grey-Sole-4-900x900.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "104512"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wwoxjVAnaWLkihZF9rYQUAEwZB91S04gJ40+i7VppLM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 31 May 2026 08:17:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p1s5gut7ld"
+        },
+        {
+          "Name": "label",
+          "Value": "upload/product/08ac21a1-ea67-40ae-8009-749bac1645c9_Giay-Air-Force-1-07-Low-White-Wolf-Grey-Sole-4-900x900.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wwoxjVAnaWLkihZF9rYQUAEwZB91S04gJ40+i7VppLM="
+        }
+      ]
+    },
+    {
+      "Route": "upload/product/1e01ea68-47cc-4085-9a07-6a188653e48c_Giay-Jordan-1-High-OG-Hyper-Royal-Xanh-Nhat-3-900x900.frtrk0v44d.jpg",
+      "AssetFile": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\upload\\product\\1e01ea68-47cc-4085-9a07-6a188653e48c_Giay-Jordan-1-High-OG-Hyper-Royal-Xanh-Nhat-3-900x900.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "103915"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lax3hMrOwCjByHDEyTNsmXpfICk56qef7RfEAWzQ/Js=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 31 May 2026 08:18:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "frtrk0v44d"
+        },
+        {
+          "Name": "label",
+          "Value": "upload/product/1e01ea68-47cc-4085-9a07-6a188653e48c_Giay-Jordan-1-High-OG-Hyper-Royal-Xanh-Nhat-3-900x900.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lax3hMrOwCjByHDEyTNsmXpfICk56qef7RfEAWzQ/Js="
+        }
+      ]
+    },
+    {
+      "Route": "upload/product/1e01ea68-47cc-4085-9a07-6a188653e48c_Giay-Jordan-1-High-OG-Hyper-Royal-Xanh-Nhat-3-900x900.jpg",
+      "AssetFile": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\upload\\product\\1e01ea68-47cc-4085-9a07-6a188653e48c_Giay-Jordan-1-High-OG-Hyper-Royal-Xanh-Nhat-3-900x900.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "103915"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lax3hMrOwCjByHDEyTNsmXpfICk56qef7RfEAWzQ/Js=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 31 May 2026 08:18:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lax3hMrOwCjByHDEyTNsmXpfICk56qef7RfEAWzQ/Js="
+        }
+      ]
+    },
+    {
+      "Route": "upload/product/222f0dd4-e5a2-4e3e-859c-3f8553345a07_Giay-Jordan-1-High-OG-Skyline-White-Multicolor-Canvas-1.c8g5lhu2vy.jpg",
+      "AssetFile": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\upload\\product\\222f0dd4-e5a2-4e3e-859c-3f8553345a07_Giay-Jordan-1-High-OG-Skyline-White-Multicolor-Canvas-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30159"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bFr6yRFh1PgKfego6eG8blfoDpD7QUx5mA0UQvqn+bs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 31 May 2026 08:17:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c8g5lhu2vy"
+        },
+        {
+          "Name": "label",
+          "Value": "upload/product/222f0dd4-e5a2-4e3e-859c-3f8553345a07_Giay-Jordan-1-High-OG-Skyline-White-Multicolor-Canvas-1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bFr6yRFh1PgKfego6eG8blfoDpD7QUx5mA0UQvqn+bs="
+        }
+      ]
+    },
+    {
+      "Route": "upload/product/222f0dd4-e5a2-4e3e-859c-3f8553345a07_Giay-Jordan-1-High-OG-Skyline-White-Multicolor-Canvas-1.jpg",
+      "AssetFile": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\upload\\product\\222f0dd4-e5a2-4e3e-859c-3f8553345a07_Giay-Jordan-1-High-OG-Skyline-White-Multicolor-Canvas-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30159"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bFr6yRFh1PgKfego6eG8blfoDpD7QUx5mA0UQvqn+bs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 31 May 2026 08:17:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bFr6yRFh1PgKfego6eG8blfoDpD7QUx5mA0UQvqn+bs="
+        }
+      ]
+    },
+    {
+      "Route": "upload/product/62f31860-a5a9-4c91-90a7-a636f13c5fa5_Giay-Air-Jordan-1-Low-Bred-Toe-Do-Den-Rep-11-1.jpg",
+      "AssetFile": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\upload\\product\\62f31860-a5a9-4c91-90a7-a636f13c5fa5_Giay-Air-Jordan-1-Low-Bred-Toe-Do-Den-Rep-11-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23907"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7+qMR2CHisZXmtLXmrnZMPChi0k3glCMs7nGjnZDCWY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 31 May 2026 08:17:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7+qMR2CHisZXmtLXmrnZMPChi0k3glCMs7nGjnZDCWY="
+        }
+      ]
+    },
+    {
+      "Route": "upload/product/62f31860-a5a9-4c91-90a7-a636f13c5fa5_Giay-Air-Jordan-1-Low-Bred-Toe-Do-Den-Rep-11-1.rdkrje2pzu.jpg",
+      "AssetFile": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\upload\\product\\62f31860-a5a9-4c91-90a7-a636f13c5fa5_Giay-Air-Jordan-1-Low-Bred-Toe-Do-Den-Rep-11-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23907"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7+qMR2CHisZXmtLXmrnZMPChi0k3glCMs7nGjnZDCWY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 31 May 2026 08:17:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rdkrje2pzu"
+        },
+        {
+          "Name": "label",
+          "Value": "upload/product/62f31860-a5a9-4c91-90a7-a636f13c5fa5_Giay-Air-Jordan-1-Low-Bred-Toe-Do-Den-Rep-11-1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7+qMR2CHisZXmtLXmrnZMPChi0k3glCMs7nGjnZDCWY="
+        }
+      ]
+    },
+    {
+      "Route": "upload/product/63478f03-ba44-471d-a217-a358724d76e3_giay-Nike-Air-Force-1-Gucci-Rep-11-2-900x900.jpg",
+      "AssetFile": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\upload\\product\\63478f03-ba44-471d-a217-a358724d76e3_giay-Nike-Air-Force-1-Gucci-Rep-11-2-900x900.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "119190"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KfpLmD/VlZPcmhE9kHCj5JkGF01kM+58M92CeWc0Rus=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 31 May 2026 08:17:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KfpLmD/VlZPcmhE9kHCj5JkGF01kM+58M92CeWc0Rus="
+        }
+      ]
+    },
+    {
+      "Route": "upload/product/63478f03-ba44-471d-a217-a358724d76e3_giay-Nike-Air-Force-1-Gucci-Rep-11-2-900x900.n8qceurl3c.jpg",
+      "AssetFile": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\upload\\product\\63478f03-ba44-471d-a217-a358724d76e3_giay-Nike-Air-Force-1-Gucci-Rep-11-2-900x900.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "119190"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KfpLmD/VlZPcmhE9kHCj5JkGF01kM+58M92CeWc0Rus=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 31 May 2026 08:17:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n8qceurl3c"
+        },
+        {
+          "Name": "label",
+          "Value": "upload/product/63478f03-ba44-471d-a217-a358724d76e3_giay-Nike-Air-Force-1-Gucci-Rep-11-2-900x900.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KfpLmD/VlZPcmhE9kHCj5JkGF01kM+58M92CeWc0Rus="
+        }
+      ]
+    },
+    {
+      "Route": "upload/product/8c8fcc7c-2b64-4ed9-a210-a28a680f17ad_Giay-Nike-Air-Max-1-86-OG-Big-Bubble-Sport-Red-trang-do-1.jpg",
+      "AssetFile": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\upload\\product\\8c8fcc7c-2b64-4ed9-a210-a28a680f17ad_Giay-Nike-Air-Max-1-86-OG-Big-Bubble-Sport-Red-trang-do-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26712"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OAcbOLV5EDhzHu3aTzvewjLqMWYkH5soO06rGjVyDLI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 31 May 2026 08:17:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OAcbOLV5EDhzHu3aTzvewjLqMWYkH5soO06rGjVyDLI="
+        }
+      ]
+    },
+    {
+      "Route": "upload/product/8c8fcc7c-2b64-4ed9-a210-a28a680f17ad_Giay-Nike-Air-Max-1-86-OG-Big-Bubble-Sport-Red-trang-do-1.k57o99u6er.jpg",
+      "AssetFile": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\upload\\product\\8c8fcc7c-2b64-4ed9-a210-a28a680f17ad_Giay-Nike-Air-Max-1-86-OG-Big-Bubble-Sport-Red-trang-do-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26712"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OAcbOLV5EDhzHu3aTzvewjLqMWYkH5soO06rGjVyDLI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 31 May 2026 08:17:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k57o99u6er"
+        },
+        {
+          "Name": "label",
+          "Value": "upload/product/8c8fcc7c-2b64-4ed9-a210-a28a680f17ad_Giay-Nike-Air-Max-1-86-OG-Big-Bubble-Sport-Red-trang-do-1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OAcbOLV5EDhzHu3aTzvewjLqMWYkH5soO06rGjVyDLI="
+        }
+      ]
+    },
+    {
+      "Route": "upload/product/9391aad6-a02f-48ff-881f-c42f04e669ae_Giay-Nike-ReactX-Rejuven8-Triple-Black-Mau-Den-2-900x900.jpg",
+      "AssetFile": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\upload\\product\\9391aad6-a02f-48ff-881f-c42f04e669ae_Giay-Nike-ReactX-Rejuven8-Triple-Black-Mau-Den-2-900x900.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "119358"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YcszuJA49a8GExxJ57sYlfInSQh8N0VjrBfOyB9Kf9c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 31 May 2026 08:17:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YcszuJA49a8GExxJ57sYlfInSQh8N0VjrBfOyB9Kf9c="
+        }
+      ]
+    },
+    {
+      "Route": "upload/product/9391aad6-a02f-48ff-881f-c42f04e669ae_Giay-Nike-ReactX-Rejuven8-Triple-Black-Mau-Den-2-900x900.l7l4rvrwo7.jpg",
+      "AssetFile": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\upload\\product\\9391aad6-a02f-48ff-881f-c42f04e669ae_Giay-Nike-ReactX-Rejuven8-Triple-Black-Mau-Den-2-900x900.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "119358"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YcszuJA49a8GExxJ57sYlfInSQh8N0VjrBfOyB9Kf9c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 31 May 2026 08:17:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l7l4rvrwo7"
+        },
+        {
+          "Name": "label",
+          "Value": "upload/product/9391aad6-a02f-48ff-881f-c42f04e669ae_Giay-Nike-ReactX-Rejuven8-Triple-Black-Mau-Den-2-900x900.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YcszuJA49a8GExxJ57sYlfInSQh8N0VjrBfOyB9Kf9c="
+        }
+      ]
+    },
+    {
+      "Route": "upload/product/cc30336b-88c5-4c6b-b25d-70107669d368_Giay-Air-Force-1-Mid-Utility-White-Black-Trang-Den-Rep-11-8-900x900.gkrmlqumtz.jpg",
+      "AssetFile": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\upload\\product\\cc30336b-88c5-4c6b-b25d-70107669d368_Giay-Air-Force-1-Mid-Utility-White-Black-Trang-Den-Rep-11-8-900x900.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "113584"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EHIlSIbrdjULuZBV8EByDVSBdWzsJd6KpNsuLwIo9mY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 31 May 2026 08:18:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gkrmlqumtz"
+        },
+        {
+          "Name": "label",
+          "Value": "upload/product/cc30336b-88c5-4c6b-b25d-70107669d368_Giay-Air-Force-1-Mid-Utility-White-Black-Trang-Den-Rep-11-8-900x900.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EHIlSIbrdjULuZBV8EByDVSBdWzsJd6KpNsuLwIo9mY="
+        }
+      ]
+    },
+    {
+      "Route": "upload/product/cc30336b-88c5-4c6b-b25d-70107669d368_Giay-Air-Force-1-Mid-Utility-White-Black-Trang-Den-Rep-11-8-900x900.jpg",
+      "AssetFile": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\upload\\product\\cc30336b-88c5-4c6b-b25d-70107669d368_Giay-Air-Force-1-Mid-Utility-White-Black-Trang-Den-Rep-11-8-900x900.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "113584"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EHIlSIbrdjULuZBV8EByDVSBdWzsJd6KpNsuLwIo9mY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 31 May 2026 08:18:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EHIlSIbrdjULuZBV8EByDVSBdWzsJd6KpNsuLwIo9mY="
+        }
+      ]
+    },
+    {
+      "Route": "upload/product/f7cffb68-660d-4fea-8e65-d73fe4cf07bd_Giay-Nike-Air-Max-1-Travis-Scott-Baroque-Brown-Nau-Kem-Rep-11-6-900x900.h75zlnawji.jpg",
+      "AssetFile": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\upload\\product\\f7cffb68-660d-4fea-8e65-d73fe4cf07bd_Giay-Nike-Air-Max-1-Travis-Scott-Baroque-Brown-Nau-Kem-Rep-11-6-900x900.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "121677"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"42l+1rUOZ+/sxvRPgAtu0OSxQxgyqviXSmW0k3/mXlM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 31 May 2026 08:18:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h75zlnawji"
+        },
+        {
+          "Name": "label",
+          "Value": "upload/product/f7cffb68-660d-4fea-8e65-d73fe4cf07bd_Giay-Nike-Air-Max-1-Travis-Scott-Baroque-Brown-Nau-Kem-Rep-11-6-900x900.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-42l+1rUOZ+/sxvRPgAtu0OSxQxgyqviXSmW0k3/mXlM="
+        }
+      ]
+    },
+    {
+      "Route": "upload/product/f7cffb68-660d-4fea-8e65-d73fe4cf07bd_Giay-Nike-Air-Max-1-Travis-Scott-Baroque-Brown-Nau-Kem-Rep-11-6-900x900.jpg",
+      "AssetFile": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\wwwroot\\upload\\product\\f7cffb68-660d-4fea-8e65-d73fe4cf07bd_Giay-Nike-Air-Max-1-Travis-Scott-Baroque-Brown-Nau-Kem-Rep-11-6-900x900.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "121677"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"42l+1rUOZ+/sxvRPgAtu0OSxQxgyqviXSmW0k3/mXlM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 31 May 2026 08:18:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-42l+1rUOZ+/sxvRPgAtu0OSxQxgyqviXSmW0k3/mXlM="
         }
       ]
     }
