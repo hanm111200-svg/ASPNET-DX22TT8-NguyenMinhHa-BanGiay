@@ -14,23 +14,23 @@
                             <label class="form-label" for="basic-default-fullname">Tên Sản phẩm</label>
                             <input type="text" class="form-control" id="basic-default-fullname" placeholder="Nhập tên danh mục" asp-for="Name" />
                         </div>
-                        <div>
-                            <label for="exampleFormControlTextarea1" class="form-label">Mô tả</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" asp-for="Description"></textarea>
-                        </div>
                         <div class="mb-3">
                             <label for="exampleFormControlSelect1" class="form-label">Thương hiệu</label>
-                            <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example" asp-for="CategoryId" asp-items="ViewBag.categories"> 
+                            <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example" asp-for="CategoryId" asp-items="ViewBag.categories">
                             </select>
-                        </div>
-                        <div>
-                            <label for="exampleFormControlTextarea1" class="form-label">Nội dung</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" asp-for="Content"></textarea>
                         </div>
                         <div class="mb-3">
                             <label class="form-label" for="basic-default-fullname">Giá</label>
                             <input type="text" class="form-control" id="basic-default-fullname" placeholder="Nhập giá" asp-for="Price" />
                         </div>
+                        <div>
+                            <label for="exampleFormControlTextarea1" class="form-label">Mô tả</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" asp-for="Description"></textarea>
+                        </div>                        
+                        <div>
+                            <label for="exampleFormControlTextarea1" class="form-label">Nội dung</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" asp-for="Content"></textarea>
+                        </div>                        
                         <div class="mb-3">
                             <label for="formFile" class="form-label">Hình ảnh</label>
                             <input class="form-control" type="file" id="formFile" asp-for="Image" />

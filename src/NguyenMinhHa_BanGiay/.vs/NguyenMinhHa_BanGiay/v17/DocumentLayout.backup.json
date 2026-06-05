@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2A9B337-49FD-4948-809A-B65D114AC359}|NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay.csproj|d:\\12 - asp.net\\aspnet 2026\\aspnet-dx22tt8-nguyenminhha-bangiay\\src\\nguyenminhha_bangiay\\nguyenminhha_bangiay\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A9B337-49FD-4948-809A-B65D114AC359}|NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay.csproj|solutionrelative:nguyenminhha_bangiay\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2A9B337-49FD-4948-809A-B65D114AC359}|NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay.csproj|d:\\12 - asp.net\\aspnet 2026\\aspnet-dx22tt8-nguyenminhha-bangiay\\src\\nguyenminhha_bangiay\\nguyenminhha_bangiay\\areas\\admin\\views\\shared\\_sidebaradminpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2A9B337-49FD-4948-809A-B65D114AC359}|NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay.csproj|solutionrelative:nguyenminhha_bangiay\\areas\\admin\\views\\shared\\_sidebaradminpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -63,6 +67,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "NguyenMinhHa_BanGiay\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "NguyenMinhHa_BanGiay\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAzwKkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T05:36:43.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "_SidebarAdminPartial.cshtml",
               "DocumentMoniker": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\Areas\\Admin\\Views\\Shared\\_SidebarAdminPartial.cshtml",
               "RelativeDocumentMoniker": "NguyenMinhHa_BanGiay\\Areas\\Admin\\Views\\Shared\\_SidebarAdminPartial.cshtml",
@@ -75,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "_HeaderAdminPartial.cshtml",
               "DocumentMoniker": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\Areas\\Admin\\Views\\Shared\\_HeaderAdminPartial.cshtml",
               "RelativeDocumentMoniker": "NguyenMinhHa_BanGiay\\Areas\\Admin\\Views\\Shared\\_HeaderAdminPartial.cshtml",
@@ -88,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "DashboardController.cs",
               "DocumentMoniker": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\Areas\\Admin\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "NguyenMinhHa_BanGiay\\Areas\\Admin\\Controllers\\DashboardController.cs",
@@ -101,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "LoginController.cs",
               "DocumentMoniker": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\Areas\\Admin\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "NguyenMinhHa_BanGiay\\Areas\\Admin\\Controllers\\LoginController.cs",
@@ -114,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ForgotPassword.cshtml",
               "DocumentMoniker": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\Areas\\Admin\\Views\\Login\\ForgotPassword.cshtml",
               "RelativeDocumentMoniker": "NguyenMinhHa_BanGiay\\Areas\\Admin\\Views\\Login\\ForgotPassword.cshtml",
@@ -127,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\Areas\\Admin\\Views\\Login\\Index.cshtml",
               "RelativeDocumentMoniker": "NguyenMinhHa_BanGiay\\Areas\\Admin\\Views\\Login\\Index.cshtml",
@@ -140,7 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "_FooterPartial.cshtml",
               "DocumentMoniker": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\Views\\Shared\\_FooterPartial.cshtml",
               "RelativeDocumentMoniker": "NguyenMinhHa_BanGiay\\Views\\Shared\\_FooterPartial.cshtml",
@@ -153,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Detail.cshtml",
               "DocumentMoniker": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\Views\\Product\\Detail.cshtml",
               "RelativeDocumentMoniker": "NguyenMinhHa_BanGiay\\Views\\Product\\Detail.cshtml",
@@ -165,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "_HeaderPartial.cshtml",
               "DocumentMoniker": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\Views\\Shared\\_HeaderPartial.cshtml",
               "RelativeDocumentMoniker": "NguyenMinhHa_BanGiay\\Views\\Shared\\_HeaderPartial.cshtml",
@@ -178,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\Views\\Product\\Index.cshtml",
               "RelativeDocumentMoniker": "NguyenMinhHa_BanGiay\\Views\\Product\\Index.cshtml",
@@ -190,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\12 - ASP.NET\\ASPNET 2026\\ASPNET-DX22TT8-NguyenMinhHa-BanGiay\\src\\NguyenMinhHa_BanGiay\\NguyenMinhHa_BanGiay\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "NguyenMinhHa_BanGiay\\Views\\Home\\Index.cshtml",

@@ -25,7 +25,7 @@ namespace NguyenMinhHa_BanGiay.Services.Momo
                 $"&amount={model.Total}" +
                 $"&orderId={model.OrderId}" +
                 $"&orderInfo={model.OrderId}" +
-                $"&returnUrl={_options.Value.ReturnUrl}" +
+                $"&redirectUrl={_options.Value.ReturnUrl}" +
                 $"&notifyUrl={_options.Value.NotifyUrl}" +
                 $"&extraData=";
             var signature = ComputeHmacSha256(rawData, _options.Value.SecretKey);

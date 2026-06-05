@@ -22225,8 +22225,8 @@
       ]
     },
     {
-      "Route": "upload/product/08ac21a1-ea67-40ae-8009-749bac1645c9_Giay-Air-Force-1-07-Low-White-Wolf-Grey-Sole-4-900x900.jpg",
-      "AssetFile": "upload/product/08ac21a1-ea67-40ae-8009-749bac1645c9_Giay-Air-Force-1-07-Low-White-Wolf-Grey-Sole-4-900x900.jpg",
+      "Route": "upload/product/04175ab6-8b20-466b-a95c-30773321315b_nike.jpg",
+      "AssetFile": "upload/product/04175ab6-8b20-466b-a95c-30773321315b_nike.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22239,7 +22239,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "104512"
+          "Value": "22332"
         },
         {
           "Name": "Content-Type",
@@ -22247,23 +22247,23 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wwoxjVAnaWLkihZF9rYQUAEwZB91S04gJ40+i7VppLM=\""
+          "Value": "\"sT/fVykFJuEIjGIiKKK4cbZ1H/y9UU++GKaKdWiREu0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 31 May 2026 08:17:01 GMT"
+          "Value": "Fri, 05 Jun 2026 05:46:29 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-wwoxjVAnaWLkihZF9rYQUAEwZB91S04gJ40+i7VppLM="
+          "Value": "sha256-sT/fVykFJuEIjGIiKKK4cbZ1H/y9UU++GKaKdWiREu0="
         }
       ]
     },
     {
-      "Route": "upload/product/08ac21a1-ea67-40ae-8009-749bac1645c9_Giay-Air-Force-1-07-Low-White-Wolf-Grey-Sole-4-900x900.p1s5gut7ld.jpg",
-      "AssetFile": "upload/product/08ac21a1-ea67-40ae-8009-749bac1645c9_Giay-Air-Force-1-07-Low-White-Wolf-Grey-Sole-4-900x900.jpg",
+      "Route": "upload/product/04175ab6-8b20-466b-a95c-30773321315b_nike.l3njwp6vvg.jpg",
+      "AssetFile": "upload/product/04175ab6-8b20-466b-a95c-30773321315b_nike.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22276,7 +22276,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "104512"
+          "Value": "22332"
         },
         {
           "Name": "Content-Type",
@@ -22284,76 +22284,31 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wwoxjVAnaWLkihZF9rYQUAEwZB91S04gJ40+i7VppLM=\""
+          "Value": "\"sT/fVykFJuEIjGIiKKK4cbZ1H/y9UU++GKaKdWiREu0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 31 May 2026 08:17:01 GMT"
+          "Value": "Fri, 05 Jun 2026 05:46:29 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "p1s5gut7ld"
+          "Value": "l3njwp6vvg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-wwoxjVAnaWLkihZF9rYQUAEwZB91S04gJ40+i7VppLM="
+          "Value": "sha256-sT/fVykFJuEIjGIiKKK4cbZ1H/y9UU++GKaKdWiREu0="
         },
         {
           "Name": "label",
-          "Value": "upload/product/08ac21a1-ea67-40ae-8009-749bac1645c9_Giay-Air-Force-1-07-Low-White-Wolf-Grey-Sole-4-900x900.jpg"
+          "Value": "upload/product/04175ab6-8b20-466b-a95c-30773321315b_nike.jpg"
         }
       ]
     },
     {
-      "Route": "upload/product/1e01ea68-47cc-4085-9a07-6a188653e48c_Giay-Jordan-1-High-OG-Hyper-Royal-Xanh-Nhat-3-900x900.frtrk0v44d.jpg",
-      "AssetFile": "upload/product/1e01ea68-47cc-4085-9a07-6a188653e48c_Giay-Jordan-1-High-OG-Hyper-Royal-Xanh-Nhat-3-900x900.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "103915"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lax3hMrOwCjByHDEyTNsmXpfICk56qef7RfEAWzQ/Js=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 31 May 2026 08:18:06 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "frtrk0v44d"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-lax3hMrOwCjByHDEyTNsmXpfICk56qef7RfEAWzQ/Js="
-        },
-        {
-          "Name": "label",
-          "Value": "upload/product/1e01ea68-47cc-4085-9a07-6a188653e48c_Giay-Jordan-1-High-OG-Hyper-Royal-Xanh-Nhat-3-900x900.jpg"
-        }
-      ]
-    },
-    {
-      "Route": "upload/product/1e01ea68-47cc-4085-9a07-6a188653e48c_Giay-Jordan-1-High-OG-Hyper-Royal-Xanh-Nhat-3-900x900.jpg",
-      "AssetFile": "upload/product/1e01ea68-47cc-4085-9a07-6a188653e48c_Giay-Jordan-1-High-OG-Hyper-Royal-Xanh-Nhat-3-900x900.jpg",
+      "Route": "upload/product/2bfc6c5b-6d07-479a-894b-d9f8f7673ff5_nike.jpg",
+      "AssetFile": "upload/product/2bfc6c5b-6d07-479a-894b-d9f8f7673ff5_nike.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22366,7 +22321,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "103915"
+          "Value": "22332"
         },
         {
           "Name": "Content-Type",
@@ -22374,23 +22329,23 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"lax3hMrOwCjByHDEyTNsmXpfICk56qef7RfEAWzQ/Js=\""
+          "Value": "\"sT/fVykFJuEIjGIiKKK4cbZ1H/y9UU++GKaKdWiREu0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 31 May 2026 08:18:06 GMT"
+          "Value": "Fri, 05 Jun 2026 05:48:03 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-lax3hMrOwCjByHDEyTNsmXpfICk56qef7RfEAWzQ/Js="
+          "Value": "sha256-sT/fVykFJuEIjGIiKKK4cbZ1H/y9UU++GKaKdWiREu0="
         }
       ]
     },
     {
-      "Route": "upload/product/222f0dd4-e5a2-4e3e-859c-3f8553345a07_Giay-Jordan-1-High-OG-Skyline-White-Multicolor-Canvas-1.c8g5lhu2vy.jpg",
-      "AssetFile": "upload/product/222f0dd4-e5a2-4e3e-859c-3f8553345a07_Giay-Jordan-1-High-OG-Skyline-White-Multicolor-Canvas-1.jpg",
+      "Route": "upload/product/2bfc6c5b-6d07-479a-894b-d9f8f7673ff5_nike.l3njwp6vvg.jpg",
+      "AssetFile": "upload/product/2bfc6c5b-6d07-479a-894b-d9f8f7673ff5_nike.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22403,7 +22358,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "30159"
+          "Value": "22332"
         },
         {
           "Name": "Content-Type",
@@ -22411,31 +22366,31 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bFr6yRFh1PgKfego6eG8blfoDpD7QUx5mA0UQvqn+bs=\""
+          "Value": "\"sT/fVykFJuEIjGIiKKK4cbZ1H/y9UU++GKaKdWiREu0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 31 May 2026 08:17:57 GMT"
+          "Value": "Fri, 05 Jun 2026 05:48:03 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "c8g5lhu2vy"
+          "Value": "l3njwp6vvg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-bFr6yRFh1PgKfego6eG8blfoDpD7QUx5mA0UQvqn+bs="
+          "Value": "sha256-sT/fVykFJuEIjGIiKKK4cbZ1H/y9UU++GKaKdWiREu0="
         },
         {
           "Name": "label",
-          "Value": "upload/product/222f0dd4-e5a2-4e3e-859c-3f8553345a07_Giay-Jordan-1-High-OG-Skyline-White-Multicolor-Canvas-1.jpg"
+          "Value": "upload/product/2bfc6c5b-6d07-479a-894b-d9f8f7673ff5_nike.jpg"
         }
       ]
     },
     {
-      "Route": "upload/product/222f0dd4-e5a2-4e3e-859c-3f8553345a07_Giay-Jordan-1-High-OG-Skyline-White-Multicolor-Canvas-1.jpg",
-      "AssetFile": "upload/product/222f0dd4-e5a2-4e3e-859c-3f8553345a07_Giay-Jordan-1-High-OG-Skyline-White-Multicolor-Canvas-1.jpg",
+      "Route": "upload/product/502d1543-b573-458d-82d2-4ceca2687d47_nike.jpg",
+      "AssetFile": "upload/product/502d1543-b573-458d-82d2-4ceca2687d47_nike.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22448,7 +22403,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "30159"
+          "Value": "22332"
         },
         {
           "Name": "Content-Type",
@@ -22456,60 +22411,23 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bFr6yRFh1PgKfego6eG8blfoDpD7QUx5mA0UQvqn+bs=\""
+          "Value": "\"sT/fVykFJuEIjGIiKKK4cbZ1H/y9UU++GKaKdWiREu0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 31 May 2026 08:17:57 GMT"
+          "Value": "Fri, 05 Jun 2026 05:48:23 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-bFr6yRFh1PgKfego6eG8blfoDpD7QUx5mA0UQvqn+bs="
+          "Value": "sha256-sT/fVykFJuEIjGIiKKK4cbZ1H/y9UU++GKaKdWiREu0="
         }
       ]
     },
     {
-      "Route": "upload/product/62f31860-a5a9-4c91-90a7-a636f13c5fa5_Giay-Air-Jordan-1-Low-Bred-Toe-Do-Den-Rep-11-1.jpg",
-      "AssetFile": "upload/product/62f31860-a5a9-4c91-90a7-a636f13c5fa5_Giay-Air-Jordan-1-Low-Bred-Toe-Do-Den-Rep-11-1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "23907"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"7+qMR2CHisZXmtLXmrnZMPChi0k3glCMs7nGjnZDCWY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 31 May 2026 08:17:11 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-7+qMR2CHisZXmtLXmrnZMPChi0k3glCMs7nGjnZDCWY="
-        }
-      ]
-    },
-    {
-      "Route": "upload/product/62f31860-a5a9-4c91-90a7-a636f13c5fa5_Giay-Air-Jordan-1-Low-Bred-Toe-Do-Den-Rep-11-1.rdkrje2pzu.jpg",
-      "AssetFile": "upload/product/62f31860-a5a9-4c91-90a7-a636f13c5fa5_Giay-Air-Jordan-1-Low-Bred-Toe-Do-Den-Rep-11-1.jpg",
+      "Route": "upload/product/502d1543-b573-458d-82d2-4ceca2687d47_nike.l3njwp6vvg.jpg",
+      "AssetFile": "upload/product/502d1543-b573-458d-82d2-4ceca2687d47_nike.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22522,7 +22440,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "23907"
+          "Value": "22332"
         },
         {
           "Name": "Content-Type",
@@ -22530,31 +22448,31 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7+qMR2CHisZXmtLXmrnZMPChi0k3glCMs7nGjnZDCWY=\""
+          "Value": "\"sT/fVykFJuEIjGIiKKK4cbZ1H/y9UU++GKaKdWiREu0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 31 May 2026 08:17:11 GMT"
+          "Value": "Fri, 05 Jun 2026 05:48:23 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "rdkrje2pzu"
+          "Value": "l3njwp6vvg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-7+qMR2CHisZXmtLXmrnZMPChi0k3glCMs7nGjnZDCWY="
+          "Value": "sha256-sT/fVykFJuEIjGIiKKK4cbZ1H/y9UU++GKaKdWiREu0="
         },
         {
           "Name": "label",
-          "Value": "upload/product/62f31860-a5a9-4c91-90a7-a636f13c5fa5_Giay-Air-Jordan-1-Low-Bred-Toe-Do-Den-Rep-11-1.jpg"
+          "Value": "upload/product/502d1543-b573-458d-82d2-4ceca2687d47_nike.jpg"
         }
       ]
     },
     {
-      "Route": "upload/product/63478f03-ba44-471d-a217-a358724d76e3_giay-Nike-Air-Force-1-Gucci-Rep-11-2-900x900.jpg",
-      "AssetFile": "upload/product/63478f03-ba44-471d-a217-a358724d76e3_giay-Nike-Air-Force-1-Gucci-Rep-11-2-900x900.jpg",
+      "Route": "upload/product/506b9db8-00e7-4516-8032-a31dfd8b7e3f_nike.jpg",
+      "AssetFile": "upload/product/506b9db8-00e7-4516-8032-a31dfd8b7e3f_nike.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22567,7 +22485,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "119190"
+          "Value": "22332"
         },
         {
           "Name": "Content-Type",
@@ -22575,23 +22493,23 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"KfpLmD/VlZPcmhE9kHCj5JkGF01kM+58M92CeWc0Rus=\""
+          "Value": "\"sT/fVykFJuEIjGIiKKK4cbZ1H/y9UU++GKaKdWiREu0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 31 May 2026 08:17:29 GMT"
+          "Value": "Fri, 05 Jun 2026 05:47:50 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-KfpLmD/VlZPcmhE9kHCj5JkGF01kM+58M92CeWc0Rus="
+          "Value": "sha256-sT/fVykFJuEIjGIiKKK4cbZ1H/y9UU++GKaKdWiREu0="
         }
       ]
     },
     {
-      "Route": "upload/product/63478f03-ba44-471d-a217-a358724d76e3_giay-Nike-Air-Force-1-Gucci-Rep-11-2-900x900.n8qceurl3c.jpg",
-      "AssetFile": "upload/product/63478f03-ba44-471d-a217-a358724d76e3_giay-Nike-Air-Force-1-Gucci-Rep-11-2-900x900.jpg",
+      "Route": "upload/product/506b9db8-00e7-4516-8032-a31dfd8b7e3f_nike.l3njwp6vvg.jpg",
+      "AssetFile": "upload/product/506b9db8-00e7-4516-8032-a31dfd8b7e3f_nike.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22604,7 +22522,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "119190"
+          "Value": "22332"
         },
         {
           "Name": "Content-Type",
@@ -22612,31 +22530,31 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"KfpLmD/VlZPcmhE9kHCj5JkGF01kM+58M92CeWc0Rus=\""
+          "Value": "\"sT/fVykFJuEIjGIiKKK4cbZ1H/y9UU++GKaKdWiREu0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 31 May 2026 08:17:29 GMT"
+          "Value": "Fri, 05 Jun 2026 05:47:50 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "n8qceurl3c"
+          "Value": "l3njwp6vvg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-KfpLmD/VlZPcmhE9kHCj5JkGF01kM+58M92CeWc0Rus="
+          "Value": "sha256-sT/fVykFJuEIjGIiKKK4cbZ1H/y9UU++GKaKdWiREu0="
         },
         {
           "Name": "label",
-          "Value": "upload/product/63478f03-ba44-471d-a217-a358724d76e3_giay-Nike-Air-Force-1-Gucci-Rep-11-2-900x900.jpg"
+          "Value": "upload/product/506b9db8-00e7-4516-8032-a31dfd8b7e3f_nike.jpg"
         }
       ]
     },
     {
-      "Route": "upload/product/8c8fcc7c-2b64-4ed9-a210-a28a680f17ad_Giay-Nike-Air-Max-1-86-OG-Big-Bubble-Sport-Red-trang-do-1.jpg",
-      "AssetFile": "upload/product/8c8fcc7c-2b64-4ed9-a210-a28a680f17ad_Giay-Nike-Air-Max-1-86-OG-Big-Bubble-Sport-Red-trang-do-1.jpg",
+      "Route": "upload/product/64738cf8-9ba5-4284-8c5f-eb000094c99f_nike.jpg",
+      "AssetFile": "upload/product/64738cf8-9ba5-4284-8c5f-eb000094c99f_nike.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22649,7 +22567,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "26712"
+          "Value": "22332"
         },
         {
           "Name": "Content-Type",
@@ -22657,23 +22575,23 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"OAcbOLV5EDhzHu3aTzvewjLqMWYkH5soO06rGjVyDLI=\""
+          "Value": "\"sT/fVykFJuEIjGIiKKK4cbZ1H/y9UU++GKaKdWiREu0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 31 May 2026 08:17:37 GMT"
+          "Value": "Fri, 05 Jun 2026 05:47:08 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-OAcbOLV5EDhzHu3aTzvewjLqMWYkH5soO06rGjVyDLI="
+          "Value": "sha256-sT/fVykFJuEIjGIiKKK4cbZ1H/y9UU++GKaKdWiREu0="
         }
       ]
     },
     {
-      "Route": "upload/product/8c8fcc7c-2b64-4ed9-a210-a28a680f17ad_Giay-Nike-Air-Max-1-86-OG-Big-Bubble-Sport-Red-trang-do-1.k57o99u6er.jpg",
-      "AssetFile": "upload/product/8c8fcc7c-2b64-4ed9-a210-a28a680f17ad_Giay-Nike-Air-Max-1-86-OG-Big-Bubble-Sport-Red-trang-do-1.jpg",
+      "Route": "upload/product/64738cf8-9ba5-4284-8c5f-eb000094c99f_nike.l3njwp6vvg.jpg",
+      "AssetFile": "upload/product/64738cf8-9ba5-4284-8c5f-eb000094c99f_nike.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22686,7 +22604,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "26712"
+          "Value": "22332"
         },
         {
           "Name": "Content-Type",
@@ -22694,31 +22612,31 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"OAcbOLV5EDhzHu3aTzvewjLqMWYkH5soO06rGjVyDLI=\""
+          "Value": "\"sT/fVykFJuEIjGIiKKK4cbZ1H/y9UU++GKaKdWiREu0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 31 May 2026 08:17:37 GMT"
+          "Value": "Fri, 05 Jun 2026 05:47:08 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "k57o99u6er"
+          "Value": "l3njwp6vvg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-OAcbOLV5EDhzHu3aTzvewjLqMWYkH5soO06rGjVyDLI="
+          "Value": "sha256-sT/fVykFJuEIjGIiKKK4cbZ1H/y9UU++GKaKdWiREu0="
         },
         {
           "Name": "label",
-          "Value": "upload/product/8c8fcc7c-2b64-4ed9-a210-a28a680f17ad_Giay-Nike-Air-Max-1-86-OG-Big-Bubble-Sport-Red-trang-do-1.jpg"
+          "Value": "upload/product/64738cf8-9ba5-4284-8c5f-eb000094c99f_nike.jpg"
         }
       ]
     },
     {
-      "Route": "upload/product/9391aad6-a02f-48ff-881f-c42f04e669ae_Giay-Nike-ReactX-Rejuven8-Triple-Black-Mau-Den-2-900x900.jpg",
-      "AssetFile": "upload/product/9391aad6-a02f-48ff-881f-c42f04e669ae_Giay-Nike-ReactX-Rejuven8-Triple-Black-Mau-Den-2-900x900.jpg",
+      "Route": "upload/product/715b43d0-21d7-4b97-9170-56d93856769f_nike.jpg",
+      "AssetFile": "upload/product/715b43d0-21d7-4b97-9170-56d93856769f_nike.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22731,7 +22649,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "119358"
+          "Value": "22332"
         },
         {
           "Name": "Content-Type",
@@ -22739,23 +22657,23 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"YcszuJA49a8GExxJ57sYlfInSQh8N0VjrBfOyB9Kf9c=\""
+          "Value": "\"sT/fVykFJuEIjGIiKKK4cbZ1H/y9UU++GKaKdWiREu0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 31 May 2026 08:17:46 GMT"
+          "Value": "Fri, 05 Jun 2026 05:46:54 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-YcszuJA49a8GExxJ57sYlfInSQh8N0VjrBfOyB9Kf9c="
+          "Value": "sha256-sT/fVykFJuEIjGIiKKK4cbZ1H/y9UU++GKaKdWiREu0="
         }
       ]
     },
     {
-      "Route": "upload/product/9391aad6-a02f-48ff-881f-c42f04e669ae_Giay-Nike-ReactX-Rejuven8-Triple-Black-Mau-Den-2-900x900.l7l4rvrwo7.jpg",
-      "AssetFile": "upload/product/9391aad6-a02f-48ff-881f-c42f04e669ae_Giay-Nike-ReactX-Rejuven8-Triple-Black-Mau-Den-2-900x900.jpg",
+      "Route": "upload/product/715b43d0-21d7-4b97-9170-56d93856769f_nike.l3njwp6vvg.jpg",
+      "AssetFile": "upload/product/715b43d0-21d7-4b97-9170-56d93856769f_nike.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22768,7 +22686,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "119358"
+          "Value": "22332"
         },
         {
           "Name": "Content-Type",
@@ -22776,76 +22694,31 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"YcszuJA49a8GExxJ57sYlfInSQh8N0VjrBfOyB9Kf9c=\""
+          "Value": "\"sT/fVykFJuEIjGIiKKK4cbZ1H/y9UU++GKaKdWiREu0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 31 May 2026 08:17:46 GMT"
+          "Value": "Fri, 05 Jun 2026 05:46:54 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "l7l4rvrwo7"
+          "Value": "l3njwp6vvg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-YcszuJA49a8GExxJ57sYlfInSQh8N0VjrBfOyB9Kf9c="
+          "Value": "sha256-sT/fVykFJuEIjGIiKKK4cbZ1H/y9UU++GKaKdWiREu0="
         },
         {
           "Name": "label",
-          "Value": "upload/product/9391aad6-a02f-48ff-881f-c42f04e669ae_Giay-Nike-ReactX-Rejuven8-Triple-Black-Mau-Den-2-900x900.jpg"
+          "Value": "upload/product/715b43d0-21d7-4b97-9170-56d93856769f_nike.jpg"
         }
       ]
     },
     {
-      "Route": "upload/product/cc30336b-88c5-4c6b-b25d-70107669d368_Giay-Air-Force-1-Mid-Utility-White-Black-Trang-Den-Rep-11-8-900x900.gkrmlqumtz.jpg",
-      "AssetFile": "upload/product/cc30336b-88c5-4c6b-b25d-70107669d368_Giay-Air-Force-1-Mid-Utility-White-Black-Trang-Den-Rep-11-8-900x900.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "113584"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EHIlSIbrdjULuZBV8EByDVSBdWzsJd6KpNsuLwIo9mY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 31 May 2026 08:18:16 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "gkrmlqumtz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-EHIlSIbrdjULuZBV8EByDVSBdWzsJd6KpNsuLwIo9mY="
-        },
-        {
-          "Name": "label",
-          "Value": "upload/product/cc30336b-88c5-4c6b-b25d-70107669d368_Giay-Air-Force-1-Mid-Utility-White-Black-Trang-Den-Rep-11-8-900x900.jpg"
-        }
-      ]
-    },
-    {
-      "Route": "upload/product/cc30336b-88c5-4c6b-b25d-70107669d368_Giay-Air-Force-1-Mid-Utility-White-Black-Trang-Den-Rep-11-8-900x900.jpg",
-      "AssetFile": "upload/product/cc30336b-88c5-4c6b-b25d-70107669d368_Giay-Air-Force-1-Mid-Utility-White-Black-Trang-Den-Rep-11-8-900x900.jpg",
+      "Route": "upload/product/96d1aff2-a8f0-4c6d-8ce3-acafed71182e_Giay-2.jpg",
+      "AssetFile": "upload/product/96d1aff2-a8f0-4c6d-8ce3-acafed71182e_Giay-2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22858,7 +22731,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "113584"
+          "Value": "6591"
         },
         {
           "Name": "Content-Type",
@@ -22866,23 +22739,23 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EHIlSIbrdjULuZBV8EByDVSBdWzsJd6KpNsuLwIo9mY=\""
+          "Value": "\"IoksqKFydPaTpdkH2oG1wiGuMmkZ3x9l8CQD5B1ek8A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 31 May 2026 08:18:16 GMT"
+          "Value": "Fri, 05 Jun 2026 05:46:41 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-EHIlSIbrdjULuZBV8EByDVSBdWzsJd6KpNsuLwIo9mY="
+          "Value": "sha256-IoksqKFydPaTpdkH2oG1wiGuMmkZ3x9l8CQD5B1ek8A="
         }
       ]
     },
     {
-      "Route": "upload/product/f7cffb68-660d-4fea-8e65-d73fe4cf07bd_Giay-Nike-Air-Max-1-Travis-Scott-Baroque-Brown-Nau-Kem-Rep-11-6-900x900.h75zlnawji.jpg",
-      "AssetFile": "upload/product/f7cffb68-660d-4fea-8e65-d73fe4cf07bd_Giay-Nike-Air-Max-1-Travis-Scott-Baroque-Brown-Nau-Kem-Rep-11-6-900x900.jpg",
+      "Route": "upload/product/96d1aff2-a8f0-4c6d-8ce3-acafed71182e_Giay-2.y3di05bif7.jpg",
+      "AssetFile": "upload/product/96d1aff2-a8f0-4c6d-8ce3-acafed71182e_Giay-2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22895,7 +22768,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "121677"
+          "Value": "6591"
         },
         {
           "Name": "Content-Type",
@@ -22903,31 +22776,31 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"42l+1rUOZ+/sxvRPgAtu0OSxQxgyqviXSmW0k3/mXlM=\""
+          "Value": "\"IoksqKFydPaTpdkH2oG1wiGuMmkZ3x9l8CQD5B1ek8A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 31 May 2026 08:18:26 GMT"
+          "Value": "Fri, 05 Jun 2026 05:46:41 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "h75zlnawji"
+          "Value": "y3di05bif7"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-42l+1rUOZ+/sxvRPgAtu0OSxQxgyqviXSmW0k3/mXlM="
+          "Value": "sha256-IoksqKFydPaTpdkH2oG1wiGuMmkZ3x9l8CQD5B1ek8A="
         },
         {
           "Name": "label",
-          "Value": "upload/product/f7cffb68-660d-4fea-8e65-d73fe4cf07bd_Giay-Nike-Air-Max-1-Travis-Scott-Baroque-Brown-Nau-Kem-Rep-11-6-900x900.jpg"
+          "Value": "upload/product/96d1aff2-a8f0-4c6d-8ce3-acafed71182e_Giay-2.jpg"
         }
       ]
     },
     {
-      "Route": "upload/product/f7cffb68-660d-4fea-8e65-d73fe4cf07bd_Giay-Nike-Air-Max-1-Travis-Scott-Baroque-Brown-Nau-Kem-Rep-11-6-900x900.jpg",
-      "AssetFile": "upload/product/f7cffb68-660d-4fea-8e65-d73fe4cf07bd_Giay-Nike-Air-Max-1-Travis-Scott-Baroque-Brown-Nau-Kem-Rep-11-6-900x900.jpg",
+      "Route": "upload/product/a641c062-265b-4039-8a25-0c85dd565e5a_nike.jpg",
+      "AssetFile": "upload/product/a641c062-265b-4039-8a25-0c85dd565e5a_nike.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22940,7 +22813,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "121677"
+          "Value": "22332"
         },
         {
           "Name": "Content-Type",
@@ -22948,17 +22821,62 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"42l+1rUOZ+/sxvRPgAtu0OSxQxgyqviXSmW0k3/mXlM=\""
+          "Value": "\"sT/fVykFJuEIjGIiKKK4cbZ1H/y9UU++GKaKdWiREu0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 31 May 2026 08:18:26 GMT"
+          "Value": "Fri, 05 Jun 2026 05:48:37 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-42l+1rUOZ+/sxvRPgAtu0OSxQxgyqviXSmW0k3/mXlM="
+          "Value": "sha256-sT/fVykFJuEIjGIiKKK4cbZ1H/y9UU++GKaKdWiREu0="
+        }
+      ]
+    },
+    {
+      "Route": "upload/product/a641c062-265b-4039-8a25-0c85dd565e5a_nike.l3njwp6vvg.jpg",
+      "AssetFile": "upload/product/a641c062-265b-4039-8a25-0c85dd565e5a_nike.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22332"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sT/fVykFJuEIjGIiKKK4cbZ1H/y9UU++GKaKdWiREu0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 05 Jun 2026 05:48:37 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l3njwp6vvg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sT/fVykFJuEIjGIiKKK4cbZ1H/y9UU++GKaKdWiREu0="
+        },
+        {
+          "Name": "label",
+          "Value": "upload/product/a641c062-265b-4039-8a25-0c85dd565e5a_nike.jpg"
         }
       ]
     }
