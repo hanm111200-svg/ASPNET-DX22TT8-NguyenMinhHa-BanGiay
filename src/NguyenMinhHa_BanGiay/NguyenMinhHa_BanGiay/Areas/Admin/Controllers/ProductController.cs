@@ -176,6 +176,13 @@ namespace NguyenMinhHa_BanGiay.Areas.Admin.Controllers
         public async Task<IActionResult> Delete(int? Id)
         {
             var product = await _dataContext.Products.FindAsync(Id);
+            var productSizes = _dataContext.ProductSize
+            .Where(ps => ps.ProductId == Id)
+            .ToList();
+
+            if (productSizes.Any())
+                _dataContext.ProductSize.RemoveRange(productSizes);
+
             if (product.ImageUrl != null)
             {
                 string uploadsDir = Path.Combine(_webHostEnviroment.WebRootPath, "upload/product");

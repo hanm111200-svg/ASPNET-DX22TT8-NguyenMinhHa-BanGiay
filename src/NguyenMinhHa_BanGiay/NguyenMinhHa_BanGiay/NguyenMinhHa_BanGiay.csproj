@@ -26,7 +26,6 @@
 
   <ItemGroup>
     <Folder Include="Migrations\" />
-    <Folder Include="Repository\Components\" />
     <Folder Include="wwwroot\assets\admin\" />
     <Folder Include="wwwroot\assets\blog\" />
   </ItemGroup>
